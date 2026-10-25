@@ -47,7 +47,7 @@ tools/                          Level üretici ve doğrulayıcı
 
 ## Oyunlar
 
-Her oyun 3 zorluk × 20 level = 60 level. Tüm levellerin tek çözümlü olduğu ve tahmin yapmadan, mantıkla çözülebildiği doğrulanır.
+21 oyun, her biri 3 zorluk × 20 level = 60 level (toplam 1260 level). Soru tipi oyunlarda (örüntü, katlama, küp, alan) bir level 3–5 sorudan oluşur ve her sorunun tek doğru cevabı bağımsız bir modelle doğrulanır. Her oyunun ilk açılışında çocuklar için "Nasıl Oynanır?" anlatımı gösterilir. Tüm levellerin tek çözümlü olduğu ve tahmin yapmadan, mantıkla çözülebildiği doğrulanır.
 
 | Kategori | Oyun | Kolay | Orta | Zor | Boosterlar |
 |---|---|---|---|---|---|
@@ -60,5 +60,17 @@ Her oyun 3 zorluk × 20 level = 60 level. Tüm levellerin tek çözümlü olduğ
 | Yol/Bağlantı | Köprü Kurma (Hashi) | 7×7 | 9×9 | 11×11 → 13×13 | 🌉 Köprü Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
 | Yol/Bağlantı | Çit Çizme (Slitherlink) | 5×5 | 7×7 | 9×9, 10×10 | 🖍️ Çizgi Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
 | Sözel | Mantık Tablosu | 3 kişi × 2 özellik | 4 × 3 | 5 × 3–4 | 🔍 Eşleşme Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Sayısal | Kakuro | 4×4–5×5 | 6×6–7×7 | 8×8–9×9 | 🔍 Hücre Aç · ❗ Hata Bul · 💡 Akıllı İpucu (toplam kombinasyonları) |
+| Sayısal | Hesap Kafesi (KenKen) | 3×3–4×4, sadece + | 4×4–5×5, + − × | 5×5–6×6, dört işlem | 🔍 Hücre Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Sayısal | Sihirli Kare | 3×3 (farklı sayı dizileri) | 4×4 | 4×4, 5×5 | 🔍 Hücre Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Görsel | Şekil Örüntüleri | tekrar eden diziler | artan/dönen özellikler | 3×3 tablolar | ✂️ Yarı Yarıya · 💡 İpucu · 🔎 Kuralı Göster |
+| Görsel | Simetri | dikey eksen, resimler | yatay eksen, kayık eksen | çift/çapraz eksen, dönme | 🔍 Hücre Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Görsel | Kâğıt Katlama | 1 katlama | 2 katlama, çentik | çapraz katlama, ters sorular | ✂️ Yarı Yarıya · 💡 İpucu · 👣 Adım Adım |
+| Yol/Bağlantı | Sayı Bağla (Numberlink) | 5×5–6×6 | 7×7–8×8 | 9×9–10×10 | 🔗 Yol Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Yol/Bağlantı | Labirent | 6×6–9×9 | 11×11–15×15 | 17×17–21×21, anahtar-kapı | 👣 Yol Göster · 🚧 Çıkmaz Sokaklar · 💡 Akıllı İpucu |
+| Sözel | Şifre Çözme | emoji ve sayı kodu | Sezar, yarım anahtar | meyve denklemleri, kelime kutusu | 🔍 Harf Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Geometrik | Dikdörtgen Böl (Shikaku) | 5×5–6×6 | 7×7–9×9 | 10×10–12×12 | 🟦 Dikdörtgen Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Geometrik | Alan Problemleri | kare sayma, en × boy | L/T/U şekiller, çevre | üçgen, paralelkenar, kesilmiş şekiller | ✂️ Yarı Yarıya · 💡 İpucu · ✏️ Böl ve Say |
+| Geometrik | Küp Açılımları | hangisi küp olur, karşı yüz | sembollü küpler | yönlü semboller, iki görünüş | ✂️ Yarı Yarıya · 💡 İpucu · 📦 Katla |
 
 "Akıllı İpucu" her oyunda sıradaki mantıklı adımı bulur, ilgili hücreleri işaretler ve nedenini Türkçe açıklar. Hiçbir işe yaramayacağı durumda (ör. hata yokken "Hata Bul") booster hakkı harcanmaz.
