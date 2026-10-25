@@ -5,6 +5,14 @@ import { DIFFICULTIES, LEVELS_PER_DIFFICULTY } from '../js/core/config.js';
 import { createRng } from '../js/core/rng.js';
 import { listGames, loadLogic, levelsPath } from './common.mjs';
 
+// Her level tek satırda: dosya küçük kalır, farklar okunur olur.
+function formatLevels(out) {
+  const parts = Object.entries(out).map(
+    ([diff, list]) => `  ${JSON.stringify(diff)}: [\n${list.map((l) => `    ${JSON.stringify(l)}`).join(',\n')}\n  ]`,
+  );
+  return `{\n${parts.join(',\n')}\n}\n`;
+}
+
 const [gameId, seed = 'v1'] = process.argv.slice(2);
 if (!gameId || !listGames().includes(gameId)) {
   console.error(`Kullanım: node tools/generate.mjs <oyun-id> [tohum]\nOyunlar: ${listGames().join(', ')}`);
@@ -31,5 +39,5 @@ for (const diff of DIFFICULTIES) {
   }
 }
 
-writeFileSync(levelsPath(gameId), JSON.stringify(out, null, 1) + '\n');
+writeFileSync(levelsPath(gameId), formatLevels(out));
 console.log(`\n${levelsPath(gameId)} yazıldı.`);
