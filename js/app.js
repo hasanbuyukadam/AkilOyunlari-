@@ -1,4 +1,4 @@
-import { GAMES, loadGame, loadLevels } from './core/registry.js';
+import { CATEGORIES, loadAvailableGames, loadGame, loadLevels } from './core/registry.js';
 import { DIFFICULTIES, LEVELS_PER_DIFFICULTY, starsFor } from './core/config.js';
 import { getStars, setStars, isUnlocked, solvedCount } from './core/storage.js';
 
@@ -18,14 +18,11 @@ export function toast(msg) {
 }
 
 async function renderHome() {
-  const games = await Promise.all(GAMES.map((g) => loadGame(g.id)));
-  app.innerHTML = `
-    <h1>Oyunlar</h1>
-    <div class="game-list">
-      ${games.map((g) => {
-        const total = DIFFICULTIES.length * LEVELS_PER_DIFFICULTY;
-        const done = DIFFICULTIES.reduce((s, d) => s + solvedCount(g.id, d.id), 0);
-        return `
+  const entries = await loadAvailableGames();
+  const total = DIFFICULTIES.length * LEVELS_PER_DIFFICULTY;
+  const card = ({ game: g }) => {
+    const done = DIFFICULTIES.reduce((s, d) => s + solvedCount(g.id, d.id), 0);
+    return `
         <a class="game-card" href="#/${g.id}">
           <div class="game-icon">${g.icon}</div>
           <div>
@@ -35,8 +32,12 @@ async function renderHome() {
             <small>${done} / ${total} level</small>
           </div>
         </a>`;
-      }).join('')}
-    </div>`;
+  };
+  app.innerHTML = CATEGORIES.map((cat) => {
+    const list = entries.filter((e) => e.category === cat.id);
+    if (!list.length) return '';
+    return `<h2 class="cat-title">${esc(cat.name)}</h2><div class="game-list">${list.map(card).join('')}</div>`;
+  }).join('');
 }
 
 async function renderLevels(gameId, diffId) {
