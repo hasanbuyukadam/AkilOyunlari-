@@ -38,7 +38,8 @@ tools/                          Level üretici ve doğrulayıcı
 1. `games/<id>/logic.js` — şu fonksiyonları dışa aktarır:
    - `generateLevel(rng, difficulty, index, total)` → `{ puzzle, solution, ... }`
    - `verifyLevel(level)` → hata metni ya da `null` (tek çözüm kontrolü burada yapılır)
-2. `games/<id>/index.js` — `{ id, name, icon, description, rules, boosters: [3 adet], mount(container, level, ctx) }`.
+2. `games/<id>/index.js` — `{ id, name, icon, description, rules, howTo: [çocuk diliyle adımlar], boosters: [3 adet], mount(container, level, ctx) }`.
+   `howTo` oyun ilk açıldığında "Nasıl Oynanır?" penceresinde gösterilir.
    `mount` bir nesne döndürür: `useBooster(id) → { ok, message }` (`ok: false` ise hak harcanmaz) ve `destroy()`.
    Bulmaca çözülünce `ctx.onSolved()` çağrılır.
 3. `js/core/registry.js` içindeki `GAMES` listesine ekleyin.

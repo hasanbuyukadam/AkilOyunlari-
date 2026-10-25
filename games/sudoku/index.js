@@ -15,6 +15,13 @@ export default {
   icon: '🔢',
   description: '4×4, 6×6 ve 9×9 ızgaraları rakamlarla doldur; her satır, sütun ve bölgede her rakam bir kez.',
   rules: 'Izgara kalın çizgilerle bölgelere ayrılmıştır (4×4’te 2×2, 6×6’da 2×3, 9×9’da 3×3). Her satır, sütun ve bölgede 1’den ızgara boyutuna kadar her rakam yalnızca bir kez yer almalı. Her bulmacanın tek bir çözümü vardır ve tahmin yapmadan çözülebilir.',
+  howTo: [
+    "Bir boş kareye dokun, sonra alttaki rakamlardan birini seç.",
+    "Her satırda, her sütunda ve kalın çizgiyle ayrılmış her bölgede bir rakam yalnızca bir kez olabilir.",
+    "Kırmızı görünen rakam, aynı satır, sütun ya da bölgede tekrar ediyor demektir.",
+    "Emin olmadığın yerlere ✏️ Not ile küçük notlar alabilirsin.",
+    "Takılırsan 💡 Akıllı İpucu sana bir sonraki adımı ve nedenini anlatır.",
+  ],
   boosters: [
     { id: 'reveal', name: 'Hücre Aç', icon: '🔍', uses: 3, description: 'Seçili (ya da rastgele) boş hücrenin doğru rakamını yerleştirir.' },
     { id: 'check', name: 'Hata Bul', icon: '❗', uses: 2, description: 'Yanlış girdiğin rakamları kırmızıyla gösterir.' },

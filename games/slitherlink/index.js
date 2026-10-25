@@ -19,6 +19,13 @@ export default {
   icon: '✏️',
   description: 'Noktaları birleştirip sayılara uyan tek bir kapalı çit çiz.',
   rules: 'Noktalar arasına çizgi çizerek tek bir kapalı döngü oluştur. Döngü kendini kesmez ve dallanmaz; her noktaya ya 0 ya 2 çizgi gelir. Hücredeki sayı, o hücrenin kaç kenarının döngüde olduğunu gösterir. Kenara dokun: çizgi → × (kesin boş) → boş. Sağ tık ya da basılı tutma doğrudan × koyar. Her bulmacanın tek bir çözümü vardır.',
+  howTo: [
+    "Noktaların arasına çizgiler çizerek tek bir kapalı yol (çit) yap.",
+    "Hücredeki sayı, o karenin kaç kenarında çit olduğunu söyler.",
+    "Çit hiçbir yerde ayrılmaz ve kendini kesmez.",
+    "Çizgi çizmek için iki nokta arasına dokun. Bir daha dokunursan × (çizgi yok) olur.",
+    "0 yazan karelerin etrafına hiç çizgi gelmez. Oradan başlamak kolaydır!",
+  ],
   boosters: [
     { id: 'reveal', name: 'Çizgi Aç', icon: '🖍️', uses: 3, description: 'Döngünün doğru bir parçasını (en çok 3 kenar) çizer.' },
     { id: 'check', name: 'Hata Bul', icon: '❗', uses: 2, description: 'Yanlış çizgileri ve yanlış × işaretlerini kırmızıyla gösterir.' },

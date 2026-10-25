@@ -17,6 +17,13 @@ export default {
   icon: '🏙️',
   description: 'Kenardaki sayılara bakarak binaların kat sayılarını yerleştir.',
   rules: 'Her satır ve sütunda 1’den N’ye kadar her bina yüksekliği birer kez bulunur. Kenardaki sayı, o taraftan bakınca kaç bina görüldüğünü söyler: yüksek bina arkasındaki alçak binaları gizler. Her bulmacanın tek bir çözümü vardır ve tahmin yapmadan çözülebilir.',
+  howTo: [
+    "Her kareye bir bina koyuyorsun. Sayı binanın kaç katlı olduğunu gösterir.",
+    "Her satırda ve sütunda her yükseklik yalnızca bir kez olabilir.",
+    "Kenardaki sayı, o taraftan bakınca kaç bina görüldüğünü söyler. Yüksek bina, arkasındaki alçak binaları saklar.",
+    "İpucu 1 ise en yüksek bina hemen kenardadır.",
+    "Takılırsan 💡 Akıllı İpucu'yu kullan.",
+  ],
   boosters: [
     { id: 'reveal', name: 'Hücre Aç', icon: '🔍', uses: 3, description: 'Seçili (ya da rastgele) boş hücrenin doğru bina yüksekliğini yerleştirir.' },
     { id: 'check', name: 'Hata Bul', icon: '❗', uses: 2, description: 'Yanlış yerleştirdiğin binaları kırmızıyla gösterir.' },

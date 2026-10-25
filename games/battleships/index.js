@@ -17,6 +17,13 @@ export default {
   icon: '🚢',
   description: 'Satır ve sütun sayılarından gizli filoyu bul.',
   rules: 'Filodaki tüm gemileri ızgaraya yerleştir. Satır ve sütunların yanındaki sayılar o hatta kaç gemi hücresi olduğunu gösterir. Gemiler düzdür (yatay ya da dikey) ve birbirine değmez — çapraz bile. Bazı hücreler ipucu olarak açıktır. Dokun: boş → gemi → su; uzun bas ya da sağ tık: su. Her bulmacanın tek çözümü vardır ve tahmin gerektirmez.',
+  howTo: [
+    "Gizli gemileri bulacaksın. Hangi gemilerin olduğu filo listesinde yazıyor.",
+    "Kenardaki sayılar o satırda ya da sütunda kaç gemi parçası olduğunu söyler.",
+    "Gemiler düzdür ve birbirine değemez, çapraz bile!",
+    "Kareye dokun: önce gemi, sonra su, sonra temizle.",
+    "Açık gelen ipucu kareleri gemilerin nerede olduğunu gösterir.",
+  ],
   boosters: [
     { id: 'reveal', name: 'Hücre Aç', icon: '🔍', uses: 3, description: 'Doğru bir hücreyi (öncelikle gemi hücresini) biçimiyle birlikte açar.' },
     { id: 'check', name: 'Hata Bul', icon: '❗', uses: 2, description: 'Yanlış işaretlediğin gemi ve su hücrelerini kırmızıyla gösterir.' },

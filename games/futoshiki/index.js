@@ -17,6 +17,13 @@ export default {
   icon: '⚖️',
   description: 'Rakamları yerleştir; aradaki büyüktür/küçüktür işaretlerine uy.',
   rules: 'Her satır ve sütunda 1’den N’ye kadar her rakam birer kez yer almalı. Hücreler arasındaki < ve > (dikeyde ∧ ve ∨) işaretleri doğru olmalı: işaretin sivri ucu küçük sayıyı gösterir. Her bulmacanın tek bir çözümü vardır ve tahmin yapmadan çözülebilir.',
+  howTo: [
+    "Bir kareye dokun ve bir rakam seç.",
+    "Her satırda ve sütunda her rakam yalnızca bir kez olabilir.",
+    "İşaretlere dikkat et: < ve > işaretinin ağzı her zaman büyük sayıya açılır, sivri ucu küçük sayıyı gösterir.",
+    "Kırmızı işaret, kuralın bozulduğunu gösterir.",
+    "Takılırsan 💡 Akıllı İpucu'yu kullan.",
+  ],
   boosters: [
     { id: 'reveal', name: 'Hücre Aç', icon: '🔍', uses: 3, description: 'Seçili (ya da rastgele) boş hücrenin doğru rakamını yerleştirir.' },
     { id: 'check', name: 'Hata Bul', icon: '❗', uses: 2, description: 'Yanlış girdiğin rakamları kırmızıyla gösterir.' },

@@ -111,3 +111,11 @@ h1 { margin: 8px 0 12px; font-size: 1.6rem; }
   .level-grid { grid-template-columns: repeat(4, 1fr); }
   .booster { min-width: 0; flex: 1; }
 }
+
+/* Nasıl Oynanır? */
+.howto-btn { cursor: pointer; font: inherit; font-weight: 600; margin-bottom: 4px; }
+.modal-box.howto { text-align: left; max-width: 440px; }
+.modal-box.howto h2 { text-align: center; }
+.modal-box.howto ol { padding-left: 22px; line-height: 1.5; }
+.modal-box.howto li { margin: 6px 0; }
+.modal-box.howto .modal-actions button { cursor: pointer; font: inherit; font-weight: 600; }

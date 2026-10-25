@@ -41,3 +41,26 @@ export function isUnlocked(gameId, difficulty, levelNo) {
 export function solvedCount(gameId, difficulty) {
   return Object.keys(load()?.[gameId]?.[difficulty] ?? {}).length;
 }
+
+// "Nasıl Oynanır?" anlatımı her oyunda yalnızca ilk açılışta kendiliğinden gösterilir.
+const SEEN_KEY = 'akiloyunlari:howto';
+let seenMemory = {};
+
+export function hasSeenHowTo(gameId) {
+  try {
+    return Boolean(JSON.parse(localStorage.getItem(SEEN_KEY) ?? '{}')[gameId]);
+  } catch {
+    return Boolean(seenMemory[gameId]);
+  }
+}
+
+export function markHowToSeen(gameId) {
+  seenMemory[gameId] = true;
+  try {
+    const data = JSON.parse(localStorage.getItem(SEEN_KEY) ?? '{}');
+    data[gameId] = true;
+    localStorage.setItem(SEEN_KEY, JSON.stringify(data));
+  } catch {
+    /* bellekte kalır */
+  }
+}

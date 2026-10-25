@@ -18,6 +18,13 @@ export default {
   icon: '⛺',
   description: 'Her ağacın yanına bir çadır kur; çadırlar birbirine değmesin.',
   rules: 'Her ağacın dik komşusuna (sağ, sol, üst, alt) tam bir çadır kurulur; her çadır da tam bir ağaca aittir. Çadırlar birbirine çapraz da dahil hiç değemez. Satır ve sütun kenarındaki sayılar o satır/sütundaki çadır sayısını gösterir. Dokun: boş → çadır → çim → boş. Uzun bas ya da sağ tıkla: doğrudan çim. Her bulmacanın tek bir çözümü vardır ve tahmin yapmadan çözülebilir.',
+  howTo: [
+    "Her ağacın hemen yanına (sağ, sol, üst ya da alt) bir çadır kur.",
+    "Her ağacın yalnızca bir çadırı olur.",
+    "Çadırlar birbirine değemez, çapraz bile!",
+    "Kenardaki sayılar o satırda ya da sütunda kaç çadır olduğunu söyler.",
+    "Kareye dokun: önce çadır, sonra çim (boş), sonra temizle.",
+  ],
   boosters: [
     { id: 'reveal', name: 'Çadır Aç', icon: '⛺', uses: 3, description: 'Doğru yerlerden birine bir çadır kurar.' },
     { id: 'check', name: 'Hata Bul', icon: '❗', uses: 2, description: 'Yanlış kurduğun çadırları ve yanlış çim işaretlerini gösterir.' },

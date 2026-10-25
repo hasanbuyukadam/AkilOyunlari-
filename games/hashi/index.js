@@ -19,6 +19,13 @@ export default {
   icon: '🌉',
   description: 'Numaralı adaları köprülerle birbirine bağla.',
   rules: 'Adaları yatay ya da dikey köprülerle bağla. İki ada arasında en fazla 2 köprü olabilir; köprüler birbirini ve adaları kesemez. Her adadaki sayı, o adaya bağlanan köprü sayısıdır ve tüm adalar tek bir grup oluşturmalıdır. Her bulmacanın tek bir çözümü vardır ve tahmin yapmadan çözülebilir.',
+  howTo: [
+    "Her ada bir sayı taşır. Bu sayı, adaya kaç köprü bağlanacağını söyler.",
+    "Bir adaya dokun, sonra yanındaki adaya dokun: köprü kurulur. Tekrar dokunursan çift köprü olur, bir kez daha dokunursan köprü kalkar.",
+    "Köprüler sadece düz (yatay ya da dikey) gider ve birbirini kesemez.",
+    "Sonunda bütün adalar birbirine bağlı olmalı.",
+    "Sayısı tamamlanan ada yeşil olur.",
+  ],
   boosters: [
     { id: 'reveal', name: 'Köprü Aç', icon: '🌉', uses: 3, description: 'Seçili adadan (ya da rastgele) doğru bir köprüyü yerine koyar.' },
     { id: 'check', name: 'Hata Bul', icon: '❗', uses: 2, description: 'Yanlış ya da fazla kurduğun köprüleri kırmızıyla gösterir.' },

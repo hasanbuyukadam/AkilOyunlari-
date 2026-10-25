@@ -17,7 +17,18 @@ export const GAMES = [
   { id: 'battleships', category: 'spatial', load: () => import('../../games/battleships/index.js') },
   { id: 'hashi', category: 'path', load: () => import('../../games/hashi/index.js') },
   { id: 'slitherlink', category: 'path', load: () => import('../../games/slitherlink/index.js') },
-  { id: 'logicgrid', category: 'verbal', load: () => import('../../games/logicgrid/index.js') },
+  { id: 'logicgrid', category: 'verbal', load: () => import('../../games/logicgrid/index.js') },  { id: 'kakuro', category: 'number', load: () => import('../../games/kakuro/index.js') },
+  { id: 'kenken', category: 'number', load: () => import('../../games/kenken/index.js') },
+  { id: 'magicsquare', category: 'number', load: () => import('../../games/magicsquare/index.js') },
+  { id: 'patterns', category: 'visual', load: () => import('../../games/patterns/index.js') },
+  { id: 'symmetry', category: 'visual', load: () => import('../../games/symmetry/index.js') },
+  { id: 'paperfold', category: 'visual', load: () => import('../../games/paperfold/index.js') },
+  { id: 'numberlink', category: 'path', load: () => import('../../games/numberlink/index.js') },
+  { id: 'maze', category: 'path', load: () => import('../../games/maze/index.js') },
+  { id: 'cipher', category: 'verbal', load: () => import('../../games/cipher/index.js') },
+  { id: 'shikaku', category: 'geometry', load: () => import('../../games/shikaku/index.js') },
+  { id: 'area', category: 'geometry', load: () => import('../../games/area/index.js') },
+  { id: 'cubenet', category: 'geometry', load: () => import('../../games/cubenet/index.js') },
 ];
 
 export async function loadGame(id) {

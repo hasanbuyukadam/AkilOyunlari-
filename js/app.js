@@ -1,6 +1,6 @@
 import { CATEGORIES, loadAvailableGames, loadGame, loadLevels } from './core/registry.js';
 import { DIFFICULTIES, LEVELS_PER_DIFFICULTY, starsFor } from './core/config.js';
-import { getStars, setStars, isUnlocked, solvedCount } from './core/storage.js';
+import { getStars, setStars, isUnlocked, solvedCount, hasSeenHowTo, markHowToSeen } from './core/storage.js';
 
 const app = document.getElementById('app');
 let current = null; // aktif oyun örneği (temizlik için)
@@ -52,6 +52,7 @@ async function renderLevels(nav, gameId, diffId) {
     <a class="back" href="#/">← Oyunlar</a>
     <h1>${game.icon} ${esc(game.name)}</h1>
     <p class="muted">${esc(game.rules)}</p>
+    ${game.howTo?.length ? '<button class="btn howto-btn" type="button">❓ Nasıl Oynanır?</button>' : ''}
     <div class="tabs">
       ${DIFFICULTIES.map((d) => `
         <a class="tab ${d.id === diff.id ? 'active' : ''}" style="--c:${d.color}" href="#/${gameId}/${d.id}">
@@ -73,6 +74,7 @@ async function renderLevels(nav, gameId, diffId) {
     <ul class="booster-info">
       ${game.boosters.map((b) => `<li><span>${b.icon}</span><b>${esc(b.name)}</b> — ${esc(b.description)} <small>(level başına ${b.uses} hak)</small></li>`).join('')}
     </ul>`;
+  app.querySelector('.howto-btn')?.addEventListener('click', () => showHowTo(game));
 }
 
 async function renderPlay(nav, gameId, diffId, levelNo) {
@@ -126,6 +128,7 @@ async function renderPlay(nav, gameId, diffId, levelNo) {
   };
 
   current = game.mount(document.getElementById('board'), level, ctx);
+  if (game.howTo?.length && !hasSeenHowTo(gameId)) showHowTo(game);
 
   app.querySelectorAll('.booster').forEach((btn) => {
     btn.addEventListener('click', () => {
@@ -159,6 +162,22 @@ function showWin(gameId, diffId, levelNo, stars) {
     </div>`;
   document.body.appendChild(modal);
   modal.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => modal.remove()));
+}
+
+function showHowTo(game) {
+  markHowToSeen(game.id);
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  modal.innerHTML = `
+    <div class="modal-box howto">
+      <h2>${game.icon} Nasıl Oynanır?</h2>
+      <ol>${game.howTo.map((step) => `<li>${esc(step)}</li>`).join('')}</ol>
+      <div class="modal-actions"><button class="btn primary" type="button">Anladım, başlayalım!</button></div>
+    </div>`;
+  document.body.appendChild(modal);
+  const close = () => modal.remove();
+  modal.querySelector('button').addEventListener('click', close);
+  modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
 }
 
 function renderNotFound() {

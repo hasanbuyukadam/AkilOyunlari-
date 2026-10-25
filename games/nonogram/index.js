@@ -31,6 +31,13 @@ export default {
   icon: '🖼️',
   description: 'Satır ve sütun ipuçlarıyla gizli resmi ortaya çıkar.',
   rules: 'Her satırın solundaki ve her sütunun üstündeki sayılar, o çizgideki dolu karelerin blok uzunluklarını sırasıyla verir; bloklar arasında en az bir boş kare vardır. Dokun ya da sürükle: kareleri doldur; × modu (veya sağ tık) ile boş olduğundan emin olduğun kareleri işaretle. Her bulmacanın tek çözümü vardır ve tahmin yapmadan çözülebilir.',
+  howTo: [
+    "Satırın solundaki sayılar o satırda kaç kare yan yana boyanacağını söyler. Örneğin \"3 1\": önce 3 dolu kare, en az bir boşluk, sonra 1 dolu kare.",
+    "Sütunların üstündeki sayılar da aynı şekilde çalışır.",
+    "Kareye dokun ya da parmağını sürükleyerek boya.",
+    "Boş olduğundan emin olduğun karelere × koymak işini kolaylaştırır.",
+    "Bütün sayılar tutunca gizli resim ortaya çıkar!",
+  ],
   boosters: [
     { id: 'reveal', name: 'Hücre Aç', icon: '🔍', uses: 3, description: '3 hücrenin doğru hâlini açar (dolu ya da ×).' },
     { id: 'check', name: 'Hata Bul', icon: '❗', uses: 2, description: 'Yanlış doldurduğun ya da yanlış × koyduğun kareleri gösterir.' },

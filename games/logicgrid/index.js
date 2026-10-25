@@ -29,6 +29,13 @@ export default {
   icon: '🧩',
   description: 'İpuçlarını kullanarak kimin neye sahip olduğunu tabloda bul.',
   rules: 'Her çocuğun her kategoride tam olarak bir eşi vardır ve hiçbir öğe iki çocuğa ait olamaz. Tablodaki bir kareye dokununca sırasıyla ✗ (olamaz), ✓ (eşleşiyor) ve boş olur. İpuçlarından yola çıkarak tüm doğru eşleşmeleri ✓ ile işaretle. Her bulmacanın tek bir çözümü vardır ve tahmin yapmadan çözülebilir.',
+  howTo: [
+    "Hikâyedeki çocukların hangi şeylere sahip olduğunu ipuçlarından bulacaksın.",
+    "Tablodaki kareye bir kez dokun: ✗ (olamaz). İki kez dokun: ✓ (doğru eşleşme).",
+    "Her çocuğun her gruptan sadece bir şeyi vardır.",
+    "İpuçlarını tek tek oku. Kullandığın ipucuna dokunup üstünü çizebilirsin.",
+    "Takılırsan 💡 Akıllı İpucu hangi ipucunu kullanman gerektiğini söyler.",
+  ],
   boosters: [
     { id: 'reveal', name: 'Eşleşme Aç', icon: '🔍', uses: 2, description: 'Bir çocuğun doğru bir eşleşmesini tabloda ✓ olarak açar.' },
     { id: 'check', name: 'Hata Bul', icon: '❗', uses: 2, description: 'Yanlış koyduğun ✓ ve ✗ işaretlerini kırmızıyla gösterir.' },
