@@ -1,0 +1,83 @@
+.shikaku {
+  width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px;
+  -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
+}
+.shikaku .sk-status {
+  width: min(100%, 560px); height: 3.4em; padding: 4px 12px; border-radius: 10px; line-height: 1.25;
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  color: var(--muted); font-weight: 600; font-size: .95rem;
+  background: var(--card); border: 1px solid var(--line);
+}
+.shikaku .sk-status.live { color: #fff; background: var(--danger); border-color: var(--danger); }
+.shikaku .sk-status.live.ok { background: var(--ok); border-color: var(--ok); }
+.shikaku .sk-board {
+  --cell: min(52px, calc((100vw - 48px) / var(--cols)));
+  position: relative; display: grid;
+  grid-template-columns: repeat(var(--cols), var(--cell));
+  grid-template-rows: repeat(var(--rows), var(--cell));
+  padding: 4px; background: var(--card); border: 2px solid var(--line); border-radius: 12px;
+  touch-action: none; cursor: crosshair;
+}
+@media (min-width: 700px) {
+  .shikaku .sk-board { --cell: min(52px, calc(560px / var(--cols))); }
+}
+.shikaku .sk-cell {
+  box-shadow: inset 0 0 0 .5px color-mix(in srgb, var(--text) 18%, transparent);
+  background: color-mix(in srgb, var(--text) 4%, var(--card));
+}
+.shikaku .sk-cell.cur { outline: 3px solid var(--accent); outline-offset: -3px; z-index: 3; }
+.shikaku .sk-cell.focus { background: color-mix(in srgb, #f0b429 45%, var(--card)); }
+.shikaku .sk-layer { display: contents; }
+.shikaku .sk-rect {
+  z-index: 1; margin: 2px; border-radius: 7px; pointer-events: none;
+  background: color-mix(in srgb, hsl(var(--h) 75% 58%) 38%, var(--card));
+  border: 2px solid hsl(var(--h) 60% 42%);
+  transition: background .15s;
+}
+.shikaku .sk-rect.bad {
+  background: color-mix(in srgb, var(--danger) 42%, var(--card));
+  border: 3px solid var(--danger);
+}
+.shikaku .sk-rect.locked { border-width: 3px; box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--card) 70%, transparent); }
+.shikaku .sk-rect.wrong {
+  border: 3px dashed var(--danger);
+  background: repeating-linear-gradient(45deg,
+    color-mix(in srgb, var(--danger) 40%, var(--card)) 0 6px,
+    color-mix(in srgb, var(--danger) 15%, var(--card)) 6px 12px);
+}
+.shikaku .sk-rect.preview {
+  z-index: 2; background: color-mix(in srgb, var(--danger) 18%, transparent);
+  border: 3px dashed var(--danger); display: flex; align-items: flex-end; justify-content: flex-end;
+}
+.shikaku .sk-rect.preview.good { background: color-mix(in srgb, var(--ok) 22%, transparent); border-color: var(--ok); }
+.shikaku .sk-rect.preview b {
+  margin: 2px; padding: 1px 5px; border-radius: 6px; font-size: .78rem; white-space: nowrap;
+  color: #fff; background: var(--danger);
+}
+.shikaku .sk-rect.preview.good b { background: var(--ok); }
+.shikaku .sk-rect.hint {
+  z-index: 2; background: transparent; border: 3px dashed #f0b429;
+  animation: sk-pulse 1s ease-in-out 4;
+}
+.shikaku .sk-rect.anchor { z-index: 4; background: color-mix(in srgb, var(--accent) 30%, transparent); border: 3px solid var(--accent); }
+@keyframes sk-pulse { 50% { box-shadow: 0 0 0 4px color-mix(in srgb, #f0b429 55%, transparent); } }
+.shikaku .sk-num {
+  z-index: 3; display: flex; align-items: center; justify-content: center; pointer-events: none;
+}
+.shikaku .sk-num span {
+  min-width: 72%; height: 72%; padding: 0 2px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: calc(var(--cell) * .46); line-height: 1; color: var(--text);
+  background: var(--card); box-shadow: 0 0 0 1.5px color-mix(in srgb, var(--text) 35%, transparent);
+}
+.shikaku .sk-num.focus span { box-shadow: 0 0 0 3px #f0b429; }
+.shikaku.solved .sk-rect { border-color: var(--ok); }
+.shikaku .sk-tools { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.shikaku .sk-tools button {
+  min-height: 44px; padding: 8px 14px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--card); color: var(--text); font: inherit; font-weight: 600; cursor: pointer;
+}
+.shikaku .sk-tools button:disabled { opacity: .45; cursor: default; }
+@media (hover: hover) {
+  .shikaku .sk-tools button:not(:disabled):hover { border-color: var(--accent); }
+}
