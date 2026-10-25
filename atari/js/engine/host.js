@@ -105,7 +105,7 @@ export class Host {
           <div class="abtns ${hasC ? 'three' : ''}">
             ${hasC ? `<div data-btn="c" class="ab c"><span>C</span><small>${esc(btns.c)}</small></div>` : ''}
             ${btns.b ? `<div data-btn="b" class="ab b"><span>B</span><small>${esc(btns.b)}</small></div>` : ''}
-            <div data-btn="a" class="ab a"><span>A</span><small>${esc(btns.a || '')}</small></div>
+            ${btns.a ? `<div data-btn="a" class="ab a"><span>A</span><small>${esc(btns.a)}</small></div>` : ''}
           </div>
         </div>
         <details class="help">

@@ -94,11 +94,17 @@ for (const id of ids) {
     const shotEvery = (seconds * 1000) / 3;
     let nextShot = Date.now() + shotEvery;
     while (Date.now() < end) {
+      // Oyun bitip menüye dönüldüyse oyunu yeniden aç
+      if (!page.url().includes(`#/oyun/${id}`)) {
+        await page.goto(`${base}#/oyun/${id}`);
+        await page.waitForSelector('canvas');
+        await page.keyboard.press('Enter');
+      }
       const k = KEYS[Math.floor(Math.random() * KEYS.length)];
       await page.keyboard.down(k);
       await page.waitForTimeout(40 + Math.random() * 200);
       await page.keyboard.up(k);
-      const state = await page.$eval('.overlay', (o) => (o.classList.contains('show') ? o.querySelector('h2')?.textContent : ''));
+      const state = await page.$$eval('.overlay', (os) => { const o = os[0]; return o && o.classList.contains('show') ? o.querySelector('h2')?.textContent : ''; });
       if (state === 'HATA') {
         errors.push(`oyun içi hata: ${await page.$eval('.overlay .desc', (e) => e.textContent)}`);
         break;
