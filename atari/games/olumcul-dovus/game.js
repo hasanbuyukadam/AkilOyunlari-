@@ -752,7 +752,7 @@ class Fighter {
   draw(gfx, camX) {
     if (this.hidden) return;
     const base = POSES[this.pose] || POSES.idle0;
-    const rot = this.rot || base.rot || 0;
+    const rot = this.fx?.rot ?? (this.rot || base.rot || 0);
     const pose = rot !== base.rot ? { ...base, rot } : base;
     let tint = null;
     if (this.state === 'frozen') tint = 'ice';
@@ -1357,7 +1357,7 @@ export default class DeadlyGame {
           this.sfx.play('hit');
           this.spark(vic.x, -60, false, true);
         }
-        if (t > 20) { vic.pose = 'fall'; vic.rot = t * 18; vic.vy += 0.02; }
+        if (t > 20) { vic.pose = 'fall'; vic.fx = { rot: (t * 18) % 360 }; vic.vy += 0.02; }
         if (t === 150) { vic.hidden = true; this.star = { x: vic.x, t: 0 }; this.sfx.seq([['E6', 0.06], ['B6', 0.15]], { vol: 0.08 }); }
         if (this.star) this.star.t++;
         break;
@@ -1477,6 +1477,7 @@ export default class DeadlyGame {
     }
     if (this.phase === 'fatality') {
       this.updateFatality();
+      for (const f of this.f) if (f.dispHp > f.hp) f.dispHp = Math.max(f.hp, f.dispHp - 1);
       p1.update(blankCmd());
       p2.update(blankCmd());
       this.updateParts();
@@ -1964,7 +1965,6 @@ export default class DeadlyGame {
       if (done) gfx.text('X', tx + 20, y + 10, '#d02010', { align: 'center' });
     }
     const py = 196 - Math.min(this.ladderPos, n - 1) * 36;
-    gfx.text('◀', 0, 0, '#000');
     gfx.rect(tx + 46, py - 2, 6, 6, '#ffd040');
     gfx.text('SEN', tx + 56, py - 2, '#ffd040');
     // Rakip bilgisi
@@ -1982,7 +1982,6 @@ export default class DeadlyGame {
   drawEnding(gfx) {
     const t = this.t;
     gfx.cls('#000');
-    drawStageMini(gfx, t);
     drawFighterArt(gfx.ctx, this.playerCh, Math.floor(t / 24) % 2 ? POSES.win2 : POSES.win, 1, W / 2, 180, false, this.tick, { noShadow: true });
     gfx.text('ZAFER', W / 2 + 2, 22, '#300000', { align: 'center', scale: 4 });
     gfx.text('ZAFER', W / 2, 20, '#d02010', { align: 'center', scale: 4 });
