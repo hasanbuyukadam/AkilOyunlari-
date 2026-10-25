@@ -1,0 +1,120 @@
+.patterns-game {
+  --gap: 8px;
+  width: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px;
+  color: var(--text);
+}
+.patterns-game .pt-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.patterns-game .pt-progress { display: flex; align-items: center; gap: 8px; }
+.patterns-game .pt-pdot {
+  width: 14px; height: 14px; border-radius: 50%; background: var(--line); transition: background .25s, transform .25s;
+}
+.patterns-game .pt-pdot.cur { background: var(--card); box-shadow: 0 0 0 3px var(--accent); transform: scale(1.1); }
+.patterns-game .pt-pdot.done { background: var(--ok); }
+.patterns-game .pt-ptext { font-size: .85rem; color: var(--muted); margin-left: 4px; font-weight: 600; }
+.patterns-game .pt-head { text-align: center; }
+.patterns-game .pt-title { margin: 0; font-size: 1.3rem; }
+.patterns-game .pt-sub { margin: 4px 0 0; color: var(--muted); font-size: .95rem; }
+
+/* Kutucuklar */
+.patterns-game .pt-board { width: 100%; display: flex; justify-content: center; }
+.patterns-game .pt-seq {
+  display: grid; gap: var(--gap); justify-content: center; width: 100%;
+  grid-template-columns: repeat(var(--n), minmax(0, 96px));
+}
+.patterns-game .pt-mat {
+  display: grid; gap: var(--gap); justify-content: center; width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 120px));
+  padding: 10px; border-radius: 16px; background: var(--accent-soft); max-width: 400px;
+}
+.patterns-game .pt-cell {
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start; min-width: 0;
+}
+.patterns-game .pt-cell .pt-svg, .patterns-game .pt-cell.missing > span {
+  width: 100%; aspect-ratio: 1; display: block;
+  background: var(--card); border: 2px solid var(--line); border-radius: 12px;
+}
+.patterns-game .pt-cell.missing > span {
+  display: flex; align-items: center; justify-content: center;
+  border: 3px dashed var(--accent); color: var(--accent); font-weight: 800; font-size: 2rem;
+  background: color-mix(in srgb, var(--accent) 8%, var(--card));
+  animation: pt-pulse 1.6s ease-in-out infinite;
+}
+@keyframes pt-pulse { 50% { background: color-mix(in srgb, var(--accent) 18%, var(--card)); } }
+.patterns-game .pt-cell.answer .pt-svg { border: 3px solid var(--ok); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok) 25%, transparent); animation: pt-pop .4s ease-out; }
+@keyframes pt-pop { 0% { transform: scale(.7); } 70% { transform: scale(1.08); } 100% { transform: scale(1); } }
+.patterns-game .pt-svg { overflow: visible; }
+.patterns-game .pt-dot { fill: var(--text); }
+
+.patterns-game .pt-board.shake { animation: pt-shake .4s ease-in-out; }
+@keyframes pt-shake { 20%, 60% { transform: translateX(-7px); } 40%, 80% { transform: translateX(7px); } }
+
+/* Kural etiketleri */
+.patterns-game .pt-tags { display: flex; flex-direction: column; align-items: center; gap: 2px; margin-top: 4px; width: 100%; }
+.patterns-game .pt-tag {
+  display: inline-flex; align-items: center; gap: 3px; max-width: 100%;
+  font-size: .72rem; font-weight: 700; line-height: 1.2; padding: 2px 6px; border-radius: 8px;
+  background: var(--accent-soft); color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  border: 1px solid color-mix(in srgb, var(--accent) 45%, transparent);
+}
+.patterns-game .pt-tag i { width: 9px; height: 9px; border-radius: 50%; flex: none; display: inline-block; }
+.patterns-game .pt-tag.t-s { background: color-mix(in srgb, #8e44ad 18%, var(--card)); }
+.patterns-game .pt-tag.t-c { background: color-mix(in srgb, #e53935 15%, var(--card)); }
+.patterns-game .pt-tag.t-n { background: color-mix(in srgb, #1e88e5 18%, var(--card)); }
+.patterns-game .pt-tag.t-z { background: color-mix(in srgb, #43a047 18%, var(--card)); }
+.patterns-game .pt-tag.t-f { background: color-mix(in srgb, #fb8c00 18%, var(--card)); }
+.patterns-game .pt-tag.t-r { background: color-mix(in srgb, #00897b 18%, var(--card)); font-size: .9rem; }
+.patterns-game .pt-tag.t-d { background: color-mix(in srgb, #6d4c41 18%, var(--card)); }
+.patterns-game .pt-rule {
+  width: 100%; max-width: 560px; padding: 10px 14px; border-radius: 12px; line-height: 1.45;
+  background: color-mix(in srgb, #f0b429 16%, var(--card)); border: 2px solid #f0b429;
+}
+.patterns-game .pt-rule ul { margin: 6px 0 0; padding-left: 18px; }
+.patterns-game .pt-rule li { margin: 4px 0; }
+.patterns-game .pt-rule .pt-tag { display: inline-flex; vertical-align: 1px; }
+
+/* Seçenekler */
+.patterns-game .pt-options {
+  display: grid; grid-template-columns: repeat(4, minmax(0, 120px)); gap: 10px; justify-content: center; width: 100%;
+}
+.patterns-game .pt-opt {
+  position: relative; padding: 6px 6px 4px; border-radius: 14px; border: 2px solid var(--line); background: var(--card);
+  cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; min-width: 0;
+  transition: transform .12s, border-color .15s, opacity .2s; color: var(--text); font: inherit;
+}
+.patterns-game .pt-opt .pt-svg { width: 100%; aspect-ratio: 1; display: block; }
+.patterns-game .pt-opt:hover:not(:disabled) { border-color: var(--accent); transform: translateY(-2px); }
+.patterns-game .pt-opt:active:not(:disabled) { transform: scale(.96); }
+.patterns-game .pt-opt:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.patterns-game .pt-key {
+  display: block; margin-top: 2px; font-size: .85rem; font-weight: 800; color: var(--muted); line-height: 1.1;
+}
+.patterns-game .pt-opt.wrong { border-color: var(--danger); opacity: .45; cursor: default; }
+.patterns-game .pt-opt.wrong .pt-key { color: var(--danger); }
+.patterns-game .pt-opt.wrong .pt-key::after { content: ' ✗'; }
+.patterns-game .pt-opt.right .pt-key { color: var(--ok); }
+.patterns-game .pt-opt.right .pt-key::after { content: ' ✓'; }
+.patterns-game .pt-opt.gone { visibility: hidden; }
+.patterns-game .pt-opt.right { border-color: var(--ok); border-width: 3px; background: color-mix(in srgb, var(--ok) 14%, var(--card)); }
+.patterns-game .pt-opt:disabled:not(.right) { cursor: default; }
+
+/* Geri bildirim */
+.patterns-game .pt-feedback { width: 100%; max-width: 560px; min-height: 1.5em; text-align: center; }
+.patterns-game .pt-feedback.no { color: var(--danger); font-weight: 600; }
+.patterns-game .pt-feedback.ok {
+  text-align: left; padding: 12px 16px; border-radius: 14px; line-height: 1.45;
+  background: color-mix(in srgb, var(--ok) 13%, var(--card)); border: 2px solid var(--ok);
+  animation: pt-pop .35s ease-out;
+}
+.patterns-game .pt-ok-title { font-weight: 800; font-size: 1.15rem; color: var(--ok); }
+.patterns-game .pt-feedback ul { margin: 6px 0; padding-left: 20px; }
+.patterns-game .pt-answer { margin: 6px 0 10px; font-weight: 700; }
+.patterns-game .pt-next { display: block; margin: 0 auto; min-height: 46px; min-width: 160px; font: inherit; font-weight: 700; cursor: pointer; }
+
+@media (max-width: 600px) {
+  .patterns-game .pt-seq { grid-template-columns: repeat(var(--mob), minmax(0, 96px)); }
+  .patterns-game .pt-options { gap: 8px; }
+  .patterns-game .pt-title { font-size: 1.15rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .patterns-game *, .patterns-game *::after { animation: none !important; transition: none !important; }
+}

@@ -1,0 +1,2408 @@
+{
+ "easy": [
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=square c=c(green,blue) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(square,star) c=purple z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(heart,triangle) c=green z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=square c=c(green,blue) z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:green:2:1:0:0:-1;square:blue:2:1:0:0:-1;square:green:2:1:0:0:-1;square:blue:2:1:0:0:-1;square:green:2:1:0:0:-1;square:blue:2:1:0:0:-1;?",
+     "options": "square:blue:2:1:0:0:-1;square:green:2:2:0:0:-1;triangle:green:2:1:0:0:-1;square:green:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "square:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(square,star) c=purple z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:purple:2:1:0:0:-1;star:purple:2:1:0:0:-1;square:purple:2:1:0:0:-1;star:purple:2:1:0:0:-1;square:purple:2:1:0:0:-1;star:purple:2:1:0:0:-1;?",
+     "options": "square:purple:2:1:0:0:-1;square:orange:2:1:0:0:-1;square:purple:1:1:0:0:-1;star:purple:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "square:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(heart,triangle) c=green z=2 n=1 f=0 r=0 d=-1",
+     "items": "heart:green:2:1:0:0:-1;triangle:green:2:1:0:0:-1;heart:green:2:1:0:0:-1;triangle:green:2:1:0:0:-1;heart:green:2:1:0:0:-1;triangle:green:2:1:0:0:-1;?",
+     "options": "heart:blue:2:1:0:0:-1;heart:green:2:2:0:0:-1;heart:green:2:1:0:0:-1;triangle:green:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "heart:green:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=star c=c(green,orange) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(square,triangle) c=yellow z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(heart,circle) c=purple z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=star c=c(green,orange) z=2 n=1 f=0 r=0 d=-1",
+     "items": "star:green:2:1:0:0:-1;star:orange:2:1:0:0:-1;star:green:2:1:0:0:-1;star:orange:2:1:0:0:-1;star:green:2:1:0:0:-1;star:orange:2:1:0:0:-1;?",
+     "options": "star:green:2:1:0:0:-1;star:green:0:1:0:0:-1;circle:green:2:1:0:0:-1;star:orange:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "star:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(square,triangle) c=yellow z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:yellow:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;square:yellow:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;square:yellow:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;?",
+     "options": "square:yellow:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;square:yellow:0:1:0:0:-1;square:yellow:2:3:0:0:-1",
+     "correct": 0,
+     "answer": "square:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(heart,circle) c=purple z=2 n=1 f=0 r=0 d=-1",
+     "items": "heart:purple:2:1:0:0:-1;circle:purple:2:1:0:0:-1;heart:purple:2:1:0:0:-1;circle:purple:2:1:0:0:-1;heart:purple:2:1:0:0:-1;circle:purple:2:1:0:0:-1;?",
+     "options": "heart:purple:2:1:0:0:-1;circle:purple:2:1:0:0:-1;heart:purple:2:3:0:0:-1;heart:purple:2:1:2:0:-1",
+     "correct": 0,
+     "answer": "heart:purple:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=c(triangle,star) c=blue z=2 n=1 f=0 r=0 d=-1 ; seq6|s=star c=c(yellow,blue) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(star,heart) c=orange z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(triangle,star) c=blue z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:blue:2:1:0:0:-1;star:blue:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;star:blue:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;star:blue:2:1:0:0:-1;?",
+     "options": "star:blue:2:1:0:0:-1;triangle:green:2:1:0:0:-1;triangle:blue:2:1:1:0:-1;triangle:blue:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "triangle:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=star c=c(yellow,blue) z=2 n=1 f=0 r=0 d=-1",
+     "items": "star:yellow:2:1:0:0:-1;star:blue:2:1:0:0:-1;star:yellow:2:1:0:0:-1;star:blue:2:1:0:0:-1;star:yellow:2:1:0:0:-1;star:blue:2:1:0:0:-1;?",
+     "options": "star:yellow:2:3:0:0:-1;star:yellow:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;star:blue:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "star:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(star,heart) c=orange z=2 n=1 f=0 r=0 d=-1",
+     "items": "star:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;star:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;star:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;?",
+     "options": "star:orange:2:3:0:0:-1;star:orange:2:1:0:0:-1;star:orange:2:1:1:0:-1;heart:orange:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "star:orange:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=c(square,star) c=green z=2 n=1 f=0 r=0 d=-1 ; seq6|s=triangle c=c(yellow,red) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(square,star) c=blue z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(square,star) c=green z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:green:2:1:0:0:-1;star:green:2:1:0:0:-1;square:green:2:1:0:0:-1;star:green:2:1:0:0:-1;square:green:2:1:0:0:-1;star:green:2:1:0:0:-1;?",
+     "options": "square:green:2:1:0:0:-1;star:green:2:1:0:0:-1;square:green:2:3:0:0:-1;square:orange:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "square:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=triangle c=c(yellow,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:yellow:2:1:0:0:-1;triangle:red:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:red:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:red:2:1:0:0:-1;?",
+     "options": "triangle:yellow:2:1:2:0:-1;triangle:red:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:yellow:2:3:0:0:-1",
+     "correct": 2,
+     "answer": "triangle:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(square,star) c=blue z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:blue:2:1:0:0:-1;star:blue:2:1:0:0:-1;square:blue:2:1:0:0:-1;star:blue:2:1:0:0:-1;square:blue:2:1:0:0:-1;star:blue:2:1:0:0:-1;?",
+     "options": "square:blue:1:1:0:0:-1;square:blue:2:1:0:0:-1;square:blue:2:1:1:0:-1;star:blue:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "square:blue:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=hexagon c=c(orange,blue,yellow) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=heart c=c(purple,green) z=2 n=1 f=0 r=0 d=-1 ; seq8|s=c(hexagon,heart,square) c=orange z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=hexagon c=c(orange,blue,yellow) z=2 n=1 f=0 r=0 d=-1",
+     "items": "hexagon:orange:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;?",
+     "options": "hexagon:yellow:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;hexagon:orange:1:1:0:0:-1;hexagon:orange:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "hexagon:orange:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=heart c=c(purple,green) z=2 n=1 f=0 r=0 d=-1",
+     "items": "heart:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1;?",
+     "options": "heart:purple:2:1:2:0:-1;heart:purple:2:3:0:0:-1;heart:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "heart:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=c(hexagon,heart,square) c=orange z=2 n=1 f=0 r=0 d=-1",
+     "items": "hexagon:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;square:orange:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;square:orange:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;?",
+     "options": "square:orange:0:1:0:0:-1;square:orange:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "square:orange:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq7|s=hexagon c=c(yellow,green,blue) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=hexagon c=c(green,blue) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(star,hexagon) c=orange z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 7,
+     "rules": "s=hexagon c=c(yellow,green,blue) z=2 n=1 f=0 r=0 d=-1",
+     "items": "hexagon:yellow:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;?",
+     "options": "hexagon:green:2:1:0:0:-1;heart:green:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "hexagon:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=hexagon c=c(green,blue) z=2 n=1 f=0 r=0 d=-1",
+     "items": "hexagon:green:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;?",
+     "options": "hexagon:green:2:3:0:0:-1;hexagon:green:2:1:1:0:-1;hexagon:blue:2:1:0:0:-1;hexagon:green:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "hexagon:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(star,hexagon) c=orange z=2 n=1 f=0 r=0 d=-1",
+     "items": "star:orange:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;star:orange:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;star:orange:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;?",
+     "options": "star:blue:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;star:orange:2:1:0:0:-1;star:orange:2:1:1:0:-1",
+     "correct": 2,
+     "answer": "star:orange:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=circle c=c(green,orange) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=square c=c(yellow,blue,purple) z=2 n=1 f=0 r=0 d=-1 ; seq8|s=c(square,triangle,heart) c=orange z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=circle c=c(green,orange) z=2 n=1 f=0 r=0 d=-1",
+     "items": "circle:green:2:1:0:0:-1;circle:orange:2:1:0:0:-1;circle:green:2:1:0:0:-1;circle:orange:2:1:0:0:-1;circle:green:2:1:0:0:-1;circle:orange:2:1:0:0:-1;?",
+     "options": "circle:green:2:1:0:0:-1;circle:orange:2:1:0:0:-1;circle:green:1:1:0:0:-1;circle:green:2:1:2:0:-1",
+     "correct": 0,
+     "answer": "circle:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=square c=c(yellow,blue,purple) z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:yellow:2:1:0:0:-1;square:blue:2:1:0:0:-1;square:purple:2:1:0:0:-1;square:yellow:2:1:0:0:-1;square:blue:2:1:0:0:-1;square:purple:2:1:0:0:-1;?",
+     "options": "square:blue:2:1:0:0:-1;square:purple:2:1:0:0:-1;square:yellow:2:1:0:0:-1;square:yellow:2:1:2:0:-1",
+     "correct": 2,
+     "answer": "square:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=c(square,triangle,heart) c=orange z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;square:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;square:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;?",
+     "options": "heart:orange:2:3:0:0:-1;triangle:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;square:orange:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "heart:orange:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=star c=c(blue,red) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(circle,star) c=c(red,green) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(square,star) c=green z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=star c=c(blue,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "star:blue:2:1:0:0:-1;star:red:2:1:0:0:-1;star:blue:2:1:0:0:-1;star:red:2:1:0:0:-1;star:blue:2:1:0:0:-1;star:red:2:1:0:0:-1;?",
+     "options": "star:red:2:1:0:0:-1;heart:blue:2:1:0:0:-1;star:blue:2:1:0:0:-1;star:blue:0:1:0:0:-1",
+     "correct": 2,
+     "answer": "star:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(circle,star) c=c(red,green) z=2 n=1 f=0 r=0 d=-1",
+     "items": "circle:red:2:1:0:0:-1;star:green:2:1:0:0:-1;circle:red:2:1:0:0:-1;star:green:2:1:0:0:-1;circle:red:2:1:0:0:-1;star:green:2:1:0:0:-1;?",
+     "options": "circle:red:2:1:0:0:-1;circle:green:2:1:0:0:-1;star:green:2:1:0:0:-1;star:red:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "circle:red:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(square,star) c=green z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:green:2:1:0:0:-1;star:green:2:1:0:0:-1;square:green:2:1:0:0:-1;star:green:2:1:0:0:-1;square:green:2:1:0:0:-1;star:green:2:1:0:0:-1;?",
+     "options": "square:green:2:1:0:0:-1;square:green:2:3:0:0:-1;square:green:2:1:2:0:-1;star:green:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "square:green:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=triangle c=c(yellow,red,blue) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(hexagon,star) c=c(red,purple) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(heart,circle) c=orange z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=triangle c=c(yellow,red,blue) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:yellow:2:1:0:0:-1;triangle:red:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:red:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;?",
+     "options": "triangle:red:2:1:0:0:-1;triangle:yellow:0:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:blue:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "triangle:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(hexagon,star) c=c(red,purple) z=2 n=1 f=0 r=0 d=-1",
+     "items": "hexagon:red:2:1:0:0:-1;star:purple:2:1:0:0:-1;hexagon:red:2:1:0:0:-1;star:purple:2:1:0:0:-1;hexagon:red:2:1:0:0:-1;star:purple:2:1:0:0:-1;?",
+     "options": "hexagon:red:2:1:0:0:-1;star:red:2:1:0:0:-1;star:purple:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "hexagon:red:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(heart,circle) c=orange z=2 n=1 f=0 r=0 d=-1",
+     "items": "heart:orange:2:1:0:0:-1;circle:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;circle:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;circle:orange:2:1:0:0:-1;?",
+     "options": "heart:orange:2:2:0:0:-1;circle:orange:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;heart:orange:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "heart:orange:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=triangle c=orange z=2 n=1 f=c(0,2) r=0 d=-1 ; seq8|s=c(triangle,triangle,square) c=orange z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(triangle,hexagon,circle) c=green z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=triangle c=orange z=2 n=1 f=c(0,2) r=0 d=-1",
+     "items": "triangle:orange:2:1:0:0:-1;triangle:orange:2:1:2:0:-1;triangle:orange:2:1:0:0:-1;triangle:orange:2:1:2:0:-1;triangle:orange:2:1:0:0:-1;triangle:orange:2:1:2:0:-1;?",
+     "options": "triangle:orange:2:1:2:0:-1;hexagon:orange:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:orange:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "triangle:orange:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=c(triangle,triangle,square) c=orange z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;square:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;square:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;?",
+     "options": "square:red:2:1:0:0:-1;square:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;square:orange:2:1:1:0:-1",
+     "correct": 1,
+     "answer": "square:orange:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(triangle,hexagon,circle) c=green z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:green:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;circle:green:2:1:0:0:-1;triangle:green:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;circle:green:2:1:0:0:-1;?",
+     "options": "triangle:green:2:2:0:0:-1;triangle:green:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;circle:green:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "triangle:green:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq8|s=c(hexagon,square,square) c=yellow z=2 n=1 f=0 r=0 d=-1 ; seq6|s=square c=c(orange,red,red) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(heart,triangle) c=c(blue,purple) z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=c(hexagon,square,square) c=yellow z=2 n=1 f=0 r=0 d=-1",
+     "items": "hexagon:yellow:2:1:0:0:-1;square:yellow:2:1:0:0:-1;square:yellow:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;square:yellow:2:1:0:0:-1;square:yellow:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;square:yellow:2:1:0:0:-1;?",
+     "options": "square:yellow:2:1:0:0:-1;square:yellow:2:1:1:0:-1;hexagon:yellow:2:1:0:0:-1;square:orange:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "square:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=square c=c(orange,red,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:orange:2:1:0:0:-1;square:red:2:1:0:0:-1;square:red:2:1:0:0:-1;square:orange:2:1:0:0:-1;square:red:2:1:0:0:-1;square:red:2:1:0:0:-1;?",
+     "options": "square:orange:0:1:0:0:-1;square:orange:2:1:0:0:-1;square:red:2:1:0:0:-1;square:orange:2:1:1:0:-1",
+     "correct": 1,
+     "answer": "square:orange:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(heart,triangle) c=c(blue,purple) z=2 n=1 f=0 r=0 d=-1",
+     "items": "heart:blue:2:1:0:0:-1;triangle:purple:2:1:0:0:-1;heart:blue:2:1:0:0:-1;triangle:purple:2:1:0:0:-1;heart:blue:2:1:0:0:-1;triangle:purple:2:1:0:0:-1;?",
+     "options": "heart:blue:2:1:0:0:-1;heart:purple:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;triangle:purple:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "heart:blue:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=star c=purple z=c(2,0) n=1 f=0 r=0 d=-1 ; seq6|s=triangle c=blue z=2 n=1 f=c(2,1) r=0 d=-1 ; seq6|s=c(circle,hexagon) c=c(yellow,green) z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=star c=purple z=c(2,0) n=1 f=0 r=0 d=-1",
+     "items": "star:purple:2:1:0:0:-1;star:purple:0:1:0:0:-1;star:purple:2:1:0:0:-1;star:purple:0:1:0:0:-1;star:purple:2:1:0:0:-1;star:purple:0:1:0:0:-1;?",
+     "options": "star:purple:0:1:0:0:-1;star:purple:2:1:0:0:-1;star:purple:1:1:0:0:-1;hexagon:purple:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "star:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=triangle c=blue z=2 n=1 f=c(2,1) r=0 d=-1",
+     "items": "triangle:blue:2:1:2:0:-1;triangle:blue:2:1:1:0:-1;triangle:blue:2:1:2:0:-1;triangle:blue:2:1:1:0:-1;triangle:blue:2:1:2:0:-1;triangle:blue:2:1:1:0:-1;?",
+     "options": "triangle:blue:2:1:2:0:-1;star:blue:2:1:2:0:-1;triangle:blue:0:1:2:0:-1;triangle:blue:2:1:1:0:-1",
+     "correct": 0,
+     "answer": "triangle:blue:2:1:2:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(circle,hexagon) c=c(yellow,green) z=2 n=1 f=0 r=0 d=-1",
+     "items": "circle:yellow:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;?",
+     "options": "hexagon:green:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;circle:green:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "circle:yellow:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=c(square,square,triangle) c=green z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(triangle,star,circle) c=red z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(triangle,heart) c=c(purple,orange) z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(square,square,triangle) c=green z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:green:2:1:0:0:-1;square:green:2:1:0:0:-1;triangle:green:2:1:0:0:-1;square:green:2:1:0:0:-1;square:green:2:1:0:0:-1;triangle:green:2:1:0:0:-1;?",
+     "options": "triangle:green:2:1:0:0:-1;square:green:0:1:0:0:-1;square:green:2:1:0:0:-1;square:green:2:3:0:0:-1",
+     "correct": 2,
+     "answer": "square:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(triangle,star,circle) c=red z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:red:2:1:0:0:-1;star:red:2:1:0:0:-1;circle:red:2:1:0:0:-1;triangle:red:2:1:0:0:-1;star:red:2:1:0:0:-1;circle:red:2:1:0:0:-1;?",
+     "options": "star:red:2:1:0:0:-1;triangle:red:2:3:0:0:-1;circle:red:2:1:0:0:-1;triangle:red:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "triangle:red:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(triangle,heart) c=c(purple,orange) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:purple:2:1:0:0:-1;heart:orange:2:1:0:0:-1;triangle:purple:2:1:0:0:-1;heart:orange:2:1:0:0:-1;triangle:purple:2:1:0:0:-1;heart:orange:2:1:0:0:-1;?",
+     "options": "triangle:purple:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;heart:purple:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "triangle:purple:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=heart c=purple z=2 n=1 f=c(0,1) r=0 d=-1 ; seq8|s=c(triangle,triangle,heart) c=orange z=2 n=1 f=0 r=0 d=-1 ; seq8|s=circle c=c(orange,yellow,green) z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=heart c=purple z=2 n=1 f=c(0,1) r=0 d=-1",
+     "items": "heart:purple:2:1:0:0:-1;heart:purple:2:1:1:0:-1;heart:purple:2:1:0:0:-1;heart:purple:2:1:1:0:-1;heart:purple:2:1:0:0:-1;heart:purple:2:1:1:0:-1;?",
+     "options": "heart:purple:2:1:0:0:-1;square:purple:2:1:0:0:-1;heart:orange:2:1:0:0:-1;heart:purple:2:1:1:0:-1",
+     "correct": 0,
+     "answer": "heart:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=c(triangle,triangle,heart) c=orange z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;heart:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;?",
+     "options": "triangle:orange:2:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:orange:0:1:0:0:-1;heart:orange:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "heart:orange:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=circle c=c(orange,yellow,green) z=2 n=1 f=0 r=0 d=-1",
+     "items": "circle:orange:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;circle:green:2:1:0:0:-1;circle:orange:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;circle:green:2:1:0:0:-1;circle:orange:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;?",
+     "options": "circle:green:2:1:0:0:-1;star:green:2:1:0:0:-1;circle:orange:2:1:0:0:-1;circle:yellow:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "circle:green:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq8|s=c(circle,heart,square) c=yellow z=2 n=1 f=0 r=0 d=-1 ; seq8|s=c(triangle,hexagon,hexagon) c=purple z=2 n=1 f=0 r=0 d=-1 ; seq7|s=c(triangle,star,square) c=c(red,green,yellow) z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=c(circle,heart,square) c=yellow z=2 n=1 f=0 r=0 d=-1",
+     "items": "circle:yellow:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;square:yellow:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;square:yellow:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;?",
+     "options": "square:yellow:2:1:0:0:-1;square:yellow:0:1:0:0:-1;heart:yellow:2:1:0:0:-1;circle:yellow:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "square:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=c(triangle,hexagon,hexagon) c=purple z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:purple:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1;triangle:purple:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1;triangle:purple:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1;?",
+     "options": "hexagon:purple:2:1:1:0:-1;hexagon:purple:0:1:0:0:-1;triangle:purple:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "hexagon:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 7,
+     "rules": "s=c(triangle,star,square) c=c(red,green,yellow) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:red:2:1:0:0:-1;star:green:2:1:0:0:-1;square:yellow:2:1:0:0:-1;triangle:red:2:1:0:0:-1;star:green:2:1:0:0:-1;square:yellow:2:1:0:0:-1;triangle:red:2:1:0:0:-1;?",
+     "options": "star:red:2:1:0:0:-1;star:green:2:1:0:0:-1;triangle:green:2:1:0:0:-1;triangle:red:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "star:green:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq8|s=circle c=c(green,green,blue) z=2 n=1 f=0 r=0 d=-1 ; seq7|s=c(square,triangle,heart) c=c(yellow,blue,red) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(square,heart) c=c(yellow,purple) z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=circle c=c(green,green,blue) z=2 n=1 f=0 r=0 d=-1",
+     "items": "circle:green:2:1:0:0:-1;circle:green:2:1:0:0:-1;circle:blue:2:1:0:0:-1;circle:green:2:1:0:0:-1;circle:green:2:1:0:0:-1;circle:blue:2:1:0:0:-1;circle:green:2:1:0:0:-1;circle:green:2:1:0:0:-1;?",
+     "options": "circle:blue:0:1:0:0:-1;circle:blue:2:1:0:0:-1;star:blue:2:1:0:0:-1;circle:green:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "circle:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 7,
+     "rules": "s=c(square,triangle,heart) c=c(yellow,blue,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:yellow:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;heart:red:2:1:0:0:-1;square:yellow:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;heart:red:2:1:0:0:-1;square:yellow:2:1:0:0:-1;?",
+     "options": "square:yellow:2:1:0:0:-1;square:blue:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:blue:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "triangle:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(square,heart) c=c(yellow,purple) z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:yellow:2:1:0:0:-1;heart:purple:2:1:0:0:-1;square:yellow:2:1:0:0:-1;heart:purple:2:1:0:0:-1;square:yellow:2:1:0:0:-1;heart:purple:2:1:0:0:-1;?",
+     "options": "square:yellow:2:1:0:0:-1;square:purple:2:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:yellow:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "square:yellow:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=c(heart,star) c=c(purple,blue) z=2 n=1 f=0 r=0 d=-1 ; seq7|s=heart c=c(green,yellow,purple) z=2 n=1 f=0 r=0 d=-1 ; seq8|s=c(square,hexagon,circle) c=blue z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(heart,star) c=c(purple,blue) z=2 n=1 f=0 r=0 d=-1",
+     "items": "heart:purple:2:1:0:0:-1;star:blue:2:1:0:0:-1;heart:purple:2:1:0:0:-1;star:blue:2:1:0:0:-1;heart:purple:2:1:0:0:-1;star:blue:2:1:0:0:-1;?",
+     "options": "star:purple:2:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:blue:2:1:0:0:-1;star:blue:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "heart:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 7,
+     "rules": "s=heart c=c(green,yellow,purple) z=2 n=1 f=0 r=0 d=-1",
+     "items": "heart:green:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1;?",
+     "options": "heart:green:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;heart:purple:2:1:0:0:-1;circle:yellow:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "heart:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=c(square,hexagon,circle) c=blue z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:blue:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;circle:blue:2:1:0:0:-1;square:blue:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;circle:blue:2:1:0:0:-1;square:blue:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;?",
+     "options": "circle:red:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;square:blue:2:1:0:0:-1;circle:blue:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "circle:blue:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=triangle c=green z=c(2,0) n=1 f=0 r=0 d=-1 ; seq6|s=c(heart,triangle) c=c(yellow,red) z=2 n=1 f=0 r=0 d=-1 ; seq7|s=c(triangle,star,circle) c=c(green,red,purple) z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=triangle c=green z=c(2,0) n=1 f=0 r=0 d=-1",
+     "items": "triangle:green:2:1:0:0:-1;triangle:green:0:1:0:0:-1;triangle:green:2:1:0:0:-1;triangle:green:0:1:0:0:-1;triangle:green:2:1:0:0:-1;triangle:green:0:1:0:0:-1;?",
+     "options": "triangle:green:0:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:green:1:1:0:0:-1;triangle:green:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "triangle:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(heart,triangle) c=c(yellow,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "heart:yellow:2:1:0:0:-1;triangle:red:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;triangle:red:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;triangle:red:2:1:0:0:-1;?",
+     "options": "triangle:red:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;heart:red:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "heart:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 7,
+     "rules": "s=c(triangle,star,circle) c=c(green,red,purple) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:green:2:1:0:0:-1;star:red:2:1:0:0:-1;circle:purple:2:1:0:0:-1;triangle:green:2:1:0:0:-1;star:red:2:1:0:0:-1;circle:purple:2:1:0:0:-1;triangle:green:2:1:0:0:-1;?",
+     "options": "star:red:2:1:0:0:-1;star:green:2:1:0:0:-1;triangle:red:2:1:0:0:-1;triangle:green:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "star:red:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=c(circle,heart,hexagon) c=c(purple,green,orange) z=2 n=1 f=0 r=0 d=-1 ; seq8|s=c(hexagon,heart,circle) c=purple z=2 n=1 f=0 r=0 d=-1 ; seq8|s=c(hexagon,star,star) c=red z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(circle,heart,hexagon) c=c(purple,green,orange) z=2 n=1 f=0 r=0 d=-1",
+     "items": "circle:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;circle:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;?",
+     "options": "circle:green:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;circle:purple:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "circle:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=c(hexagon,heart,circle) c=purple z=2 n=1 f=0 r=0 d=-1",
+     "items": "hexagon:purple:2:1:0:0:-1;heart:purple:2:1:0:0:-1;circle:purple:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1;heart:purple:2:1:0:0:-1;circle:purple:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1;heart:purple:2:1:0:0:-1;?",
+     "options": "circle:purple:2:1:2:0:-1;heart:purple:2:1:0:0:-1;circle:purple:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "circle:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=c(hexagon,star,star) c=red z=2 n=1 f=0 r=0 d=-1",
+     "items": "hexagon:red:2:1:0:0:-1;star:red:2:1:0:0:-1;star:red:2:1:0:0:-1;hexagon:red:2:1:0:0:-1;star:red:2:1:0:0:-1;star:red:2:1:0:0:-1;hexagon:red:2:1:0:0:-1;star:red:2:1:0:0:-1;?",
+     "options": "hexagon:red:2:1:0:0:-1;star:red:1:1:0:0:-1;star:red:2:1:0:0:-1;star:red:2:2:0:0:-1",
+     "correct": 2,
+     "answer": "star:red:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "seq6|s=c(triangle,square) c=c(blue,purple) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=star c=purple z=2 n=1 f=c(0,1) r=0 d=-1 ; seq8|s=star c=c(green,green,red) z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(triangle,square) c=c(blue,purple) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:blue:2:1:0:0:-1;square:purple:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;square:purple:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;square:purple:2:1:0:0:-1;?",
+     "options": "triangle:blue:2:1:0:0:-1;square:purple:2:1:0:0:-1;triangle:purple:2:1:0:0:-1;square:blue:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "triangle:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=star c=purple z=2 n=1 f=c(0,1) r=0 d=-1",
+     "items": "star:purple:2:1:0:0:-1;star:purple:2:1:1:0:-1;star:purple:2:1:0:0:-1;star:purple:2:1:1:0:-1;star:purple:2:1:0:0:-1;star:purple:2:1:1:0:-1;?",
+     "options": "star:purple:2:1:0:0:-1;star:purple:0:1:0:0:-1;hexagon:purple:2:1:0:0:-1;star:purple:2:1:1:0:-1",
+     "correct": 0,
+     "answer": "star:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 9,
+     "m": 8,
+     "rules": "s=star c=c(green,green,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "star:green:2:1:0:0:-1;star:green:2:1:0:0:-1;star:red:2:1:0:0:-1;star:green:2:1:0:0:-1;star:green:2:1:0:0:-1;star:red:2:1:0:0:-1;star:green:2:1:0:0:-1;star:green:2:1:0:0:-1;?",
+     "options": "circle:red:2:1:0:0:-1;star:green:2:1:0:0:-1;star:red:2:1:0:0:-1;star:red:1:1:0:0:-1",
+     "correct": 2,
+     "answer": "star:red:2:1:0:0:-1"
+    }
+   ]
+  }
+ ],
+ "medium": [
+  {
+   "difficulty": "medium",
+   "puzzle": "seq5|s=heart c=green z=2 n=1 f=0 r=0 d=s(2,-1) ; seq6|s=c(hexagon,star) c=c(blue,red,yellow) z=2 n=1 f=0 r=0 d=-1 ; seq5|s=square c=orange z=2 n=s(1,1) f=0 r=0 d=-1 ; seq5|s=s(3,1) c=yellow z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=heart c=green z=2 n=1 f=0 r=0 d=s(2,-1)",
+     "items": "heart:green:2:1:0:0:2;heart:green:2:1:0:0:1;heart:green:2:1:0:0:0;heart:green:2:1:0:0:3;heart:green:2:1:0:0:2;?",
+     "options": "heart:green:2:1:0:0:3;heart:green:2:1:0:0:2;heart:green:2:1:0:0:0;heart:green:2:1:0:0:1",
+     "correct": 3,
+     "answer": "heart:green:2:1:0:0:1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(hexagon,star) c=c(blue,red,yellow) z=2 n=1 f=0 r=0 d=-1",
+     "items": "hexagon:blue:2:1:0:0:-1;star:red:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;star:blue:2:1:0:0:-1;hexagon:red:2:1:0:0:-1;star:yellow:2:1:0:0:-1;?",
+     "options": "star:yellow:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;hexagon:red:2:1:0:0:-1;star:blue:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "hexagon:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=square c=orange z=2 n=s(1,1) f=0 r=0 d=-1",
+     "items": "square:orange:2:1:0:0:-1;square:orange:2:2:0:0:-1;square:orange:2:3:0:0:-1;square:orange:2:4:0:0:-1;square:orange:2:5:0:0:-1;?",
+     "options": "square:orange:2:4:0:0:-1;square:orange:2:5:0:0:-1;square:orange:2:2:0:0:-1;square:orange:2:6:0:0:-1",
+     "correct": 3,
+     "answer": "square:orange:2:6:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=s(3,1) c=yellow z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:yellow:2:1:0:0:-1;square:yellow:2:1:0:0:-1;pentagon:yellow:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;heptagon:yellow:2:1:0:0:-1;?",
+     "options": "hexagon:yellow:2:1:0:0:-1;heptagon:yellow:2:1:0:0:-1;octagon:yellow:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "octagon:yellow:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq2|s=triangle c=orange z=2 n=1 f=0 r=s(2,2) d=-1 ; seq5|s=circle c=orange z=2 n=s(1,1) f=0 r=0 d=-1 ; seq7|s=c(square,heart) c=c(yellow,purple,green) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=circle c=purple z=2 n=1 f=0 r=0 d=s(3,-1)",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 2,
+     "rules": "s=triangle c=orange z=2 n=1 f=0 r=s(2,2) d=-1",
+     "items": "triangle:orange:2:1:0:90:-1;triangle:orange:2:1:0:180:-1;?;triangle:orange:2:1:0:0:-1;triangle:orange:2:1:0:90:-1;triangle:orange:2:1:0:180:-1;triangle:orange:2:1:0:270:-1",
+     "options": "triangle:orange:2:1:0:0:-1;triangle:orange:2:1:0:270:-1;triangle:orange:2:1:0:90:-1;triangle:orange:2:1:0:180:-1",
+     "correct": 1,
+     "answer": "triangle:orange:2:1:0:270:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=circle c=orange z=2 n=s(1,1) f=0 r=0 d=-1",
+     "items": "circle:orange:2:1:0:0:-1;circle:orange:2:2:0:0:-1;circle:orange:2:3:0:0:-1;circle:orange:2:4:0:0:-1;circle:orange:2:5:0:0:-1;?",
+     "options": "circle:orange:2:2:0:0:-1;circle:orange:2:4:0:0:-1;circle:orange:2:5:0:0:-1;circle:orange:2:6:0:0:-1",
+     "correct": 3,
+     "answer": "circle:orange:2:6:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 7,
+     "rules": "s=c(square,heart) c=c(yellow,purple,green) z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:yellow:2:1:0:0:-1;heart:purple:2:1:0:0:-1;square:green:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;square:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1;square:yellow:2:1:0:0:-1;?",
+     "options": "square:yellow:2:1:0:0:-1;square:purple:2:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "heart:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=circle c=purple z=2 n=1 f=0 r=0 d=s(3,-1)",
+     "items": "circle:purple:2:1:0:0:3;circle:purple:2:1:0:0:2;circle:purple:2:1:0:0:1;circle:purple:2:1:0:0:0;circle:purple:2:1:0:0:3;circle:purple:2:1:0:0:2;?",
+     "options": "circle:purple:2:1:0:0:0;circle:purple:2:1:0:0:3;circle:purple:2:1:0:0:1;circle:purple:2:1:0:0:2",
+     "correct": 2,
+     "answer": "circle:purple:2:1:0:0:1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq7|s=c(square,heart) c=c(yellow,blue,red) z=2 n=1 f=0 r=0 d=-1 ; seq5|s=triangle c=orange z=2 n=1 f=0 r=0 d=s(1,1) ; seq6|s=triangle c=orange z=2 n=1 f=0 r=s(4,-2) d=-1 ; seq4|s=square c=orange z=2 n=s(1,1) f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 7,
+     "rules": "s=c(square,heart) c=c(yellow,blue,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:yellow:2:1:0:0:-1;heart:blue:2:1:0:0:-1;square:red:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;square:blue:2:1:0:0:-1;heart:red:2:1:0:0:-1;square:yellow:2:1:0:0:-1;?",
+     "options": "heart:yellow:2:1:0:0:-1;square:blue:2:1:0:0:-1;heart:blue:2:1:0:0:-1;square:yellow:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "heart:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=triangle c=orange z=2 n=1 f=0 r=0 d=s(1,1)",
+     "items": "triangle:orange:2:1:0:0:1;triangle:orange:2:1:0:0:2;triangle:orange:2:1:0:0:3;triangle:orange:2:1:0:0:0;triangle:orange:2:1:0:0:1;?",
+     "options": "triangle:orange:2:1:0:0:1;triangle:orange:2:1:0:0:0;triangle:orange:2:1:0:0:2;triangle:orange:2:1:0:0:3",
+     "correct": 2,
+     "answer": "triangle:orange:2:1:0:0:2"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=triangle c=orange z=2 n=1 f=0 r=s(4,-2) d=-1",
+     "items": "triangle:orange:2:1:0:180:-1;triangle:orange:2:1:0:90:-1;triangle:orange:2:1:0:0:-1;triangle:orange:2:1:0:270:-1;triangle:orange:2:1:0:180:-1;triangle:orange:2:1:0:90:-1;?",
+     "options": "triangle:orange:2:1:0:180:-1;triangle:orange:2:1:0:90:-1;triangle:orange:2:1:0:0:-1;triangle:orange:2:1:0:270:-1",
+     "correct": 2,
+     "answer": "triangle:orange:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 4,
+     "rules": "s=square c=orange z=2 n=s(1,1) f=0 r=0 d=-1",
+     "items": "square:orange:2:1:0:0:-1;square:orange:2:2:0:0:-1;square:orange:2:3:0:0:-1;square:orange:2:4:0:0:-1;?;square:orange:2:6:0:0:-1",
+     "options": "square:orange:2:5:0:0:-1;square:orange:2:4:0:0:-1;square:orange:2:6:0:0:-1;square:orange:2:3:0:0:-1",
+     "correct": 0,
+     "answer": "square:orange:2:5:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq5|s=star c=red z=2 n=s(1,1) f=0 r=0 d=-1 ; seq5|s=square c=red z=2 n=1 f=0 r=0 d=s(2,-1) ; seq6|s=arrow c=green z=2 n=1 f=0 r=s(0,2) d=-1 ; seq5|s=c(square,hexagon) c=c(orange,blue,purple) z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=star c=red z=2 n=s(1,1) f=0 r=0 d=-1",
+     "items": "star:red:2:1:0:0:-1;star:red:2:2:0:0:-1;star:red:2:3:0:0:-1;star:red:2:4:0:0:-1;star:red:2:5:0:0:-1;?",
+     "options": "star:red:2:4:0:0:-1;star:red:2:5:0:0:-1;star:red:2:3:0:0:-1;star:red:2:6:0:0:-1",
+     "correct": 3,
+     "answer": "star:red:2:6:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=square c=red z=2 n=1 f=0 r=0 d=s(2,-1)",
+     "items": "square:red:2:1:0:0:2;square:red:2:1:0:0:1;square:red:2:1:0:0:0;square:red:2:1:0:0:3;square:red:2:1:0:0:2;?",
+     "options": "square:red:2:1:0:0:2;square:red:2:1:0:0:1;square:red:2:1:0:0:0;square:red:2:1:0:0:3",
+     "correct": 1,
+     "answer": "square:red:2:1:0:0:1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=arrow c=green z=2 n=1 f=0 r=s(0,2) d=-1",
+     "items": "arrow:green:2:1:0:0:-1;arrow:green:2:1:0:90:-1;arrow:green:2:1:0:180:-1;arrow:green:2:1:0:270:-1;arrow:green:2:1:0:0:-1;arrow:green:2:1:0:90:-1;?",
+     "options": "arrow:green:2:1:0:0:-1;arrow:green:2:1:0:180:-1;arrow:green:2:1:0:270:-1;arrow:green:2:1:0:90:-1",
+     "correct": 1,
+     "answer": "arrow:green:2:1:0:180:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 5,
+     "rules": "s=c(square,hexagon) c=c(orange,blue,purple) z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:orange:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;square:purple:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;square:blue:2:1:0:0:-1;?;square:orange:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1",
+     "options": "hexagon:orange:2:1:0:0:-1;square:blue:2:1:0:0:-1;square:purple:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "hexagon:purple:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq5|s=star c=purple z=2 n=1 f=0 r=0 d=s(3,1) ; seq7|s=c(triangle,heart,circle) c=c(green,orange) z=2 n=1 f=0 r=0 d=-1 ; seq5|s=s(3,1) c=blue z=2 n=1 f=0 r=0 d=-1 ; seq5|s=heart c=orange z=2 n=s(1,1) f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=star c=purple z=2 n=1 f=0 r=0 d=s(3,1)",
+     "items": "star:purple:2:1:0:0:3;star:purple:2:1:0:0:0;star:purple:2:1:0:0:1;star:purple:2:1:0:0:2;star:purple:2:1:0:0:3;?",
+     "options": "star:purple:2:1:0:0:0;star:purple:2:1:0:0:3;star:purple:2:1:0:0:2;star:purple:2:1:0:0:1",
+     "correct": 0,
+     "answer": "star:purple:2:1:0:0:0"
+    },
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 7,
+     "rules": "s=c(triangle,heart,circle) c=c(green,orange) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:green:2:1:0:0:-1;heart:orange:2:1:0:0:-1;circle:green:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;heart:green:2:1:0:0:-1;circle:orange:2:1:0:0:-1;triangle:green:2:1:0:0:-1;?",
+     "options": "heart:orange:2:1:0:0:-1;triangle:green:2:1:0:0:-1;circle:orange:2:1:0:0:-1;heart:green:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "heart:orange:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=s(3,1) c=blue z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:blue:2:1:0:0:-1;square:blue:2:1:0:0:-1;pentagon:blue:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;heptagon:blue:2:1:0:0:-1;?",
+     "options": "pentagon:blue:2:1:0:0:-1;heptagon:blue:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;octagon:blue:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "octagon:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=heart c=orange z=2 n=s(1,1) f=0 r=0 d=-1",
+     "items": "heart:orange:2:1:0:0:-1;heart:orange:2:2:0:0:-1;heart:orange:2:3:0:0:-1;heart:orange:2:4:0:0:-1;heart:orange:2:5:0:0:-1;?",
+     "options": "heart:orange:2:6:0:0:-1;heart:orange:2:5:0:0:-1;heart:orange:2:3:0:0:-1;heart:orange:2:4:0:0:-1",
+     "correct": 0,
+     "answer": "heart:orange:2:6:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq6|s=triangle c=blue z=2 n=1 f=0 r=0 d=s(3,1) ; seq4|s=s(3,1) c=green z=2 n=1 f=0 r=0 d=-1 ; seq7|s=c(circle,star,hexagon) c=c(red,blue) z=2 n=1 f=0 r=0 d=-1 ; seq5|s=triangle c=red z=2 n=1 f=0 r=s(0,-2) d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=triangle c=blue z=2 n=1 f=0 r=0 d=s(3,1)",
+     "items": "triangle:blue:2:1:0:0:3;triangle:blue:2:1:0:0:0;triangle:blue:2:1:0:0:1;triangle:blue:2:1:0:0:2;triangle:blue:2:1:0:0:3;triangle:blue:2:1:0:0:0;?",
+     "options": "triangle:blue:2:1:0:0:3;triangle:blue:2:1:0:0:0;triangle:blue:2:1:0:0:1;triangle:blue:2:1:0:0:2",
+     "correct": 2,
+     "answer": "triangle:blue:2:1:0:0:1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 4,
+     "rules": "s=s(3,1) c=green z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:green:2:1:0:0:-1;square:green:2:1:0:0:-1;pentagon:green:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;?;octagon:green:2:1:0:0:-1",
+     "options": "heptagon:green:2:1:0:0:-1;octagon:green:2:1:0:0:-1;pentagon:green:2:1:0:0:-1;hexagon:green:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "heptagon:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 7,
+     "rules": "s=c(circle,star,hexagon) c=c(red,blue) z=2 n=1 f=0 r=0 d=-1",
+     "items": "circle:red:2:1:0:0:-1;star:blue:2:1:0:0:-1;hexagon:red:2:1:0:0:-1;circle:blue:2:1:0:0:-1;star:red:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;circle:red:2:1:0:0:-1;?",
+     "options": "circle:blue:2:1:0:0:-1;circle:red:2:1:0:0:-1;star:blue:2:1:0:0:-1;star:red:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "star:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=triangle c=red z=2 n=1 f=0 r=s(0,-2) d=-1",
+     "items": "triangle:red:2:1:0:0:-1;triangle:red:2:1:0:270:-1;triangle:red:2:1:0:180:-1;triangle:red:2:1:0:90:-1;triangle:red:2:1:0:0:-1;?",
+     "options": "triangle:red:2:1:0:90:-1;triangle:red:2:1:0:270:-1;triangle:red:2:1:0:0:-1;triangle:red:2:1:0:180:-1",
+     "correct": 1,
+     "answer": "triangle:red:2:1:0:270:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq2|s=arrow c=yellow z=2 n=1 f=0 r=s(2,-2) d=-1 ; seq7|s=c(star,heart,triangle) c=c(green,red) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=triangle c=c(purple,yellow) z=c(2,1,0) n=1 f=0 r=0 d=-1 ; seq5|s=heart c=red z=2 n=s(1,1) f=c(0,1) r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 2,
+     "rules": "s=arrow c=yellow z=2 n=1 f=0 r=s(2,-2) d=-1",
+     "items": "arrow:yellow:2:1:0:90:-1;arrow:yellow:2:1:0:0:-1;?;arrow:yellow:2:1:0:180:-1;arrow:yellow:2:1:0:90:-1;arrow:yellow:2:1:0:0:-1;arrow:yellow:2:1:0:270:-1",
+     "options": "arrow:yellow:2:1:0:270:-1;arrow:yellow:2:1:0:90:-1;arrow:yellow:2:1:0:0:-1;arrow:yellow:2:1:0:180:-1",
+     "correct": 0,
+     "answer": "arrow:yellow:2:1:0:270:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 7,
+     "rules": "s=c(star,heart,triangle) c=c(green,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "star:green:2:1:0:0:-1;heart:red:2:1:0:0:-1;triangle:green:2:1:0:0:-1;star:red:2:1:0:0:-1;heart:green:2:1:0:0:-1;triangle:red:2:1:0:0:-1;star:green:2:1:0:0:-1;?",
+     "options": "star:red:2:1:0:0:-1;star:green:2:1:0:0:-1;heart:red:2:1:0:0:-1;heart:green:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "heart:red:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=triangle c=c(purple,yellow) z=c(2,1,0) n=1 f=0 r=0 d=-1",
+     "items": "triangle:purple:2:1:0:0:-1;triangle:yellow:1:1:0:0:-1;triangle:purple:0:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:purple:1:1:0:0:-1;triangle:yellow:0:1:0:0:-1;?",
+     "options": "triangle:purple:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:purple:0:1:0:0:-1;triangle:yellow:0:1:0:0:-1",
+     "correct": 0,
+     "answer": "triangle:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=heart c=red z=2 n=s(1,1) f=c(0,1) r=0 d=-1",
+     "items": "heart:red:2:1:0:0:-1;heart:red:2:2:1:0:-1;heart:red:2:3:0:0:-1;heart:red:2:4:1:0:-1;heart:red:2:5:0:0:-1;?",
+     "options": "heart:red:2:6:1:0:-1;heart:red:2:5:1:0:-1;heart:red:2:5:0:0:-1;heart:red:2:6:0:0:-1",
+     "correct": 0,
+     "answer": "heart:red:2:6:1:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq5|s=s(8,-1) c=red z=2 n=1 f=0 r=0 d=-1 ; seq2|s=triangle c=c(red,green) z=2 n=1 f=0 r=s(2,-2) d=-1 ; seq6|s=c(star,circle) c=c(green,yellow,red) z=2 n=1 f=0 r=0 d=-1 ; seq4|s=circle c=c(blue,green) z=c(2,1,0) n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=s(8,-1) c=red z=2 n=1 f=0 r=0 d=-1",
+     "items": "octagon:red:2:1:0:0:-1;heptagon:red:2:1:0:0:-1;hexagon:red:2:1:0:0:-1;pentagon:red:2:1:0:0:-1;square:red:2:1:0:0:-1;?",
+     "options": "hexagon:red:2:1:0:0:-1;triangle:red:2:1:0:0:-1;pentagon:red:2:1:0:0:-1;square:red:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "triangle:red:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 2,
+     "rules": "s=triangle c=c(red,green) z=2 n=1 f=0 r=s(2,-2) d=-1",
+     "items": "triangle:red:2:1:0:90:-1;triangle:green:2:1:0:0:-1;?;triangle:green:2:1:0:180:-1;triangle:red:2:1:0:90:-1;triangle:green:2:1:0:0:-1;triangle:red:2:1:0:270:-1",
+     "options": "triangle:green:2:1:0:270:-1;triangle:green:2:1:0:0:-1;triangle:red:2:1:0:270:-1;triangle:red:2:1:0:180:-1",
+     "correct": 2,
+     "answer": "triangle:red:2:1:0:270:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(star,circle) c=c(green,yellow,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "star:green:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;star:red:2:1:0:0:-1;circle:green:2:1:0:0:-1;star:yellow:2:1:0:0:-1;circle:red:2:1:0:0:-1;?",
+     "options": "circle:red:2:1:0:0:-1;star:yellow:2:1:0:0:-1;circle:green:2:1:0:0:-1;star:green:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "star:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 4,
+     "rules": "s=circle c=c(blue,green) z=c(2,1,0) n=1 f=0 r=0 d=-1",
+     "items": "circle:blue:2:1:0:0:-1;circle:green:1:1:0:0:-1;circle:blue:0:1:0:0:-1;circle:green:2:1:0:0:-1;?;circle:green:0:1:0:0:-1;circle:blue:2:1:0:0:-1",
+     "options": "circle:blue:2:1:0:0:-1;circle:green:1:1:0:0:-1;circle:green:2:1:0:0:-1;circle:blue:1:1:0:0:-1",
+     "correct": 3,
+     "answer": "circle:blue:1:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq5|s=hexagon c=blue z=2 n=s(1,1) f=c(2,0) r=0 d=-1 ; seq6|s=heart c=c(green,yellow) z=c(0,1,2) n=1 f=0 r=0 d=-1 ; seq6|s=c(square,hexagon) c=yellow z=2 n=1 f=0 r=0 d=s(1,-1) ; seq4|s=s(3,1) c=c(purple,blue) z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=hexagon c=blue z=2 n=s(1,1) f=c(2,0) r=0 d=-1",
+     "items": "hexagon:blue:2:1:2:0:-1;hexagon:blue:2:2:0:0:-1;hexagon:blue:2:3:2:0:-1;hexagon:blue:2:4:0:0:-1;hexagon:blue:2:5:2:0:-1;?",
+     "options": "hexagon:blue:2:6:0:0:-1;hexagon:blue:2:4:0:0:-1;hexagon:blue:2:5:2:0:-1;hexagon:blue:2:6:2:0:-1",
+     "correct": 0,
+     "answer": "hexagon:blue:2:6:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=heart c=c(green,yellow) z=c(0,1,2) n=1 f=0 r=0 d=-1",
+     "items": "heart:green:0:1:0:0:-1;heart:yellow:1:1:0:0:-1;heart:green:2:1:0:0:-1;heart:yellow:0:1:0:0:-1;heart:green:1:1:0:0:-1;heart:yellow:2:1:0:0:-1;?",
+     "options": "heart:green:0:1:0:0:-1;heart:yellow:2:1:0:0:-1;heart:green:2:1:0:0:-1;heart:yellow:0:1:0:0:-1",
+     "correct": 0,
+     "answer": "heart:green:0:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(square,hexagon) c=yellow z=2 n=1 f=0 r=0 d=s(1,-1)",
+     "items": "square:yellow:2:1:0:0:1;hexagon:yellow:2:1:0:0:0;square:yellow:2:1:0:0:3;hexagon:yellow:2:1:0:0:2;square:yellow:2:1:0:0:1;hexagon:yellow:2:1:0:0:0;?",
+     "options": "hexagon:yellow:2:1:0:0:0;hexagon:yellow:2:1:0:0:3;square:yellow:2:1:0:0:3;square:yellow:2:1:0:0:2",
+     "correct": 2,
+     "answer": "square:yellow:2:1:0:0:3"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 4,
+     "rules": "s=s(3,1) c=c(purple,blue) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:purple:2:1:0:0:-1;square:blue:2:1:0:0:-1;pentagon:purple:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;?;octagon:blue:2:1:0:0:-1",
+     "options": "heptagon:purple:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;octagon:purple:2:1:0:0:-1;heptagon:blue:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "heptagon:purple:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq5|s=c(triangle,star) c=blue z=2 n=1 f=0 r=0 d=s(0,-1) ; seq5|s=s(3,1) c=c(red,yellow) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=c(triangle,heart,circle) c=c(green,blue) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=triangle c=c(red,purple) z=2 n=1 f=0 r=s(6,2) d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 5,
+     "rules": "s=c(triangle,star) c=blue z=2 n=1 f=0 r=0 d=s(0,-1)",
+     "items": "triangle:blue:2:1:0:0:0;star:blue:2:1:0:0:3;triangle:blue:2:1:0:0:2;star:blue:2:1:0:0:1;triangle:blue:2:1:0:0:0;?;triangle:blue:2:1:0:0:2",
+     "options": "triangle:blue:2:1:0:0:0;star:blue:2:1:0:0:2;star:blue:2:1:0:0:3;triangle:blue:2:1:0:0:3",
+     "correct": 2,
+     "answer": "star:blue:2:1:0:0:3"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=s(3,1) c=c(red,yellow) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:red:2:1:0:0:-1;square:yellow:2:1:0:0:-1;pentagon:red:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;heptagon:red:2:1:0:0:-1;?",
+     "options": "octagon:yellow:2:1:0:0:-1;octagon:red:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;heptagon:red:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "octagon:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(triangle,heart,circle) c=c(green,blue) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:green:2:1:0:0:-1;heart:blue:2:1:0:0:-1;circle:green:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;heart:green:2:1:0:0:-1;circle:blue:2:1:0:0:-1;?",
+     "options": "circle:green:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;triangle:green:2:1:0:0:-1;circle:blue:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "triangle:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=triangle c=c(red,purple) z=2 n=1 f=0 r=s(6,2) d=-1",
+     "items": "triangle:red:2:1:0:270:-1;triangle:purple:2:1:0:0:-1;triangle:red:2:1:0:90:-1;triangle:purple:2:1:0:180:-1;triangle:red:2:1:0:270:-1;triangle:purple:2:1:0:0:-1;?",
+     "options": "triangle:red:2:1:0:0:-1;triangle:red:2:1:0:90:-1;triangle:purple:2:1:0:90:-1;triangle:purple:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "triangle:red:2:1:0:90:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq5|s=hexagon c=red z=2 n=s(1,1) f=c(0,1) r=0 d=-1 ; seq4|s=c(hexagon,circle) c=green z=2 n=1 f=0 r=0 d=s(0,-1) ; seq5|s=s(3,1) c=c(red,yellow) z=2 n=1 f=0 r=0 d=-1 ; seq2|s=heart c=c(blue,orange) z=c(0,1,2) n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=hexagon c=red z=2 n=s(1,1) f=c(0,1) r=0 d=-1",
+     "items": "hexagon:red:2:1:0:0:-1;hexagon:red:2:2:1:0:-1;hexagon:red:2:3:0:0:-1;hexagon:red:2:4:1:0:-1;hexagon:red:2:5:0:0:-1;?",
+     "options": "hexagon:red:2:5:0:0:-1;hexagon:red:2:6:0:0:-1;hexagon:red:2:5:1:0:-1;hexagon:red:2:6:1:0:-1",
+     "correct": 3,
+     "answer": "hexagon:red:2:6:1:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 4,
+     "rules": "s=c(hexagon,circle) c=green z=2 n=1 f=0 r=0 d=s(0,-1)",
+     "items": "hexagon:green:2:1:0:0:0;circle:green:2:1:0:0:3;hexagon:green:2:1:0:0:2;circle:green:2:1:0:0:1;?;circle:green:2:1:0:0:3;hexagon:green:2:1:0:0:2",
+     "options": "circle:green:2:1:0:0:1;circle:green:2:1:0:0:0;hexagon:green:2:1:0:0:3;hexagon:green:2:1:0:0:0",
+     "correct": 3,
+     "answer": "hexagon:green:2:1:0:0:0"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=s(3,1) c=c(red,yellow) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:red:2:1:0:0:-1;square:yellow:2:1:0:0:-1;pentagon:red:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;heptagon:red:2:1:0:0:-1;?",
+     "options": "hexagon:yellow:2:1:0:0:-1;octagon:yellow:2:1:0:0:-1;octagon:red:2:1:0:0:-1;heptagon:red:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "octagon:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 2,
+     "rules": "s=heart c=c(blue,orange) z=c(0,1,2) n=1 f=0 r=0 d=-1",
+     "items": "heart:blue:0:1:0:0:-1;heart:orange:1:1:0:0:-1;?;heart:orange:0:1:0:0:-1;heart:blue:1:1:0:0:-1;heart:orange:2:1:0:0:-1;heart:blue:0:1:0:0:-1",
+     "options": "heart:orange:1:1:0:0:-1;heart:orange:2:1:0:0:-1;heart:blue:0:1:0:0:-1;heart:blue:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "heart:blue:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq5|s=triangle c=red z=2 n=s(1,1) f=0 r=0 d=-1 ; seq4|s=arrow c=yellow z=2 n=1 f=0 r=s(0,-2) d=-1 ; seq4|s=heart c=red z=2 n=s(1,1) f=c(0,2) r=0 d=-1 ; seq6|s=c(hexagon,square) c=green z=2 n=1 f=0 r=0 d=s(3,1)",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=triangle c=red z=2 n=s(1,1) f=0 r=0 d=-1",
+     "items": "triangle:red:2:1:0:0:-1;triangle:red:2:2:0:0:-1;triangle:red:2:3:0:0:-1;triangle:red:2:4:0:0:-1;triangle:red:2:5:0:0:-1;?",
+     "options": "triangle:red:2:1:0:0:-1;triangle:red:2:6:0:0:-1;triangle:red:2:5:0:0:-1;triangle:red:2:4:0:0:-1",
+     "correct": 1,
+     "answer": "triangle:red:2:6:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 4,
+     "rules": "s=arrow c=yellow z=2 n=1 f=0 r=s(0,-2) d=-1",
+     "items": "arrow:yellow:2:1:0:0:-1;arrow:yellow:2:1:0:270:-1;arrow:yellow:2:1:0:180:-1;arrow:yellow:2:1:0:90:-1;?;arrow:yellow:2:1:0:270:-1",
+     "options": "arrow:yellow:2:1:0:90:-1;arrow:yellow:2:1:0:270:-1;arrow:yellow:2:1:0:0:-1;arrow:yellow:2:1:0:180:-1",
+     "correct": 2,
+     "answer": "arrow:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 4,
+     "rules": "s=heart c=red z=2 n=s(1,1) f=c(0,2) r=0 d=-1",
+     "items": "heart:red:2:1:0:0:-1;heart:red:2:2:2:0:-1;heart:red:2:3:0:0:-1;heart:red:2:4:2:0:-1;?;heart:red:2:6:2:0:-1",
+     "options": "heart:red:2:5:0:0:-1;heart:red:2:5:2:0:-1;heart:red:2:4:2:0:-1;heart:red:2:6:0:0:-1",
+     "correct": 0,
+     "answer": "heart:red:2:5:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(hexagon,square) c=green z=2 n=1 f=0 r=0 d=s(3,1)",
+     "items": "hexagon:green:2:1:0:0:3;square:green:2:1:0:0:0;hexagon:green:2:1:0:0:1;square:green:2:1:0:0:2;hexagon:green:2:1:0:0:3;square:green:2:1:0:0:0;?",
+     "options": "square:green:2:1:0:0:1;hexagon:green:2:1:0:0:2;hexagon:green:2:1:0:0:1;square:green:2:1:0:0:0",
+     "correct": 2,
+     "answer": "hexagon:green:2:1:0:0:1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq6|s=c(heart,square,circle) c=c(yellow,orange) z=2 n=1 f=0 r=0 d=-1 ; seq4|s=hexagon c=purple z=2 n=1 f=0 r=0 d=s(2,-1) ; seq5|s=arrow c=yellow z=2 n=1 f=0 r=s(7,-1) d=-1 ; seq4|s=s(3,1) c=red z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(heart,square,circle) c=c(yellow,orange) z=2 n=1 f=0 r=0 d=-1",
+     "items": "heart:yellow:2:1:0:0:-1;square:orange:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;heart:orange:2:1:0:0:-1;square:yellow:2:1:0:0:-1;circle:orange:2:1:0:0:-1;?",
+     "options": "heart:orange:2:1:0:0:-1;heart:yellow:2:1:0:0:-1;circle:orange:2:1:0:0:-1;circle:yellow:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "heart:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 4,
+     "rules": "s=hexagon c=purple z=2 n=1 f=0 r=0 d=s(2,-1)",
+     "items": "hexagon:purple:2:1:0:0:2;hexagon:purple:2:1:0:0:1;hexagon:purple:2:1:0:0:0;hexagon:purple:2:1:0:0:3;?;hexagon:purple:2:1:0:0:1",
+     "options": "hexagon:purple:2:1:0:0:1;hexagon:purple:2:1:0:0:0;hexagon:purple:2:1:0:0:2;hexagon:purple:2:1:0:0:3",
+     "correct": 2,
+     "answer": "hexagon:purple:2:1:0:0:2"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=arrow c=yellow z=2 n=1 f=0 r=s(7,-1) d=-1",
+     "items": "arrow:yellow:2:1:0:315:-1;arrow:yellow:2:1:0:270:-1;arrow:yellow:2:1:0:225:-1;arrow:yellow:2:1:0:180:-1;arrow:yellow:2:1:0:135:-1;?",
+     "options": "arrow:yellow:2:1:0:180:-1;arrow:yellow:2:1:0:135:-1;arrow:yellow:2:1:0:90:-1;arrow:yellow:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "arrow:yellow:2:1:0:90:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 4,
+     "rules": "s=s(3,1) c=red z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:red:2:1:0:0:-1;square:red:2:1:0:0:-1;pentagon:red:2:1:0:0:-1;hexagon:red:2:1:0:0:-1;?;octagon:red:2:1:0:0:-1",
+     "options": "octagon:red:2:1:0:0:-1;hexagon:red:2:1:0:0:-1;heptagon:red:2:1:0:0:-1;pentagon:red:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "heptagon:red:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq5|s=c(square,circle) c=orange z=2 n=1 f=0 r=0 d=s(0,-1) ; seq4|s=heart c=purple z=2 n=s(1,1) f=0 r=0 d=-1 ; seq5|s=c(circle,hexagon) c=c(blue,green,red) z=2 n=1 f=0 r=0 d=-1 ; seq5|s=arrow c=orange z=2 n=1 f=0 r=s(5,1) d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 5,
+     "rules": "s=c(square,circle) c=orange z=2 n=1 f=0 r=0 d=s(0,-1)",
+     "items": "square:orange:2:1:0:0:0;circle:orange:2:1:0:0:3;square:orange:2:1:0:0:2;circle:orange:2:1:0:0:1;square:orange:2:1:0:0:0;?;square:orange:2:1:0:0:2",
+     "options": "circle:orange:2:1:0:0:3;square:orange:2:1:0:0:3;circle:orange:2:1:0:0:2;square:orange:2:1:0:0:0",
+     "correct": 0,
+     "answer": "circle:orange:2:1:0:0:3"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 4,
+     "rules": "s=heart c=purple z=2 n=s(1,1) f=0 r=0 d=-1",
+     "items": "heart:purple:2:1:0:0:-1;heart:purple:2:2:0:0:-1;heart:purple:2:3:0:0:-1;heart:purple:2:4:0:0:-1;?;heart:purple:2:6:0:0:-1",
+     "options": "heart:purple:2:3:0:0:-1;heart:purple:2:6:0:0:-1;heart:purple:2:5:0:0:-1;heart:purple:2:4:0:0:-1",
+     "correct": 2,
+     "answer": "heart:purple:2:5:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 5,
+     "rules": "s=c(circle,hexagon) c=c(blue,green,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "circle:blue:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;circle:red:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;circle:green:2:1:0:0:-1;?;circle:blue:2:1:0:0:-1;hexagon:green:2:1:0:0:-1",
+     "options": "circle:red:2:1:0:0:-1;circle:green:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;hexagon:red:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "hexagon:red:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 5,
+     "rules": "s=arrow c=orange z=2 n=1 f=0 r=s(5,1) d=-1",
+     "items": "arrow:orange:2:1:0:225:-1;arrow:orange:2:1:0:270:-1;arrow:orange:2:1:0:315:-1;arrow:orange:2:1:0:0:-1;arrow:orange:2:1:0:45:-1;?;arrow:orange:2:1:0:135:-1",
+     "options": "arrow:orange:2:1:0:45:-1;arrow:orange:2:1:0:0:-1;arrow:orange:2:1:0:90:-1;arrow:orange:2:1:0:180:-1",
+     "correct": 2,
+     "answer": "arrow:orange:2:1:0:90:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq4|s=c(triangle,hexagon) c=c(yellow,blue,green) z=2 n=1 f=0 r=0 d=-1 ; seq5|s=s(3,1) c=c(yellow,green) z=2 n=1 f=0 r=0 d=-1 ; seq4|s=square c=red z=2 n=s(6,-1) f=0 r=0 d=-1 ; seq6|s=circle c=c(purple,blue) z=c(0,1,2) n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 4,
+     "rules": "s=c(triangle,hexagon) c=c(yellow,blue,green) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:yellow:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;triangle:green:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;?;hexagon:green:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1",
+     "options": "triangle:blue:2:1:0:0:-1;hexagon:yellow:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;triangle:green:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "triangle:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=s(3,1) c=c(yellow,green) z=2 n=1 f=0 r=0 d=-1",
+     "items": "triangle:yellow:2:1:0:0:-1;square:green:2:1:0:0:-1;pentagon:yellow:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;heptagon:yellow:2:1:0:0:-1;?",
+     "options": "heptagon:yellow:2:1:0:0:-1;heptagon:green:2:1:0:0:-1;octagon:green:2:1:0:0:-1;octagon:yellow:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "octagon:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 4,
+     "rules": "s=square c=red z=2 n=s(6,-1) f=0 r=0 d=-1",
+     "items": "square:red:2:6:0:0:-1;square:red:2:5:0:0:-1;square:red:2:4:0:0:-1;square:red:2:3:0:0:-1;?;square:red:2:1:0:0:-1",
+     "options": "square:red:2:4:0:0:-1;square:red:2:1:0:0:-1;square:red:2:2:0:0:-1;square:red:2:3:0:0:-1",
+     "correct": 2,
+     "answer": "square:red:2:2:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=circle c=c(purple,blue) z=c(0,1,2) n=1 f=0 r=0 d=-1",
+     "items": "circle:purple:0:1:0:0:-1;circle:blue:1:1:0:0:-1;circle:purple:2:1:0:0:-1;circle:blue:0:1:0:0:-1;circle:purple:1:1:0:0:-1;circle:blue:2:1:0:0:-1;?",
+     "options": "circle:purple:1:1:0:0:-1;circle:blue:0:1:0:0:-1;circle:purple:0:1:0:0:-1;circle:blue:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "circle:purple:0:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq4|s=c(heart,square) c=blue z=2 n=1 f=0 r=0 d=s(1,-1) ; seq5|s=s(8,-1) c=blue z=2 n=1 f=0 r=0 d=-1 ; seq5|s=c(heart,triangle,star) c=c(green,orange) z=2 n=1 f=0 r=0 d=-1 ; seq4|s=triangle c=c(orange,yellow,purple) z=2 n=1 f=0 r=s(2,-2) d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 4,
+     "rules": "s=c(heart,square) c=blue z=2 n=1 f=0 r=0 d=s(1,-1)",
+     "items": "heart:blue:2:1:0:0:1;square:blue:2:1:0:0:0;heart:blue:2:1:0:0:3;square:blue:2:1:0:0:2;?;square:blue:2:1:0:0:0;heart:blue:2:1:0:0:3",
+     "options": "heart:blue:2:1:0:0:1;heart:blue:2:1:0:0:2;square:blue:2:1:0:0:1;square:blue:2:1:0:0:2",
+     "correct": 0,
+     "answer": "heart:blue:2:1:0:0:1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=s(8,-1) c=blue z=2 n=1 f=0 r=0 d=-1",
+     "items": "octagon:blue:2:1:0:0:-1;heptagon:blue:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;pentagon:blue:2:1:0:0:-1;square:blue:2:1:0:0:-1;?",
+     "options": "square:blue:2:1:0:0:-1;octagon:blue:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;pentagon:blue:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "triangle:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 5,
+     "rules": "s=c(heart,triangle,star) c=c(green,orange) z=2 n=1 f=0 r=0 d=-1",
+     "items": "heart:green:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;star:green:2:1:0:0:-1;heart:orange:2:1:0:0:-1;triangle:green:2:1:0:0:-1;?;heart:green:2:1:0:0:-1",
+     "options": "triangle:green:2:1:0:0:-1;star:green:2:1:0:0:-1;heart:orange:2:1:0:0:-1;star:orange:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "star:orange:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 4,
+     "rules": "s=triangle c=c(orange,yellow,purple) z=2 n=1 f=0 r=s(2,-2) d=-1",
+     "items": "triangle:orange:2:1:0:90:-1;triangle:yellow:2:1:0:0:-1;triangle:purple:2:1:0:270:-1;triangle:orange:2:1:0:180:-1;?;triangle:purple:2:1:0:0:-1;triangle:orange:2:1:0:270:-1",
+     "options": "triangle:yellow:2:1:0:90:-1;triangle:yellow:2:1:0:180:-1;triangle:orange:2:1:0:180:-1;triangle:orange:2:1:0:90:-1",
+     "correct": 0,
+     "answer": "triangle:yellow:2:1:0:90:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq6|s=heart c=red z=2 n=1 f=0 r=0 d=s(0,1) ; seq4|s=circle c=c(orange,yellow) z=c(2,1,0) n=1 f=0 r=0 d=-1 ; seq6|s=arrow c=c(orange,green,purple) z=2 n=1 f=0 r=s(4,-2) d=-1 ; seq5|s=triangle c=red z=2 n=s(1,1) f=c(0,2) r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=heart c=red z=2 n=1 f=0 r=0 d=s(0,1)",
+     "items": "heart:red:2:1:0:0:0;heart:red:2:1:0:0:1;heart:red:2:1:0:0:2;heart:red:2:1:0:0:3;heart:red:2:1:0:0:0;heart:red:2:1:0:0:1;?",
+     "options": "heart:red:2:1:0:0:0;heart:red:2:1:0:0:2;heart:red:2:1:0:0:1;heart:red:2:1:0:0:3",
+     "correct": 1,
+     "answer": "heart:red:2:1:0:0:2"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 4,
+     "rules": "s=circle c=c(orange,yellow) z=c(2,1,0) n=1 f=0 r=0 d=-1",
+     "items": "circle:orange:2:1:0:0:-1;circle:yellow:1:1:0:0:-1;circle:orange:0:1:0:0:-1;circle:yellow:2:1:0:0:-1;?;circle:yellow:0:1:0:0:-1;circle:orange:2:1:0:0:-1",
+     "options": "circle:yellow:2:1:0:0:-1;circle:yellow:1:1:0:0:-1;circle:orange:1:1:0:0:-1;circle:orange:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "circle:orange:1:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=arrow c=c(orange,green,purple) z=2 n=1 f=0 r=s(4,-2) d=-1",
+     "items": "arrow:orange:2:1:0:180:-1;arrow:green:2:1:0:90:-1;arrow:purple:2:1:0:0:-1;arrow:orange:2:1:0:270:-1;arrow:green:2:1:0:180:-1;arrow:purple:2:1:0:90:-1;?",
+     "options": "arrow:orange:2:1:0:90:-1;arrow:green:2:1:0:0:-1;arrow:purple:2:1:0:90:-1;arrow:orange:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "arrow:orange:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=triangle c=red z=2 n=s(1,1) f=c(0,2) r=0 d=-1",
+     "items": "triangle:red:2:1:0:0:-1;triangle:red:2:2:2:0:-1;triangle:red:2:3:0:0:-1;triangle:red:2:4:2:0:-1;triangle:red:2:5:0:0:-1;?",
+     "options": "triangle:red:2:6:0:0:-1;triangle:red:2:5:0:0:-1;triangle:red:2:5:2:0:-1;triangle:red:2:6:2:0:-1",
+     "correct": 3,
+     "answer": "triangle:red:2:6:2:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq2|s=c(star,circle) c=orange z=2 n=1 f=0 r=0 d=s(2,-1) ; seq2|s=heart c=c(blue,purple) z=c(0,1,2) n=1 f=0 r=0 d=-1 ; seq5|s=heart c=blue z=2 n=s(6,-1) f=0 r=0 d=-1 ; seq5|s=s(8,-1) c=red z=2 n=1 f=c(0,1) r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 2,
+     "rules": "s=c(star,circle) c=orange z=2 n=1 f=0 r=0 d=s(2,-1)",
+     "items": "star:orange:2:1:0:0:2;circle:orange:2:1:0:0:1;?;circle:orange:2:1:0:0:3;star:orange:2:1:0:0:2;circle:orange:2:1:0:0:1;star:orange:2:1:0:0:0",
+     "options": "star:orange:2:1:0:0:0;circle:orange:2:1:0:0:1;circle:orange:2:1:0:0:0;star:orange:2:1:0:0:1",
+     "correct": 0,
+     "answer": "star:orange:2:1:0:0:0"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 2,
+     "rules": "s=heart c=c(blue,purple) z=c(0,1,2) n=1 f=0 r=0 d=-1",
+     "items": "heart:blue:0:1:0:0:-1;heart:purple:1:1:0:0:-1;?;heart:purple:0:1:0:0:-1;heart:blue:1:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:blue:0:1:0:0:-1",
+     "options": "heart:purple:2:1:0:0:-1;heart:blue:1:1:0:0:-1;heart:blue:2:1:0:0:-1;heart:purple:1:1:0:0:-1",
+     "correct": 2,
+     "answer": "heart:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=heart c=blue z=2 n=s(6,-1) f=0 r=0 d=-1",
+     "items": "heart:blue:2:6:0:0:-1;heart:blue:2:5:0:0:-1;heart:blue:2:4:0:0:-1;heart:blue:2:3:0:0:-1;heart:blue:2:2:0:0:-1;?",
+     "options": "heart:blue:2:3:0:0:-1;heart:blue:2:2:0:0:-1;heart:blue:2:4:0:0:-1;heart:blue:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "heart:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=s(8,-1) c=red z=2 n=1 f=c(0,1) r=0 d=-1",
+     "items": "octagon:red:2:1:0:0:-1;heptagon:red:2:1:1:0:-1;hexagon:red:2:1:0:0:-1;pentagon:red:2:1:1:0:-1;square:red:2:1:0:0:-1;?",
+     "options": "square:red:2:1:0:0:-1;square:red:2:1:1:0:-1;triangle:red:2:1:1:0:-1;triangle:red:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "triangle:red:2:1:1:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq4|s=heart c=orange z=2 n=s(6,-1) f=0 r=0 d=-1 ; seq6|s=heart c=c(red,blue) z=c(0,1,2) n=1 f=0 r=0 d=-1 ; seq6|s=triangle c=green z=2 n=1 f=0 r=s(6,-2) d=-1 ; seq6|s=c(star,heart) c=c(orange,purple,green) z=2 n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 4,
+     "rules": "s=heart c=orange z=2 n=s(6,-1) f=0 r=0 d=-1",
+     "items": "heart:orange:2:6:0:0:-1;heart:orange:2:5:0:0:-1;heart:orange:2:4:0:0:-1;heart:orange:2:3:0:0:-1;?;heart:orange:2:1:0:0:-1",
+     "options": "heart:orange:2:2:0:0:-1;heart:orange:2:3:0:0:-1;heart:orange:2:4:0:0:-1;heart:orange:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "heart:orange:2:2:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=heart c=c(red,blue) z=c(0,1,2) n=1 f=0 r=0 d=-1",
+     "items": "heart:red:0:1:0:0:-1;heart:blue:1:1:0:0:-1;heart:red:2:1:0:0:-1;heart:blue:0:1:0:0:-1;heart:red:1:1:0:0:-1;heart:blue:2:1:0:0:-1;?",
+     "options": "heart:red:0:1:0:0:-1;heart:red:2:1:0:0:-1;heart:blue:0:1:0:0:-1;heart:blue:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "heart:red:0:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=triangle c=green z=2 n=1 f=0 r=s(6,-2) d=-1",
+     "items": "triangle:green:2:1:0:270:-1;triangle:green:2:1:0:180:-1;triangle:green:2:1:0:90:-1;triangle:green:2:1:0:0:-1;triangle:green:2:1:0:270:-1;triangle:green:2:1:0:180:-1;?",
+     "options": "triangle:green:2:1:0:180:-1;triangle:green:2:1:0:0:-1;triangle:green:2:1:0:90:-1;triangle:green:2:1:0:270:-1",
+     "correct": 2,
+     "answer": "triangle:green:2:1:0:90:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=c(star,heart) c=c(orange,purple,green) z=2 n=1 f=0 r=0 d=-1",
+     "items": "star:orange:2:1:0:0:-1;heart:purple:2:1:0:0:-1;star:green:2:1:0:0:-1;heart:orange:2:1:0:0:-1;star:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1;?",
+     "options": "star:orange:2:1:0:0:-1;star:purple:2:1:0:0:-1;heart:green:2:1:0:0:-1;heart:orange:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "star:orange:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "seq5|s=c(hexagon,triangle) c=blue z=2 n=1 f=0 r=0 d=s(3,-1) ; seq5|s=arrow c=c(orange,blue) z=2 n=1 f=0 r=s(0,1) d=-1 ; seq5|s=c(hexagon,circle,heart) c=c(red,purple) z=2 n=1 f=0 r=0 d=-1 ; seq6|s=square c=c(red,green) z=c(0,1,2) n=1 f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=c(hexagon,triangle) c=blue z=2 n=1 f=0 r=0 d=s(3,-1)",
+     "items": "hexagon:blue:2:1:0:0:3;triangle:blue:2:1:0:0:2;hexagon:blue:2:1:0:0:1;triangle:blue:2:1:0:0:0;hexagon:blue:2:1:0:0:3;?",
+     "options": "hexagon:blue:2:1:0:0:3;hexagon:blue:2:1:0:0:2;triangle:blue:2:1:0:0:1;triangle:blue:2:1:0:0:2",
+     "correct": 3,
+     "answer": "triangle:blue:2:1:0:0:2"
+    },
+    {
+     "kind": "seq",
+     "L": 6,
+     "m": 5,
+     "rules": "s=arrow c=c(orange,blue) z=2 n=1 f=0 r=s(0,1) d=-1",
+     "items": "arrow:orange:2:1:0:0:-1;arrow:blue:2:1:0:45:-1;arrow:orange:2:1:0:90:-1;arrow:blue:2:1:0:135:-1;arrow:orange:2:1:0:180:-1;?",
+     "options": "arrow:blue:2:1:0:225:-1;arrow:blue:2:1:0:135:-1;arrow:orange:2:1:0:225:-1;arrow:orange:2:1:0:180:-1",
+     "correct": 0,
+     "answer": "arrow:blue:2:1:0:225:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 8,
+     "m": 5,
+     "rules": "s=c(hexagon,circle,heart) c=c(red,purple) z=2 n=1 f=0 r=0 d=-1",
+     "items": "hexagon:red:2:1:0:0:-1;circle:purple:2:1:0:0:-1;heart:red:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1;circle:red:2:1:0:0:-1;?;hexagon:red:2:1:0:0:-1;circle:purple:2:1:0:0:-1",
+     "options": "circle:red:2:1:0:0:-1;heart:red:2:1:0:0:-1;heart:purple:2:1:0:0:-1;circle:purple:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "heart:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "seq",
+     "L": 7,
+     "m": 6,
+     "rules": "s=square c=c(red,green) z=c(0,1,2) n=1 f=0 r=0 d=-1",
+     "items": "square:red:0:1:0:0:-1;square:green:1:1:0:0:-1;square:red:2:1:0:0:-1;square:green:0:1:0:0:-1;square:red:1:1:0:0:-1;square:green:2:1:0:0:-1;?",
+     "options": "square:red:2:1:0:0:-1;square:red:0:1:0:0:-1;square:green:2:1:0:0:-1;square:green:0:1:0:0:-1",
+     "correct": 1,
+     "answer": "square:red:0:1:0:0:-1"
+    }
+   ]
+  }
+ ],
+ "hard": [
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=D(star,square,heart/2) c=green z=2 n=R(1,4,5) f=0 r=0 d=-1 ; mat|s=circle c=yellow z=2 n=C(5,2,1) f=0 r=0 d=D(0,2,1/2) ; mat|s=C(hexagon,heart,star) c=orange z=2 n=1 f=0 r=0 d=D(3,1,2/1) ; mat|s=triangle c=blue z=2 n=P(4,3,2/1) f=R(0,1,2) r=0 d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=D(star,square,heart/2) c=green z=2 n=R(1,4,5) f=0 r=0 d=-1",
+     "items": "star:green:2:1:0:0:-1;square:green:2:1:0:0:-1;heart:green:2:1:0:0:-1;heart:green:2:4:0:0:-1;star:green:2:4:0:0:-1;square:green:2:4:0:0:-1;square:green:2:5:0:0:-1;heart:green:2:5:0:0:-1;?",
+     "options": "star:green:2:6:0:0:-1;star:green:2:4:0:0:-1;heart:green:2:5:0:0:-1;star:green:2:5:0:0:-1",
+     "correct": 3,
+     "answer": "star:green:2:5:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=circle c=yellow z=2 n=C(5,2,1) f=0 r=0 d=D(0,2,1/2)",
+     "items": "circle:yellow:2:5:0:0:0;circle:yellow:2:2:0:0:2;circle:yellow:2:1:0:0:1;circle:yellow:2:5:0:0:1;circle:yellow:2:2:0:0:0;circle:yellow:2:1:0:0:2;circle:yellow:2:5:0:0:2;circle:yellow:2:2:0:0:1;?",
+     "options": "circle:yellow:2:2:0:0:0;circle:yellow:2:2:0:0:1;circle:yellow:2:1:0:0:0;circle:yellow:2:1:0:0:3",
+     "correct": 2,
+     "answer": "circle:yellow:2:1:0:0:0"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=C(hexagon,heart,star) c=orange z=2 n=1 f=0 r=0 d=D(3,1,2/1)",
+     "items": "hexagon:orange:2:1:0:0:3;heart:orange:2:1:0:0:1;star:orange:2:1:0:0:2;hexagon:orange:2:1:0:0:1;heart:orange:2:1:0:0:2;star:orange:2:1:0:0:3;hexagon:orange:2:1:0:0:2;heart:orange:2:1:0:0:3;?",
+     "options": "star:orange:2:1:0:0:1;heart:orange:2:1:0:0:3;hexagon:orange:2:1:0:0:1;star:orange:2:1:0:0:2",
+     "correct": 0,
+     "answer": "star:orange:2:1:0:0:1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=blue z=2 n=P(4,3,2/1) f=R(0,1,2) r=0 d=-1",
+     "items": "triangle:blue:2:4:0:0:-1;triangle:blue:2:5:0:0:-1;triangle:blue:2:6:0:0:-1;triangle:blue:2:3:1:0:-1;triangle:blue:2:4:1:0:-1;triangle:blue:2:5:1:0:-1;triangle:blue:2:2:2:0:-1;triangle:blue:2:3:2:0:-1;?",
+     "options": "triangle:blue:2:4:1:0:-1;triangle:blue:2:3:2:0:-1;triangle:blue:2:4:2:0:-1;triangle:blue:2:5:2:0:-1",
+     "correct": 2,
+     "answer": "triangle:blue:2:4:2:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=arrow c=green z=C(1,0,2) n=1 f=0 r=D(180,0,90/1) d=-1 ; mat|s=circle c=R(orange,purple,yellow) z=2 n=1 f=D(1,0,2/1) r=0 d=-1 ; mat|s=P(4,3,3/1) c=C(blue,yellow,purple) z=2 n=1 f=0 r=0 d=-1 ; mat|s=D(hexagon,triangle,star/2) c=purple z=2 n=1 f=C(0,2,1) r=0 d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=arrow c=green z=C(1,0,2) n=1 f=0 r=D(180,0,90/1) d=-1",
+     "items": "arrow:green:1:1:0:180:-1;arrow:green:0:1:0:0:-1;arrow:green:2:1:0:90:-1;arrow:green:1:1:0:0:-1;arrow:green:0:1:0:90:-1;arrow:green:2:1:0:180:-1;arrow:green:1:1:0:90:-1;arrow:green:0:1:0:180:-1;?",
+     "options": "arrow:green:2:1:0:0:-1;arrow:green:1:1:0:0:-1;arrow:green:0:1:0:180:-1;arrow:green:2:1:0:270:-1",
+     "correct": 0,
+     "answer": "arrow:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=circle c=R(orange,purple,yellow) z=2 n=1 f=D(1,0,2/1) r=0 d=-1",
+     "items": "circle:orange:2:1:1:0:-1;circle:orange:2:1:0:0:-1;circle:orange:2:1:2:0:-1;circle:purple:2:1:0:0:-1;circle:purple:2:1:2:0:-1;circle:purple:2:1:1:0:-1;circle:yellow:2:1:2:0:-1;circle:yellow:2:1:1:0:-1;?",
+     "options": "circle:orange:2:1:0:0:-1;circle:yellow:2:1:0:0:-1;circle:yellow:2:1:2:0:-1;circle:yellow:2:1:1:0:-1",
+     "correct": 1,
+     "answer": "circle:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=P(4,3,3/1) c=C(blue,yellow,purple) z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:blue:2:1:0:0:-1;pentagon:yellow:2:1:0:0:-1;hexagon:purple:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;square:yellow:2:1:0:0:-1;pentagon:purple:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;square:yellow:2:1:0:0:-1;?",
+     "options": "pentagon:purple:2:1:0:0:-1;square:yellow:2:1:0:0:-1;pentagon:blue:2:1:0:0:-1;square:purple:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "pentagon:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=D(hexagon,triangle,star/2) c=purple z=2 n=1 f=C(0,2,1) r=0 d=-1",
+     "items": "hexagon:purple:2:1:0:0:-1;triangle:purple:2:1:2:0:-1;star:purple:2:1:1:0:-1;star:purple:2:1:0:0:-1;hexagon:purple:2:1:2:0:-1;triangle:purple:2:1:1:0:-1;triangle:purple:2:1:0:0:-1;star:purple:2:1:2:0:-1;?",
+     "options": "star:purple:2:1:1:0:-1;star:purple:2:1:2:0:-1;hexagon:purple:2:1:1:0:-1;hexagon:purple:2:1:0:0:-1",
+     "correct": 2,
+     "answer": "hexagon:purple:2:1:1:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=heart c=yellow z=2 n=C(2,5,1) f=D(1,2,0/1) r=0 d=-1 ; mat|s=square c=D(orange,blue,purple/1) z=2 n=1 f=0 r=0 d=R(3,0,1) ; mat|s=heart c=D(purple,green,red/1) z=C(0,1,2) n=1 f=0 r=0 d=-1 ; mat|s=arrow c=red z=2 n=C(1,5,4) f=0 r=P(4,6,4/2) d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=heart c=yellow z=2 n=C(2,5,1) f=D(1,2,0/1) r=0 d=-1",
+     "items": "heart:yellow:2:2:1:0:-1;heart:yellow:2:5:2:0:-1;heart:yellow:2:1:0:0:-1;heart:yellow:2:2:2:0:-1;heart:yellow:2:5:0:0:-1;heart:yellow:2:1:1:0:-1;heart:yellow:2:2:0:0:-1;heart:yellow:2:5:1:0:-1;?",
+     "options": "heart:yellow:2:1:2:0:-1;heart:yellow:2:1:0:0:-1;heart:yellow:2:5:1:0:-1;heart:yellow:2:2:2:0:-1",
+     "correct": 0,
+     "answer": "heart:yellow:2:1:2:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=square c=D(orange,blue,purple/1) z=2 n=1 f=0 r=0 d=R(3,0,1)",
+     "items": "square:orange:2:1:0:0:3;square:blue:2:1:0:0:3;square:purple:2:1:0:0:3;square:blue:2:1:0:0:0;square:purple:2:1:0:0:0;square:orange:2:1:0:0:0;square:purple:2:1:0:0:1;square:orange:2:1:0:0:1;?",
+     "options": "square:blue:2:1:0:0:2;square:orange:2:1:0:0:1;square:blue:2:1:0:0:1;square:purple:2:1:0:0:1",
+     "correct": 2,
+     "answer": "square:blue:2:1:0:0:1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=heart c=D(purple,green,red/1) z=C(0,1,2) n=1 f=0 r=0 d=-1",
+     "items": "heart:purple:0:1:0:0:-1;heart:green:1:1:0:0:-1;heart:red:2:1:0:0:-1;heart:green:0:1:0:0:-1;heart:red:1:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:red:0:1:0:0:-1;heart:purple:1:1:0:0:-1;?",
+     "options": "heart:green:1:1:0:0:-1;heart:red:2:1:0:0:-1;heart:green:2:1:0:0:-1;heart:purple:1:1:0:0:-1",
+     "correct": 2,
+     "answer": "heart:green:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=arrow c=red z=2 n=C(1,5,4) f=0 r=P(4,6,4/2) d=-1",
+     "items": "arrow:red:2:1:0:180:-1;arrow:red:2:5:0:270:-1;arrow:red:2:4:0:0:-1;arrow:red:2:1:0:270:-1;arrow:red:2:5:0:0:-1;arrow:red:2:4:0:90:-1;arrow:red:2:1:0:180:-1;arrow:red:2:5:0:270:-1;?",
+     "options": "arrow:red:2:4:0:270:-1;arrow:red:2:4:0:0:-1;arrow:red:2:5:0:0:-1;arrow:red:2:5:0:270:-1",
+     "correct": 1,
+     "answer": "arrow:red:2:4:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=C(triangle,circle,square) c=red z=2 n=1 f=D(0,1,2/1) r=0 d=-1 ; mat|s=arrow c=orange z=2 n=R(5,3,4) f=0 r=Q(6,4,4/-2) d=-1 ; mat|s=heart c=D(red,purple,green/1) z=2 n=R(5,4,3) f=0 r=0 d=-1 ; mat|s=triangle c=R(red,green,yellow) z=2 n=1 f=D(2,1,0/1) r=0 d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=C(triangle,circle,square) c=red z=2 n=1 f=D(0,1,2/1) r=0 d=-1",
+     "items": "triangle:red:2:1:0:0:-1;circle:red:2:1:1:0:-1;square:red:2:1:2:0:-1;triangle:red:2:1:1:0:-1;circle:red:2:1:2:0:-1;square:red:2:1:0:0:-1;triangle:red:2:1:2:0:-1;circle:red:2:1:0:0:-1;?",
+     "options": "square:red:2:1:1:0:-1;circle:red:2:1:0:0:-1;circle:red:2:1:1:0:-1;square:red:2:1:2:0:-1",
+     "correct": 0,
+     "answer": "square:red:2:1:1:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=arrow c=orange z=2 n=R(5,3,4) f=0 r=Q(6,4,4/-2) d=-1",
+     "items": "arrow:orange:2:5:0:270:-1;arrow:orange:2:5:0:180:-1;arrow:orange:2:5:0:180:-1;arrow:orange:2:3:0:180:-1;arrow:orange:2:3:0:90:-1;arrow:orange:2:3:0:90:-1;arrow:orange:2:4:0:90:-1;arrow:orange:2:4:0:0:-1;?",
+     "options": "arrow:orange:2:5:0:0:-1;arrow:orange:2:3:0:90:-1;arrow:orange:2:4:0:270:-1;arrow:orange:2:4:0:0:-1",
+     "correct": 3,
+     "answer": "arrow:orange:2:4:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=heart c=D(red,purple,green/1) z=2 n=R(5,4,3) f=0 r=0 d=-1",
+     "items": "heart:red:2:5:0:0:-1;heart:purple:2:5:0:0:-1;heart:green:2:5:0:0:-1;heart:purple:2:4:0:0:-1;heart:green:2:4:0:0:-1;heart:red:2:4:0:0:-1;heart:green:2:3:0:0:-1;heart:red:2:3:0:0:-1;?",
+     "options": "heart:purple:2:3:0:0:-1;heart:green:2:3:0:0:-1;heart:purple:2:4:0:0:-1;heart:red:2:3:0:0:-1",
+     "correct": 0,
+     "answer": "heart:purple:2:3:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=R(red,green,yellow) z=2 n=1 f=D(2,1,0/1) r=0 d=-1",
+     "items": "triangle:red:2:1:2:0:-1;triangle:red:2:1:1:0:-1;triangle:red:2:1:0:0:-1;triangle:green:2:1:1:0:-1;triangle:green:2:1:0:0:-1;triangle:green:2:1:2:0:-1;triangle:yellow:2:1:0:0:-1;triangle:yellow:2:1:2:0:-1;?",
+     "options": "triangle:red:2:1:1:0:-1;triangle:yellow:2:1:1:0:-1;triangle:yellow:2:1:0:0:-1;triangle:yellow:2:1:2:0:-1",
+     "correct": 1,
+     "answer": "triangle:yellow:2:1:1:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=triangle c=C(green,red,blue) z=2 n=1 f=0 r=Q(0,0,2/-2) d=-1 ; mat|s=heart c=red z=2 n=D(4,1,3/1) f=0 r=0 d=R(0,2,1) ; mat|s=triangle c=yellow z=C(2,1,0) n=1 f=0 r=P(6,2,4/2) d=-1 ; mat|s=triangle c=R(red,yellow,orange) z=2 n=1 f=0 r=Q(2,2,6/2) d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=C(green,red,blue) z=2 n=1 f=0 r=Q(0,0,2/-2) d=-1",
+     "items": "triangle:green:2:1:0:0:-1;triangle:red:2:1:0:0:-1;triangle:blue:2:1:0:90:-1;triangle:green:2:1:0:270:-1;triangle:red:2:1:0:270:-1;triangle:blue:2:1:0:0:-1;triangle:green:2:1:0:180:-1;triangle:red:2:1:0:180:-1;?",
+     "options": "triangle:blue:2:1:0:0:-1;triangle:red:2:1:0:270:-1;triangle:blue:2:1:0:270:-1;triangle:red:2:1:0:180:-1",
+     "correct": 2,
+     "answer": "triangle:blue:2:1:0:270:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=heart c=red z=2 n=D(4,1,3/1) f=0 r=0 d=R(0,2,1)",
+     "items": "heart:red:2:4:0:0:0;heart:red:2:1:0:0:0;heart:red:2:3:0:0:0;heart:red:2:1:0:0:2;heart:red:2:3:0:0:2;heart:red:2:4:0:0:2;heart:red:2:3:0:0:1;heart:red:2:4:0:0:1;?",
+     "options": "heart:red:2:4:0:0:1;heart:red:2:1:0:0:1;heart:red:2:2:0:0:1;heart:red:2:1:0:0:0",
+     "correct": 1,
+     "answer": "heart:red:2:1:0:0:1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=yellow z=C(2,1,0) n=1 f=0 r=P(6,2,4/2) d=-1",
+     "items": "triangle:yellow:2:1:0:270:-1;triangle:yellow:1:1:0:0:-1;triangle:yellow:0:1:0:90:-1;triangle:yellow:2:1:0:90:-1;triangle:yellow:1:1:0:180:-1;triangle:yellow:0:1:0:270:-1;triangle:yellow:2:1:0:180:-1;triangle:yellow:1:1:0:270:-1;?",
+     "options": "triangle:yellow:1:1:0:270:-1;triangle:yellow:0:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:yellow:0:1:0:90:-1",
+     "correct": 1,
+     "answer": "triangle:yellow:0:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=R(red,yellow,orange) z=2 n=1 f=0 r=Q(2,2,6/2) d=-1",
+     "items": "triangle:red:2:1:0:90:-1;triangle:red:2:1:0:90:-1;triangle:red:2:1:0:270:-1;triangle:yellow:2:1:0:180:-1;triangle:yellow:2:1:0:180:-1;triangle:yellow:2:1:0:0:-1;triangle:orange:2:1:0:270:-1;triangle:orange:2:1:0:270:-1;?",
+     "options": "triangle:orange:2:1:0:180:-1;triangle:orange:2:1:0:270:-1;triangle:orange:2:1:0:90:-1;triangle:yellow:2:1:0:90:-1",
+     "correct": 2,
+     "answer": "triangle:orange:2:1:0:90:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=square c=orange z=2 n=1 f=R(0,1,2) r=0 d=D(3,2,0/1) ; mat|s=R(square,star,circle) c=blue z=2 n=1 f=D(1,0,2/2) r=0 d=-1 ; mat|s=arrow c=D(green,red,purple/1) z=2 n=1 f=0 r=R(270,0,180) d=-1 ; mat|s=Q(5,3,5/1) c=red z=2 n=1 f=C(1,2,0) r=0 d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=square c=orange z=2 n=1 f=R(0,1,2) r=0 d=D(3,2,0/1)",
+     "items": "square:orange:2:1:0:0:3;square:orange:2:1:0:0:2;square:orange:2:1:0:0:0;square:orange:2:1:1:0:2;square:orange:2:1:1:0:0;square:orange:2:1:1:0:3;square:orange:2:1:2:0:0;square:orange:2:1:2:0:3;?",
+     "options": "square:orange:2:1:2:0:3;square:orange:2:1:1:0:2;square:orange:2:1:2:0:1;square:orange:2:1:2:0:2",
+     "correct": 3,
+     "answer": "square:orange:2:1:2:0:2"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=R(square,star,circle) c=blue z=2 n=1 f=D(1,0,2/2) r=0 d=-1",
+     "items": "square:blue:2:1:1:0:-1;square:blue:2:1:0:0:-1;square:blue:2:1:2:0:-1;star:blue:2:1:2:0:-1;star:blue:2:1:1:0:-1;star:blue:2:1:0:0:-1;circle:blue:2:1:0:0:-1;circle:blue:2:1:2:0:-1;?",
+     "options": "circle:blue:2:1:2:0:-1;square:blue:2:1:1:0:-1;circle:blue:2:1:1:0:-1;star:blue:2:1:1:0:-1",
+     "correct": 2,
+     "answer": "circle:blue:2:1:1:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=arrow c=D(green,red,purple/1) z=2 n=1 f=0 r=R(270,0,180) d=-1",
+     "items": "arrow:green:2:1:0:270:-1;arrow:red:2:1:0:270:-1;arrow:purple:2:1:0:270:-1;arrow:red:2:1:0:0:-1;arrow:purple:2:1:0:0:-1;arrow:green:2:1:0:0:-1;arrow:purple:2:1:0:180:-1;arrow:green:2:1:0:180:-1;?",
+     "options": "arrow:purple:2:1:0:180:-1;arrow:green:2:1:0:180:-1;arrow:red:2:1:0:90:-1;arrow:red:2:1:0:180:-1",
+     "correct": 3,
+     "answer": "arrow:red:2:1:0:180:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=Q(5,3,5/1) c=red z=2 n=1 f=C(1,2,0) r=0 d=-1",
+     "items": "pentagon:red:2:1:1:0:-1;triangle:red:2:1:2:0:-1;pentagon:red:2:1:0:0:-1;hexagon:red:2:1:1:0:-1;square:red:2:1:2:0:-1;hexagon:red:2:1:0:0:-1;heptagon:red:2:1:1:0:-1;pentagon:red:2:1:2:0:-1;?",
+     "options": "hexagon:red:2:1:0:0:-1;pentagon:red:2:1:2:0:-1;heptagon:red:2:1:0:0:-1;heptagon:red:2:1:1:0:-1",
+     "correct": 2,
+     "answer": "heptagon:red:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=arrow c=orange z=2 n=P(4,1,1/1) f=0 r=C(270,180,90) d=-1 ; mat|s=triangle c=D(orange,yellow,purple/2) z=C(0,1,2) n=1 f=0 r=0 d=-1 ; mat|s=triangle c=red z=2 n=1 f=R(1,2,0) r=D(90,0,270/1) d=-1 ; mat|s=star c=C(blue,purple,yellow) z=2 n=1 f=D(0,2,1/2) r=0 d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=arrow c=orange z=2 n=P(4,1,1/1) f=0 r=C(270,180,90) d=-1",
+     "items": "arrow:orange:2:4:0:270:-1;arrow:orange:2:5:0:180:-1;arrow:orange:2:6:0:90:-1;arrow:orange:2:1:0:270:-1;arrow:orange:2:2:0:180:-1;arrow:orange:2:3:0:90:-1;arrow:orange:2:1:0:270:-1;arrow:orange:2:2:0:180:-1;?",
+     "options": "arrow:orange:2:3:0:90:-1;arrow:orange:2:2:0:90:-1;arrow:orange:2:3:0:180:-1;arrow:orange:2:2:0:180:-1",
+     "correct": 0,
+     "answer": "arrow:orange:2:3:0:90:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=D(orange,yellow,purple/2) z=C(0,1,2) n=1 f=0 r=0 d=-1",
+     "items": "triangle:orange:0:1:0:0:-1;triangle:yellow:1:1:0:0:-1;triangle:purple:2:1:0:0:-1;triangle:purple:0:1:0:0:-1;triangle:orange:1:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:yellow:0:1:0:0:-1;triangle:purple:1:1:0:0:-1;?",
+     "options": "triangle:orange:2:1:0:0:-1;triangle:yellow:2:1:0:0:-1;triangle:purple:1:1:0:0:-1;triangle:orange:1:1:0:0:-1",
+     "correct": 0,
+     "answer": "triangle:orange:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=red z=2 n=1 f=R(1,2,0) r=D(90,0,270/1) d=-1",
+     "items": "triangle:red:2:1:1:90:-1;triangle:red:2:1:1:0:-1;triangle:red:2:1:1:270:-1;triangle:red:2:1:2:0:-1;triangle:red:2:1:2:270:-1;triangle:red:2:1:2:90:-1;triangle:red:2:1:0:270:-1;triangle:red:2:1:0:90:-1;?",
+     "options": "triangle:red:2:1:0:270:-1;triangle:red:2:1:0:90:-1;triangle:red:2:1:1:0:-1;triangle:red:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "triangle:red:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=star c=C(blue,purple,yellow) z=2 n=1 f=D(0,2,1/2) r=0 d=-1",
+     "items": "star:blue:2:1:0:0:-1;star:purple:2:1:2:0:-1;star:yellow:2:1:1:0:-1;star:blue:2:1:1:0:-1;star:purple:2:1:0:0:-1;star:yellow:2:1:2:0:-1;star:blue:2:1:2:0:-1;star:purple:2:1:1:0:-1;?",
+     "options": "star:yellow:2:1:1:0:-1;star:yellow:2:1:0:0:-1;star:purple:2:1:1:0:-1;star:purple:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "star:yellow:2:1:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=C(square,triangle,hexagon) c=D(orange,blue,green/1) z=2 n=1 f=0 r=0 d=-1 ; mat|s=P(3,3,6/1) c=purple z=2 n=1 f=D(0,1,2/2) r=0 d=-1 ; mat|s=D(triangle,star,square/2) c=blue z=2 n=R(1,3,2) f=0 r=0 d=D(0,1,3/2) ; mat|s=R(triangle,hexagon,star) c=D(orange,blue,red/2) z=2 n=D(1,4,2/1) f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=C(square,triangle,hexagon) c=D(orange,blue,green/1) z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:orange:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;hexagon:green:2:1:0:0:-1;square:blue:2:1:0:0:-1;triangle:green:2:1:0:0:-1;hexagon:orange:2:1:0:0:-1;square:green:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;?",
+     "options": "hexagon:blue:2:1:0:0:-1;triangle:orange:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;hexagon:green:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "hexagon:blue:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=P(3,3,6/1) c=purple z=2 n=1 f=D(0,1,2/2) r=0 d=-1",
+     "items": "triangle:purple:2:1:0:0:-1;square:purple:2:1:1:0:-1;pentagon:purple:2:1:2:0:-1;triangle:purple:2:1:2:0:-1;square:purple:2:1:0:0:-1;pentagon:purple:2:1:1:0:-1;hexagon:purple:2:1:1:0:-1;heptagon:purple:2:1:2:0:-1;?",
+     "options": "octagon:purple:2:1:1:0:-1;heptagon:purple:2:1:2:0:-1;heptagon:purple:2:1:0:0:-1;octagon:purple:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "octagon:purple:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=D(triangle,star,square/2) c=blue z=2 n=R(1,3,2) f=0 r=0 d=D(0,1,3/2)",
+     "items": "triangle:blue:2:1:0:0:0;star:blue:2:1:0:0:1;square:blue:2:1:0:0:3;square:blue:2:3:0:0:3;triangle:blue:2:3:0:0:0;star:blue:2:3:0:0:1;star:blue:2:2:0:0:1;square:blue:2:2:0:0:3;?",
+     "options": "triangle:blue:2:2:0:0:0;square:blue:2:2:0:0:3;triangle:blue:2:2:0:0:1;star:blue:2:2:0:0:0",
+     "correct": 0,
+     "answer": "triangle:blue:2:2:0:0:0"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=R(triangle,hexagon,star) c=D(orange,blue,red/2) z=2 n=D(1,4,2/1) f=0 r=0 d=-1",
+     "items": "triangle:orange:2:1:0:0:-1;triangle:blue:2:4:0:0:-1;triangle:red:2:2:0:0:-1;hexagon:red:2:4:0:0:-1;hexagon:orange:2:2:0:0:-1;hexagon:blue:2:1:0:0:-1;star:blue:2:2:0:0:-1;star:red:2:1:0:0:-1;?",
+     "options": "star:orange:2:4:0:0:-1;triangle:orange:2:4:0:0:-1;star:red:2:1:0:0:-1;star:blue:2:4:0:0:-1",
+     "correct": 0,
+     "answer": "star:orange:2:4:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=arrow c=C(orange,yellow,red) z=2 n=D(5,3,2/2) f=0 r=D(0,180,270/1) d=-1 ; mat|s=hexagon c=C(red,yellow,blue) z=2 n=Q(5,6,4/-1) f=0 r=0 d=-1 ; mat|s=P(5,3,3/1) c=D(blue,yellow,orange/1) z=2 n=1 f=C(1,2,0) r=0 d=-1 ; mat|s=triangle c=D(red,blue,yellow/2) z=2 n=1 f=0 r=0 d=P(0,0,0/-1)",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=arrow c=C(orange,yellow,red) z=2 n=D(5,3,2/2) f=0 r=D(0,180,270/1) d=-1",
+     "items": "arrow:orange:2:5:0:0:-1;arrow:yellow:2:3:0:180:-1;arrow:red:2:2:0:270:-1;arrow:orange:2:2:0:180:-1;arrow:yellow:2:5:0:270:-1;arrow:red:2:3:0:0:-1;arrow:orange:2:3:0:270:-1;arrow:yellow:2:2:0:0:-1;?",
+     "options": "arrow:red:2:5:0:180:-1;arrow:yellow:2:2:0:0:-1;arrow:red:2:5:0:270:-1;arrow:orange:2:5:0:180:-1",
+     "correct": 0,
+     "answer": "arrow:red:2:5:0:180:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=hexagon c=C(red,yellow,blue) z=2 n=Q(5,6,4/-1) f=0 r=0 d=-1",
+     "items": "hexagon:red:2:5:0:0:-1;hexagon:yellow:2:6:0:0:-1;hexagon:blue:2:4:0:0:-1;hexagon:red:2:4:0:0:-1;hexagon:yellow:2:5:0:0:-1;hexagon:blue:2:3:0:0:-1;hexagon:red:2:3:0:0:-1;hexagon:yellow:2:4:0:0:-1;?",
+     "options": "hexagon:red:2:2:0:0:-1;hexagon:blue:2:2:0:0:-1;hexagon:blue:2:3:0:0:-1;hexagon:yellow:2:4:0:0:-1",
+     "correct": 1,
+     "answer": "hexagon:blue:2:2:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=P(5,3,3/1) c=D(blue,yellow,orange/1) z=2 n=1 f=C(1,2,0) r=0 d=-1",
+     "items": "pentagon:blue:2:1:1:0:-1;hexagon:yellow:2:1:2:0:-1;heptagon:orange:2:1:0:0:-1;triangle:yellow:2:1:1:0:-1;square:orange:2:1:2:0:-1;pentagon:blue:2:1:0:0:-1;triangle:orange:2:1:1:0:-1;square:blue:2:1:2:0:-1;?",
+     "options": "square:blue:2:1:2:0:-1;pentagon:yellow:2:1:0:0:-1;pentagon:blue:2:1:0:0:-1;pentagon:yellow:2:1:1:0:-1",
+     "correct": 1,
+     "answer": "pentagon:yellow:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=D(red,blue,yellow/2) z=2 n=1 f=0 r=0 d=P(0,0,0/-1)",
+     "items": "triangle:red:2:1:0:0:0;triangle:blue:2:1:0:0:3;triangle:yellow:2:1:0:0:2;triangle:yellow:2:1:0:0:0;triangle:red:2:1:0:0:3;triangle:blue:2:1:0:0:2;triangle:blue:2:1:0:0:0;triangle:yellow:2:1:0:0:3;?",
+     "options": "triangle:yellow:2:1:0:0:3;triangle:red:2:1:0:0:2;triangle:yellow:2:1:0:0:2;triangle:red:2:1:0:0:3",
+     "correct": 1,
+     "answer": "triangle:red:2:1:0:0:2"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=D(hexagon,star,triangle/1) c=C(green,blue,red) z=2 n=1 f=0 r=0 d=-1 ; mat|s=arrow c=purple z=2 n=D(4,2,5/1) f=0 r=P(2,6,2/-2) d=-1 ; mat|s=triangle c=D(yellow,red,purple/2) z=2 n=C(1,3,5) f=0 r=0 d=-1 ; mat|s=hexagon c=D(yellow,blue,purple/1) z=2 n=P(2,3,3/1) f=0 r=0 d=P(0,2,0/-1)",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=D(hexagon,star,triangle/1) c=C(green,blue,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "hexagon:green:2:1:0:0:-1;star:blue:2:1:0:0:-1;triangle:red:2:1:0:0:-1;star:green:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;hexagon:red:2:1:0:0:-1;triangle:green:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;?",
+     "options": "hexagon:red:2:1:0:0:-1;star:red:2:1:0:0:-1;hexagon:blue:2:1:0:0:-1;star:green:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "star:red:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=arrow c=purple z=2 n=D(4,2,5/1) f=0 r=P(2,6,2/-2) d=-1",
+     "items": "arrow:purple:2:4:0:90:-1;arrow:purple:2:2:0:0:-1;arrow:purple:2:5:0:270:-1;arrow:purple:2:2:0:270:-1;arrow:purple:2:5:0:180:-1;arrow:purple:2:4:0:90:-1;arrow:purple:2:5:0:90:-1;arrow:purple:2:4:0:0:-1;?",
+     "options": "arrow:purple:2:2:0:270:-1;arrow:purple:2:1:0:270:-1;arrow:purple:2:4:0:0:-1;arrow:purple:2:2:0:0:-1",
+     "correct": 0,
+     "answer": "arrow:purple:2:2:0:270:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=D(yellow,red,purple/2) z=2 n=C(1,3,5) f=0 r=0 d=-1",
+     "items": "triangle:yellow:2:1:0:0:-1;triangle:red:2:3:0:0:-1;triangle:purple:2:5:0:0:-1;triangle:purple:2:1:0:0:-1;triangle:yellow:2:3:0:0:-1;triangle:red:2:5:0:0:-1;triangle:red:2:1:0:0:-1;triangle:purple:2:3:0:0:-1;?",
+     "options": "triangle:yellow:2:5:0:0:-1;triangle:purple:2:5:0:0:-1;triangle:yellow:2:6:0:0:-1;triangle:purple:2:3:0:0:-1",
+     "correct": 0,
+     "answer": "triangle:yellow:2:5:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=hexagon c=D(yellow,blue,purple/1) z=2 n=P(2,3,3/1) f=0 r=0 d=P(0,2,0/-1)",
+     "items": "hexagon:yellow:2:2:0:0:0;hexagon:blue:2:3:0:0:3;hexagon:purple:2:4:0:0:2;hexagon:blue:2:3:0:0:2;hexagon:purple:2:4:0:0:1;hexagon:yellow:2:5:0:0:0;hexagon:purple:2:3:0:0:0;hexagon:yellow:2:4:0:0:3;?",
+     "options": "hexagon:yellow:2:4:0:0:3;hexagon:blue:2:4:0:0:2;hexagon:blue:2:5:0:0:2;hexagon:purple:2:5:0:0:2",
+     "correct": 2,
+     "answer": "hexagon:blue:2:5:0:0:2"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=heart c=D(red,yellow,purple/1) z=C(1,2,0) n=1 f=0 r=0 d=-1 ; mat|s=square c=R(red,purple,yellow) z=Q(0,0,0/1) n=1 f=0 r=0 d=Q(1,0,0/-1) ; mat|s=D(circle,hexagon,star/1) c=red z=P(0,0,0/1) n=1 f=D(1,0,2/2) r=0 d=-1 ; mat|s=arrow c=red z=P(0,0,0/1) n=1 f=0 r=C(0,270,180) d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=heart c=D(red,yellow,purple/1) z=C(1,2,0) n=1 f=0 r=0 d=-1",
+     "items": "heart:red:1:1:0:0:-1;heart:yellow:2:1:0:0:-1;heart:purple:0:1:0:0:-1;heart:yellow:1:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:red:0:1:0:0:-1;heart:purple:1:1:0:0:-1;heart:red:2:1:0:0:-1;?",
+     "options": "heart:yellow:0:1:0:0:-1;heart:purple:0:1:0:0:-1;heart:yellow:2:1:0:0:-1;heart:red:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "heart:yellow:0:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=square c=R(red,purple,yellow) z=Q(0,0,0/1) n=1 f=0 r=0 d=Q(1,0,0/-1)",
+     "items": "square:red:0:1:0:0:1;square:red:0:1:0:0:0;square:red:0:1:0:0:0;square:purple:1:1:0:0:0;square:purple:1:1:0:0:3;square:purple:1:1:0:0:3;square:yellow:2:1:0:0:3;square:yellow:2:1:0:0:2;?",
+     "options": "square:yellow:0:1:0:0:2;square:yellow:2:1:0:0:1;square:yellow:2:1:0:0:2;square:purple:1:1:0:0:3",
+     "correct": 2,
+     "answer": "square:yellow:2:1:0:0:2"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=D(circle,hexagon,star/1) c=red z=P(0,0,0/1) n=1 f=D(1,0,2/2) r=0 d=-1",
+     "items": "circle:red:0:1:1:0:-1;hexagon:red:1:1:0:0:-1;star:red:2:1:2:0:-1;hexagon:red:0:1:2:0:-1;star:red:1:1:1:0:-1;circle:red:2:1:0:0:-1;star:red:0:1:0:0:-1;circle:red:1:1:2:0:-1;?",
+     "options": "hexagon:red:2:1:1:0:-1;hexagon:red:1:1:1:0:-1;circle:red:1:1:2:0:-1;hexagon:red:2:1:2:0:-1",
+     "correct": 0,
+     "answer": "hexagon:red:2:1:1:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=arrow c=red z=P(0,0,0/1) n=1 f=0 r=C(0,270,180) d=-1",
+     "items": "arrow:red:0:1:0:0:-1;arrow:red:1:1:0:270:-1;arrow:red:2:1:0:180:-1;arrow:red:0:1:0:0:-1;arrow:red:1:1:0:270:-1;arrow:red:2:1:0:180:-1;arrow:red:0:1:0:0:-1;arrow:red:1:1:0:270:-1;?",
+     "options": "arrow:red:2:1:0:270:-1;arrow:red:2:1:0:180:-1;arrow:red:1:1:0:270:-1;arrow:red:1:1:0:180:-1",
+     "correct": 1,
+     "answer": "arrow:red:2:1:0:180:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=D(square,heart,triangle/2) c=green z=R(2,1,0) n=1 f=0 r=0 d=Q(3,1,3/1) ; mat|s=square c=R(yellow,green,orange) z=D(2,1,0/1) n=1 f=D(1,0,2/2) r=0 d=-1 ; mat|s=D(square,heart,triangle/1) c=C(green,blue,red) z=2 n=1 f=0 r=0 d=-1 ; mat|s=circle c=blue z=2 n=D(5,2,1/1) f=0 r=0 d=R(1,3,0)",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=D(square,heart,triangle/2) c=green z=R(2,1,0) n=1 f=0 r=0 d=Q(3,1,3/1)",
+     "items": "square:green:2:1:0:0:3;heart:green:2:1:0:0:1;triangle:green:2:1:0:0:3;triangle:green:1:1:0:0:0;square:green:1:1:0:0:2;heart:green:1:1:0:0:0;heart:green:0:1:0:0:1;triangle:green:0:1:0:0:3;?",
+     "options": "square:green:0:1:0:0:0;triangle:green:0:1:0:0:1;square:green:0:1:0:0:1;triangle:green:0:1:0:0:3",
+     "correct": 2,
+     "answer": "square:green:0:1:0:0:1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=square c=R(yellow,green,orange) z=D(2,1,0/1) n=1 f=D(1,0,2/2) r=0 d=-1",
+     "items": "square:yellow:2:1:1:0:-1;square:yellow:1:1:0:0:-1;square:yellow:0:1:2:0:-1;square:green:1:1:2:0:-1;square:green:0:1:1:0:-1;square:green:2:1:0:0:-1;square:orange:0:1:0:0:-1;square:orange:2:1:2:0:-1;?",
+     "options": "square:orange:1:1:0:0:-1;square:orange:2:1:2:0:-1;square:orange:1:1:1:0:-1;square:orange:2:1:1:0:-1",
+     "correct": 2,
+     "answer": "square:orange:1:1:1:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=D(square,heart,triangle/1) c=C(green,blue,red) z=2 n=1 f=0 r=0 d=-1",
+     "items": "square:green:2:1:0:0:-1;heart:blue:2:1:0:0:-1;triangle:red:2:1:0:0:-1;heart:green:2:1:0:0:-1;triangle:blue:2:1:0:0:-1;square:red:2:1:0:0:-1;triangle:green:2:1:0:0:-1;square:blue:2:1:0:0:-1;?",
+     "options": "square:red:2:1:0:0:-1;heart:blue:2:1:0:0:-1;square:blue:2:1:0:0:-1;heart:red:2:1:0:0:-1",
+     "correct": 3,
+     "answer": "heart:red:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=circle c=blue z=2 n=D(5,2,1/1) f=0 r=0 d=R(1,3,0)",
+     "items": "circle:blue:2:5:0:0:1;circle:blue:2:2:0:0:1;circle:blue:2:1:0:0:1;circle:blue:2:2:0:0:3;circle:blue:2:1:0:0:3;circle:blue:2:5:0:0:3;circle:blue:2:1:0:0:0;circle:blue:2:5:0:0:0;?",
+     "options": "circle:blue:2:2:0:0:1;circle:blue:2:2:0:0:0;circle:blue:2:3:0:0:0;circle:blue:2:5:0:0:0",
+     "correct": 1,
+     "answer": "circle:blue:2:2:0:0:0"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=circle c=D(green,purple,yellow/1) z=2 n=D(2,1,3/2) f=R(1,2,0) r=0 d=-1 ; mat|s=arrow c=green z=2 n=1 f=D(2,1,0/1) r=C(270,90,0) d=-1 ; mat|s=triangle c=C(orange,red,purple) z=2 n=D(4,2,1/1) f=0 r=0 d=-1 ; mat|s=star c=D(red,blue,green/1) z=2 n=1 f=R(2,0,1) r=0 d=Q(3,0,3/1)",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=circle c=D(green,purple,yellow/1) z=2 n=D(2,1,3/2) f=R(1,2,0) r=0 d=-1",
+     "items": "circle:green:2:2:1:0:-1;circle:purple:2:1:1:0:-1;circle:yellow:2:3:1:0:-1;circle:purple:2:3:2:0:-1;circle:yellow:2:2:2:0:-1;circle:green:2:1:2:0:-1;circle:yellow:2:1:0:0:-1;circle:green:2:3:0:0:-1;?",
+     "options": "circle:purple:2:2:0:0:-1;circle:purple:2:2:2:0:-1;circle:green:2:3:0:0:-1;circle:purple:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "circle:purple:2:2:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=arrow c=green z=2 n=1 f=D(2,1,0/1) r=C(270,90,0) d=-1",
+     "items": "arrow:green:2:1:2:270:-1;arrow:green:2:1:1:90:-1;arrow:green:2:1:0:0:-1;arrow:green:2:1:1:270:-1;arrow:green:2:1:0:90:-1;arrow:green:2:1:2:0:-1;arrow:green:2:1:0:270:-1;arrow:green:2:1:2:90:-1;?",
+     "options": "arrow:green:2:1:1:270:-1;arrow:green:2:1:1:0:-1;arrow:green:2:1:2:90:-1;arrow:green:2:1:0:0:-1",
+     "correct": 1,
+     "answer": "arrow:green:2:1:1:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=C(orange,red,purple) z=2 n=D(4,2,1/1) f=0 r=0 d=-1",
+     "items": "triangle:orange:2:4:0:0:-1;triangle:red:2:2:0:0:-1;triangle:purple:2:1:0:0:-1;triangle:orange:2:2:0:0:-1;triangle:red:2:1:0:0:-1;triangle:purple:2:4:0:0:-1;triangle:orange:2:1:0:0:-1;triangle:red:2:4:0:0:-1;?",
+     "options": "triangle:purple:2:1:0:0:-1;triangle:orange:2:2:0:0:-1;triangle:red:2:4:0:0:-1;triangle:purple:2:2:0:0:-1",
+     "correct": 3,
+     "answer": "triangle:purple:2:2:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=star c=D(red,blue,green/1) z=2 n=1 f=R(2,0,1) r=0 d=Q(3,0,3/1)",
+     "items": "star:red:2:1:2:0:3;star:blue:2:1:2:0:0;star:green:2:1:2:0:3;star:blue:2:1:0:0:0;star:green:2:1:0:0:1;star:red:2:1:0:0:0;star:green:2:1:1:0:1;star:red:2:1:1:0:2;?",
+     "options": "star:green:2:1:1:0:1;star:blue:2:1:1:0:0;star:blue:2:1:1:0:1;star:red:2:1:1:0:2",
+     "correct": 2,
+     "answer": "star:blue:2:1:1:0:1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=arrow c=D(yellow,blue,red/1) z=2 n=1 f=0 r=P(6,0,2/-2) d=D(0,1,2/2) ; mat|s=triangle c=C(orange,purple,red) z=2 n=P(2,4,4/1) f=0 r=D(270,90,0/1) d=-1 ; mat|s=heart c=D(purple,blue,orange/2) z=C(2,0,1) n=1 f=0 r=0 d=-1 ; mat|s=C(triangle,square,circle) c=orange z=2 n=P(3,2,1/1) f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=arrow c=D(yellow,blue,red/1) z=2 n=1 f=0 r=P(6,0,2/-2) d=D(0,1,2/2)",
+     "items": "arrow:yellow:2:1:0:270:0;arrow:blue:2:1:0:180:1;arrow:red:2:1:0:90:2;arrow:blue:2:1:0:0:2;arrow:red:2:1:0:270:0;arrow:yellow:2:1:0:180:1;arrow:red:2:1:0:90:1;arrow:yellow:2:1:0:0:2;?",
+     "options": "arrow:blue:2:1:0:270:0;arrow:blue:2:1:0:0:0;arrow:yellow:2:1:0:0:2;arrow:blue:2:1:0:270:3",
+     "correct": 0,
+     "answer": "arrow:blue:2:1:0:270:0"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=C(orange,purple,red) z=2 n=P(2,4,4/1) f=0 r=D(270,90,0/1) d=-1",
+     "items": "triangle:orange:2:2:0:270:-1;triangle:purple:2:3:0:90:-1;triangle:red:2:4:0:0:-1;triangle:orange:2:4:0:90:-1;triangle:purple:2:5:0:0:-1;triangle:red:2:6:0:270:-1;triangle:orange:2:4:0:0:-1;triangle:purple:2:5:0:270:-1;?",
+     "options": "triangle:red:2:6:0:180:-1;triangle:purple:2:5:0:270:-1;triangle:red:2:4:0:90:-1;triangle:red:2:6:0:90:-1",
+     "correct": 3,
+     "answer": "triangle:red:2:6:0:90:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=heart c=D(purple,blue,orange/2) z=C(2,0,1) n=1 f=0 r=0 d=-1",
+     "items": "heart:purple:2:1:0:0:-1;heart:blue:0:1:0:0:-1;heart:orange:1:1:0:0:-1;heart:orange:2:1:0:0:-1;heart:purple:0:1:0:0:-1;heart:blue:1:1:0:0:-1;heart:blue:2:1:0:0:-1;heart:orange:0:1:0:0:-1;?",
+     "options": "heart:orange:0:1:0:0:-1;heart:purple:2:1:0:0:-1;heart:purple:1:1:0:0:-1;heart:orange:1:1:0:0:-1",
+     "correct": 2,
+     "answer": "heart:purple:1:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=C(triangle,square,circle) c=orange z=2 n=P(3,2,1/1) f=0 r=0 d=-1",
+     "items": "triangle:orange:2:3:0:0:-1;square:orange:2:4:0:0:-1;circle:orange:2:5:0:0:-1;triangle:orange:2:2:0:0:-1;square:orange:2:3:0:0:-1;circle:orange:2:4:0:0:-1;triangle:orange:2:1:0:0:-1;square:orange:2:2:0:0:-1;?",
+     "options": "square:orange:2:2:0:0:-1;circle:orange:2:3:0:0:-1;circle:orange:2:2:0:0:-1;triangle:orange:2:3:0:0:-1",
+     "correct": 1,
+     "answer": "circle:orange:2:3:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=triangle c=R(purple,green,yellow) z=2 n=D(2,3,1/2) f=0 r=Q(4,0,6/-2) d=-1 ; mat|s=P(4,3,4/1) c=yellow z=2 n=1 f=R(0,1,2) r=0 d=D(1,0,2/1) ; mat|s=arrow c=yellow z=2 n=P(1,4,4/1) f=0 r=Q(0,2,4/2) d=D(0,2,3/1) ; mat|s=triangle c=green z=2 n=R(1,3,5) f=D(1,2,0/2) r=D(180,0,270/1) d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=R(purple,green,yellow) z=2 n=D(2,3,1/2) f=0 r=Q(4,0,6/-2) d=-1",
+     "items": "triangle:purple:2:2:0:180:-1;triangle:purple:2:3:0:0:-1;triangle:purple:2:1:0:270:-1;triangle:green:2:1:0:90:-1;triangle:green:2:2:0:270:-1;triangle:green:2:3:0:180:-1;triangle:yellow:2:3:0:0:-1;triangle:yellow:2:1:0:180:-1;?",
+     "options": "triangle:yellow:2:2:0:180:-1;triangle:yellow:2:2:0:90:-1;triangle:purple:2:2:0:90:-1;triangle:yellow:2:1:0:180:-1",
+     "correct": 1,
+     "answer": "triangle:yellow:2:2:0:90:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=P(4,3,4/1) c=yellow z=2 n=1 f=R(0,1,2) r=0 d=D(1,0,2/1)",
+     "items": "square:yellow:2:1:0:0:1;pentagon:yellow:2:1:0:0:0;hexagon:yellow:2:1:0:0:2;triangle:yellow:2:1:1:0:0;square:yellow:2:1:1:0:2;pentagon:yellow:2:1:1:0:1;square:yellow:2:1:2:0:2;pentagon:yellow:2:1:2:0:1;?",
+     "options": "hexagon:yellow:2:1:2:0:0;hexagon:yellow:2:1:1:0:0;pentagon:yellow:2:1:2:0:1;hexagon:yellow:2:1:2:0:1",
+     "correct": 0,
+     "answer": "hexagon:yellow:2:1:2:0:0"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=arrow c=yellow z=2 n=P(1,4,4/1) f=0 r=Q(0,2,4/2) d=D(0,2,3/1)",
+     "items": "arrow:yellow:2:1:0:0:0;arrow:yellow:2:2:0:90:2;arrow:yellow:2:3:0:180:3;arrow:yellow:2:4:0:90:2;arrow:yellow:2:5:0:180:3;arrow:yellow:2:6:0:270:0;arrow:yellow:2:4:0:180:3;arrow:yellow:2:5:0:270:0;?",
+     "options": "arrow:yellow:2:6:0:0:2;arrow:yellow:2:6:0:0:1;arrow:yellow:2:5:0:270:0;arrow:yellow:2:4:0:0:2",
+     "correct": 0,
+     "answer": "arrow:yellow:2:6:0:0:2"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=green z=2 n=R(1,3,5) f=D(1,2,0/2) r=D(180,0,270/1) d=-1",
+     "items": "triangle:green:2:1:1:180:-1;triangle:green:2:1:2:0:-1;triangle:green:2:1:0:270:-1;triangle:green:2:3:0:0:-1;triangle:green:2:3:1:270:-1;triangle:green:2:3:2:180:-1;triangle:green:2:5:2:270:-1;triangle:green:2:5:0:180:-1;?",
+     "options": "triangle:green:2:5:0:0:-1;triangle:green:2:5:1:0:-1;triangle:green:2:5:1:270:-1;triangle:green:2:5:0:180:-1",
+     "correct": 1,
+     "answer": "triangle:green:2:5:1:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=circle c=purple z=2 n=D(1,5,2/1) f=C(1,0,2) r=0 d=P(3,1,2/-1) ; mat|s=D(circle,square,hexagon/2) c=D(blue,green,red/1) z=2 n=Q(3,1,2/1) f=0 r=0 d=-1 ; mat|s=C(triangle,star,heart) c=D(yellow,green,red/1) z=2 n=D(4,5,3/1) f=0 r=0 d=-1 ; mat|s=D(star,heart,square/1) c=red z=2 n=R(5,1,3) f=0 r=0 d=D(1,2,0/2)",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=circle c=purple z=2 n=D(1,5,2/1) f=C(1,0,2) r=0 d=P(3,1,2/-1)",
+     "items": "circle:purple:2:1:1:0:3;circle:purple:2:5:0:0:2;circle:purple:2:2:2:0:1;circle:purple:2:5:1:0:1;circle:purple:2:2:0:0:0;circle:purple:2:1:2:0:3;circle:purple:2:2:1:0:2;circle:purple:2:1:0:0:1;?",
+     "options": "circle:purple:2:1:0:0:1;circle:purple:2:5:2:0:3;circle:purple:2:5:2:0:0;circle:purple:2:5:0:0:0",
+     "correct": 2,
+     "answer": "circle:purple:2:5:2:0:0"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=D(circle,square,hexagon/2) c=D(blue,green,red/1) z=2 n=Q(3,1,2/1) f=0 r=0 d=-1",
+     "items": "circle:blue:2:3:0:0:-1;square:green:2:1:0:0:-1;hexagon:red:2:2:0:0:-1;hexagon:green:2:4:0:0:-1;circle:red:2:2:0:0:-1;square:blue:2:3:0:0:-1;square:red:2:5:0:0:-1;hexagon:blue:2:3:0:0:-1;?",
+     "options": "square:green:2:4:0:0:-1;circle:green:2:4:0:0:-1;circle:green:2:3:0:0:-1;hexagon:blue:2:3:0:0:-1",
+     "correct": 1,
+     "answer": "circle:green:2:4:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=C(triangle,star,heart) c=D(yellow,green,red/1) z=2 n=D(4,5,3/1) f=0 r=0 d=-1",
+     "items": "triangle:yellow:2:4:0:0:-1;star:green:2:5:0:0:-1;heart:red:2:3:0:0:-1;triangle:green:2:5:0:0:-1;star:red:2:3:0:0:-1;heart:yellow:2:4:0:0:-1;triangle:red:2:3:0:0:-1;star:yellow:2:4:0:0:-1;?",
+     "options": "star:yellow:2:4:0:0:-1;heart:green:2:4:0:0:-1;heart:green:2:5:0:0:-1;heart:yellow:2:5:0:0:-1",
+     "correct": 2,
+     "answer": "heart:green:2:5:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=D(star,heart,square/1) c=red z=2 n=R(5,1,3) f=0 r=0 d=D(1,2,0/2)",
+     "items": "star:red:2:5:0:0:1;heart:red:2:5:0:0:2;square:red:2:5:0:0:0;heart:red:2:1:0:0:0;square:red:2:1:0:0:1;star:red:2:1:0:0:2;square:red:2:3:0:0:2;star:red:2:3:0:0:0;?",
+     "options": "heart:red:2:4:0:0:1;star:red:2:3:0:0:0;star:red:2:3:0:0:1;heart:red:2:3:0:0:1",
+     "correct": 3,
+     "answer": "heart:red:2:3:0:0:1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=triangle c=green z=2 n=R(5,2,3) f=D(1,2,0/2) r=0 d=Q(1,1,2/-1) ; mat|s=R(square,triangle,heart) c=D(blue,orange,green/2) z=2 n=D(4,3,5/2) f=0 r=0 d=-1 ; mat|s=R(triangle,hexagon,circle) c=D(green,orange,purple/1) z=2 n=1 f=D(2,0,1/1) r=0 d=-1 ; mat|s=Q(5,4,4/1) c=blue z=2 n=1 f=D(2,0,1/2) r=0 d=D(3,2,1/2)",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=green z=2 n=R(5,2,3) f=D(1,2,0/2) r=0 d=Q(1,1,2/-1)",
+     "items": "triangle:green:2:5:1:0:1;triangle:green:2:5:2:0:1;triangle:green:2:5:0:0:2;triangle:green:2:2:0:0:0;triangle:green:2:2:1:0:0;triangle:green:2:2:2:0:1;triangle:green:2:3:2:0:3;triangle:green:2:3:0:0:3;?",
+     "options": "triangle:green:2:3:1:0:0;triangle:green:2:3:2:0:0;triangle:green:2:3:0:0:3;triangle:green:2:3:1:0:1",
+     "correct": 0,
+     "answer": "triangle:green:2:3:1:0:0"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=R(square,triangle,heart) c=D(blue,orange,green/2) z=2 n=D(4,3,5/2) f=0 r=0 d=-1",
+     "items": "square:blue:2:4:0:0:-1;square:orange:2:3:0:0:-1;square:green:2:5:0:0:-1;triangle:green:2:5:0:0:-1;triangle:blue:2:4:0:0:-1;triangle:orange:2:3:0:0:-1;heart:orange:2:3:0:0:-1;heart:green:2:5:0:0:-1;?",
+     "options": "heart:blue:2:4:0:0:-1;heart:green:2:5:0:0:-1;heart:blue:2:3:0:0:-1;square:blue:2:4:0:0:-1",
+     "correct": 0,
+     "answer": "heart:blue:2:4:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=R(triangle,hexagon,circle) c=D(green,orange,purple/1) z=2 n=1 f=D(2,0,1/1) r=0 d=-1",
+     "items": "triangle:green:2:1:2:0:-1;triangle:orange:2:1:0:0:-1;triangle:purple:2:1:1:0:-1;hexagon:orange:2:1:0:0:-1;hexagon:purple:2:1:1:0:-1;hexagon:green:2:1:2:0:-1;circle:purple:2:1:1:0:-1;circle:green:2:1:2:0:-1;?",
+     "options": "circle:orange:2:1:0:0:-1;circle:green:2:1:2:0:-1;circle:orange:2:1:1:0:-1;circle:purple:2:1:0:0:-1",
+     "correct": 0,
+     "answer": "circle:orange:2:1:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=Q(5,4,4/1) c=blue z=2 n=1 f=D(2,0,1/2) r=0 d=D(3,2,1/2)",
+     "items": "pentagon:blue:2:1:2:0:3;square:blue:2:1:0:0:2;square:blue:2:1:1:0:1;hexagon:blue:2:1:1:0:1;pentagon:blue:2:1:2:0:3;pentagon:blue:2:1:0:0:2;heptagon:blue:2:1:0:0:2;hexagon:blue:2:1:1:0:1;?",
+     "options": "hexagon:blue:2:1:2:0:3;hexagon:blue:2:1:2:0:0;hexagon:blue:2:1:1:0:1;heptagon:blue:2:1:2:0:3",
+     "correct": 0,
+     "answer": "hexagon:blue:2:1:2:0:3"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=R(heart,triangle,star) c=D(blue,green,red/2) z=2 n=1 f=0 r=0 d=P(2,3,0/1) ; mat|s=D(heart,circle,triangle/1) c=C(purple,blue,green) z=2 n=Q(4,2,3/1) f=0 r=0 d=-1 ; mat|s=D(hexagon,star,square/2) c=blue z=2 n=D(4,5,2/1) f=C(2,0,1) r=0 d=-1 ; mat|s=C(star,heart,triangle) c=D(red,orange,green/1) z=2 n=D(1,5,4/1) f=0 r=0 d=-1",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=R(heart,triangle,star) c=D(blue,green,red/2) z=2 n=1 f=0 r=0 d=P(2,3,0/1)",
+     "items": "heart:blue:2:1:0:0:2;heart:green:2:1:0:0:3;heart:red:2:1:0:0:0;triangle:red:2:1:0:0:3;triangle:blue:2:1:0:0:0;triangle:green:2:1:0:0:1;star:green:2:1:0:0:0;star:red:2:1:0:0:1;?",
+     "options": "star:red:2:1:0:0:1;star:blue:2:1:0:0:1;star:red:2:1:0:0:2;star:blue:2:1:0:0:2",
+     "correct": 3,
+     "answer": "star:blue:2:1:0:0:2"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=D(heart,circle,triangle/1) c=C(purple,blue,green) z=2 n=Q(4,2,3/1) f=0 r=0 d=-1",
+     "items": "heart:purple:2:4:0:0:-1;circle:blue:2:2:0:0:-1;triangle:green:2:3:0:0:-1;circle:purple:2:5:0:0:-1;triangle:blue:2:3:0:0:-1;heart:green:2:4:0:0:-1;triangle:purple:2:6:0:0:-1;heart:blue:2:4:0:0:-1;?",
+     "options": "circle:green:2:4:0:0:-1;heart:blue:2:4:0:0:-1;circle:purple:2:5:0:0:-1;circle:green:2:5:0:0:-1",
+     "correct": 3,
+     "answer": "circle:green:2:5:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=D(hexagon,star,square/2) c=blue z=2 n=D(4,5,2/1) f=C(2,0,1) r=0 d=-1",
+     "items": "hexagon:blue:2:4:2:0:-1;star:blue:2:5:0:0:-1;square:blue:2:2:1:0:-1;square:blue:2:5:2:0:-1;hexagon:blue:2:2:0:0:-1;star:blue:2:4:1:0:-1;star:blue:2:2:2:0:-1;square:blue:2:4:0:0:-1;?",
+     "options": "hexagon:blue:2:5:1:0:-1;square:blue:2:4:0:0:-1;star:blue:2:5:1:0:-1;hexagon:blue:2:5:2:0:-1",
+     "correct": 0,
+     "answer": "hexagon:blue:2:5:1:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=C(star,heart,triangle) c=D(red,orange,green/1) z=2 n=D(1,5,4/1) f=0 r=0 d=-1",
+     "items": "star:red:2:1:0:0:-1;heart:orange:2:5:0:0:-1;triangle:green:2:4:0:0:-1;star:orange:2:5:0:0:-1;heart:green:2:4:0:0:-1;triangle:red:2:1:0:0:-1;star:green:2:4:0:0:-1;heart:red:2:1:0:0:-1;?",
+     "options": "triangle:orange:2:5:0:0:-1;triangle:orange:2:6:0:0:-1;heart:red:2:1:0:0:-1;heart:orange:2:5:0:0:-1",
+     "correct": 0,
+     "answer": "triangle:orange:2:5:0:0:-1"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=triangle c=blue z=2 n=D(5,1,3/2) f=0 r=C(270,90,180) d=D(0,3,1/2) ; mat|s=D(star,square,heart/2) c=D(blue,orange,green/1) z=2 n=P(4,4,2/1) f=0 r=0 d=-1 ; mat|s=triangle c=R(orange,blue,yellow) z=2 n=D(5,4,2/2) f=0 r=D(180,270,0/2) d=-1 ; mat|s=D(heart,triangle,square/2) c=red z=2 n=D(4,3,2/2) f=0 r=0 d=D(1,2,0/1)",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=blue z=2 n=D(5,1,3/2) f=0 r=C(270,90,180) d=D(0,3,1/2)",
+     "items": "triangle:blue:2:5:0:270:0;triangle:blue:2:1:0:90:3;triangle:blue:2:3:0:180:1;triangle:blue:2:3:0:270:1;triangle:blue:2:5:0:90:0;triangle:blue:2:1:0:180:3;triangle:blue:2:1:0:270:3;triangle:blue:2:3:0:90:1;?",
+     "options": "triangle:blue:2:5:0:180:0;triangle:blue:2:3:0:90:1;triangle:blue:2:5:0:180:1;triangle:blue:2:5:0:270:0",
+     "correct": 0,
+     "answer": "triangle:blue:2:5:0:180:0"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=D(star,square,heart/2) c=D(blue,orange,green/1) z=2 n=P(4,4,2/1) f=0 r=0 d=-1",
+     "items": "star:blue:2:4:0:0:-1;square:orange:2:5:0:0:-1;heart:green:2:6:0:0:-1;heart:orange:2:4:0:0:-1;star:green:2:5:0:0:-1;square:blue:2:6:0:0:-1;square:green:2:2:0:0:-1;heart:blue:2:3:0:0:-1;?",
+     "options": "star:orange:2:5:0:0:-1;star:orange:2:4:0:0:-1;star:green:2:4:0:0:-1;heart:blue:2:3:0:0:-1",
+     "correct": 1,
+     "answer": "star:orange:2:4:0:0:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=R(orange,blue,yellow) z=2 n=D(5,4,2/2) f=0 r=D(180,270,0/2) d=-1",
+     "items": "triangle:orange:2:5:0:180:-1;triangle:orange:2:4:0:270:-1;triangle:orange:2:2:0:0:-1;triangle:blue:2:2:0:0:-1;triangle:blue:2:5:0:180:-1;triangle:blue:2:4:0:270:-1;triangle:yellow:2:4:0:270:-1;triangle:yellow:2:2:0:0:-1;?",
+     "options": "triangle:yellow:2:2:0:0:-1;triangle:yellow:2:5:0:180:-1;triangle:yellow:2:6:0:180:-1;triangle:yellow:2:5:0:90:-1",
+     "correct": 1,
+     "answer": "triangle:yellow:2:5:0:180:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=D(heart,triangle,square/2) c=red z=2 n=D(4,3,2/2) f=0 r=0 d=D(1,2,0/1)",
+     "items": "heart:red:2:4:0:0:1;triangle:red:2:3:0:0:2;square:red:2:2:0:0:0;square:red:2:2:0:0:2;heart:red:2:4:0:0:0;triangle:red:2:3:0:0:1;triangle:red:2:3:0:0:0;square:red:2:2:0:0:1;?",
+     "options": "square:red:2:2:0:0:1;heart:red:2:4:0:0:3;heart:red:2:5:0:0:2;heart:red:2:4:0:0:2",
+     "correct": 3,
+     "answer": "heart:red:2:4:0:0:2"
+    }
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "mat|s=D(star,hexagon,square/1) c=purple z=2 n=C(3,2,5) f=0 r=0 d=D(1,3,0/2) ; mat|s=triangle c=D(purple,yellow,red/1) z=2 n=1 f=C(2,1,0) r=P(6,6,6/-2) d=-1 ; mat|s=square c=D(blue,purple,red/1) z=D(0,1,2/1) n=1 f=0 r=0 d=R(3,1,2) ; mat|s=D(circle,square,triangle/2) c=D(yellow,blue,purple/1) z=2 n=1 f=0 r=0 d=Q(3,3,1/-1)",
+   "questions": [
+    {
+     "kind": "mat",
+     "rules": "s=D(star,hexagon,square/1) c=purple z=2 n=C(3,2,5) f=0 r=0 d=D(1,3,0/2)",
+     "items": "star:purple:2:3:0:0:1;hexagon:purple:2:2:0:0:3;square:purple:2:5:0:0:0;hexagon:purple:2:3:0:0:0;square:purple:2:2:0:0:1;star:purple:2:5:0:0:3;square:purple:2:3:0:0:3;star:purple:2:2:0:0:0;?",
+     "options": "hexagon:purple:2:4:0:0:1;hexagon:purple:2:5:0:0:2;hexagon:purple:2:5:0:0:1;star:purple:2:2:0:0:0",
+     "correct": 2,
+     "answer": "hexagon:purple:2:5:0:0:1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=triangle c=D(purple,yellow,red/1) z=2 n=1 f=C(2,1,0) r=P(6,6,6/-2) d=-1",
+     "items": "triangle:purple:2:1:2:270:-1;triangle:yellow:2:1:1:180:-1;triangle:red:2:1:0:90:-1;triangle:yellow:2:1:2:270:-1;triangle:red:2:1:1:180:-1;triangle:purple:2:1:0:90:-1;triangle:red:2:1:2:270:-1;triangle:purple:2:1:1:180:-1;?",
+     "options": "triangle:purple:2:1:0:90:-1;triangle:yellow:2:1:0:90:-1;triangle:yellow:2:1:0:180:-1;triangle:purple:2:1:1:180:-1",
+     "correct": 1,
+     "answer": "triangle:yellow:2:1:0:90:-1"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=square c=D(blue,purple,red/1) z=D(0,1,2/1) n=1 f=0 r=0 d=R(3,1,2)",
+     "items": "square:blue:0:1:0:0:3;square:purple:1:1:0:0:3;square:red:2:1:0:0:3;square:purple:1:1:0:0:1;square:red:2:1:0:0:1;square:blue:0:1:0:0:1;square:red:2:1:0:0:2;square:blue:0:1:0:0:2;?",
+     "options": "square:blue:0:1:0:0:2;square:purple:1:1:0:0:3;square:purple:2:1:0:0:2;square:purple:1:1:0:0:2",
+     "correct": 3,
+     "answer": "square:purple:1:1:0:0:2"
+    },
+    {
+     "kind": "mat",
+     "rules": "s=D(circle,square,triangle/2) c=D(yellow,blue,purple/1) z=2 n=1 f=0 r=0 d=Q(3,3,1/-1)",
+     "items": "circle:yellow:2:1:0:0:3;square:blue:2:1:0:0:3;triangle:purple:2:1:0:0:1;triangle:blue:2:1:0:0:2;circle:purple:2:1:0:0:2;square:yellow:2:1:0:0:0;square:purple:2:1:0:0:1;triangle:yellow:2:1:0:0:1;?",
+     "options": "circle:blue:2:1:0:0:2;circle:blue:2:1:0:0:3;square:blue:2:1:0:0:3;triangle:yellow:2:1:0:0:1",
+     "correct": 1,
+     "answer": "circle:blue:2:1:0:0:3"
+    }
+   ]
+  }
+ ]
+}
