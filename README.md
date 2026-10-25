@@ -46,8 +46,18 @@ tools/                          Level üretici ve doğrulayıcı
 
 ## Oyunlar
 
-| Oyun | Boosterlar |
-|---|---|
-| Sudoku | 🔍 Hücre Aç · ❗ Hata Bul · 💡 Akıllı İpucu (sıradaki mantıklı hamleyi nedeniyle gösterir) |
+Her oyun 3 zorluk × 20 level = 60 level. Tüm levellerin tek çözümlü olduğu ve tahmin yapmadan, mantıkla çözülebildiği doğrulanır.
 
-Sudoku zorlukları: Kolay 42→34 ipucu, Orta 33→27 ipucu (yalnızca tekli tekniklerle çözülür), Zor 29→25 ipucu (çift/işaretleme gibi ileri teknik gerektirir). Hiçbir level tahmin gerektirmez.
+| Kategori | Oyun | Kolay | Orta | Zor | Boosterlar |
+|---|---|---|---|---|---|
+| Sayısal | Sudoku | 4×4, 6×6 | 6×6, 9×9 | 9×9 (ileri teknik) | 🔍 Hücre Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Sayısal | Büyük-Küçük (Futoshiki) | 4×4 | 5×5 | 6×6, 7×7 | 🔍 Hücre Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Görsel | Kare Karalamaca (Nonogram) | 5×5 → 8×8 | 10×10 | 12×12 → 15×15 | 🔍 Hücre Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Konumsal | Apartmanlar (Skyscrapers) | 4×4 | 5×5 | 6×6, 7×7 | 🔍 Hücre Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Konumsal | Çadırlar ve Ağaçlar | 6×6 | 8×8 | 10×10 → 12×12 | ⛺ Çadır Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Konumsal | Amiral Battı | 6×6 | 8×8 | 10×10 | 🔍 Hücre Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Yol/Bağlantı | Köprü Kurma (Hashi) | 7×7 | 9×9 | 11×11 → 13×13 | 🌉 Köprü Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Yol/Bağlantı | Çit Çizme (Slitherlink) | 5×5 | 7×7 | 9×9, 10×10 | 🖍️ Çizgi Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+| Sözel | Mantık Tablosu | 3 kişi × 2 özellik | 4 × 3 | 5 × 3–4 | 🔍 Eşleşme Aç · ❗ Hata Bul · 💡 Akıllı İpucu |
+
+"Akıllı İpucu" her oyunda sıradaki mantıklı adımı bulur, ilgili hücreleri işaretler ve nedenini Türkçe açıklar. Hiçbir işe yaramayacağı durumda (ör. hata yokken "Hata Bul") booster hakkı harcanmaz.

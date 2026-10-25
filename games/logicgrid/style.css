@@ -1,0 +1,108 @@
+.logicgrid { --cs: 32px; --lw: 92px; width: 100%; display: flex; flex-direction: column; gap: 12px; }
+.logicgrid .lg-intro { margin: 0; padding: 10px 12px; background: var(--accent-soft); border-radius: 10px; line-height: 1.45; }
+.logicgrid .lg-tools { display: flex; gap: 8px; flex-wrap: wrap; }
+.logicgrid .lg-tool {
+  padding: 8px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--card);
+  color: var(--text); font: inherit; font-size: .9rem; font-weight: 600; cursor: pointer; min-height: 40px;
+  touch-action: manipulation;
+}
+.logicgrid .lg-tool.on { border-color: var(--accent); color: var(--accent); }
+.logicgrid .lg-main { display: flex; flex-wrap: wrap; gap: 14px; align-items: flex-start; }
+.logicgrid .lg-scroll { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 4px; }
+
+/* Izgara */
+.logicgrid .lg-grid { border-collapse: collapse; table-layout: fixed; background: var(--card); }
+.logicgrid .lg-grid th, .logicgrid .lg-grid td { padding: 0; }
+.logicgrid .lg-corner { border: 0; }
+.logicgrid .lg-rc { width: 22px; min-width: 22px; }
+.logicgrid .lg-cathead {
+  font-size: .78rem; font-weight: 700; color: var(--text); background: var(--accent-soft);
+  border: 2px solid var(--text); border-bottom: 1px solid var(--line); height: 26px;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 0;
+}
+.logicgrid .lg-colhead {
+  width: var(--cs); min-width: var(--cs); max-width: var(--cs); height: 86px; vertical-align: bottom;
+  border: 1px solid var(--line); border-top: 0; font-size: .74rem; font-weight: 600; color: var(--text);
+}
+.logicgrid .lg-colhead.bl, .logicgrid .lg-grid td.bl { border-left: 2px solid var(--text); }
+.logicgrid .lg-colhead:last-child { border-right: 2px solid var(--text); }
+.logicgrid .lg-vert {
+  writing-mode: vertical-rl; transform: rotate(180deg); display: inline-flex; align-items: center; gap: 2px;
+  white-space: nowrap; padding: 4px 0; line-height: 1;
+}
+.logicgrid .lg-chw { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; gap: 2px; padding-bottom: 3px; }
+.logicgrid .lg-colhead .lg-vert { max-height: 64px; overflow: hidden; text-overflow: ellipsis; padding: 0; }
+.logicgrid .lg-colhead .lg-ico { font-size: .85rem; line-height: 1; }
+.logicgrid .lg-rowcat {
+  width: 22px; min-width: 22px; background: var(--accent-soft); border: 2px solid var(--text); border-right: 1px solid var(--line);
+  font-size: .74rem; font-weight: 700; text-align: center; overflow: hidden;
+}
+.logicgrid .lg-rowhead {
+  width: var(--lw); min-width: var(--lw); max-width: var(--lw); height: var(--cs); text-align: left;
+  border: 1px solid var(--line); border-left: 0; padding: 0 4px; font-size: .8rem; font-weight: 600;
+}
+.logicgrid .lg-lbl { display: flex; align-items: center; gap: 3px; overflow: hidden; white-space: nowrap; }
+.logicgrid .lg-lbl .lg-w { overflow: hidden; text-overflow: ellipsis; }
+.logicgrid .lg-grid tr.bt th, .logicgrid .lg-grid tr.bt td { border-top: 2px solid var(--text); }
+.logicgrid .lg-grid tbody tr:last-child td, .logicgrid .lg-grid tbody tr:last-child th { border-bottom: 2px solid var(--text); }
+.logicgrid .lg-grid td { border: 1px solid var(--line); width: var(--cs); height: var(--cs); }
+.logicgrid .lg-grid tr td:last-child { border-right: 2px solid var(--text); }
+/* Alt bloklarda kısa kalan satırların altını kalın çiz */
+.logicgrid .lg-grid tbody tr:has(+ tr.bt) td { border-bottom: 2px solid var(--text); }
+.logicgrid .lg-rowhead.hl, .logicgrid .lg-colhead.hl { background: color-mix(in srgb, var(--accent) 22%, var(--card)); }
+
+.logicgrid .lg-cell {
+  display: flex; align-items: center; justify-content: center; width: 100%; height: 100%;
+  min-width: var(--cs); min-height: var(--cs); border: 0; padding: 0; margin: 0; background: var(--card); cursor: pointer;
+  font: inherit; font-size: calc(var(--cs) * .58); font-weight: 700; line-height: 1; color: var(--text);
+  touch-action: manipulation; -webkit-tap-highlight-color: transparent;
+}
+.logicgrid .lg-cell:hover { background: color-mix(in srgb, var(--accent) 10%, var(--card)); }
+.logicgrid .lg-cell.no { color: var(--danger); }
+.logicgrid .lg-cell.auto { opacity: .45; }
+.logicgrid .lg-cell.yes { color: var(--ok); background: color-mix(in srgb, var(--ok) 14%, var(--card)); }
+.logicgrid .lg-cell.locked { box-shadow: inset 0 0 0 2px var(--ok); }
+.logicgrid .lg-cell.cur { box-shadow: inset 0 0 0 2px var(--accent); }
+.logicgrid .lg-cell.wrong { background: color-mix(in srgb, var(--danger) 30%, var(--card)); color: var(--danger); opacity: 1; }
+.logicgrid .lg-cell.hinted { animation: lg-pulse 1s ease-in-out 3; box-shadow: inset 0 0 0 3px #f0b429; background: color-mix(in srgb, #f0b429 22%, var(--card)); }
+@keyframes lg-pulse { 50% { box-shadow: inset 0 0 0 6px #f0b429; } }
+.logicgrid.solved .lg-cell.yes { background: color-mix(in srgb, var(--ok) 35%, var(--card)); transition: background .3s; }
+
+/* İpuçları */
+.logicgrid .lg-clues { flex: 1 1 260px; min-width: 0; }
+.logicgrid h3 { margin: 0 0 6px; font-size: 1rem; }
+.logicgrid h3 small { font-weight: 400; color: var(--muted); font-size: .78rem; }
+.logicgrid .lg-clues ol { margin: 0; padding-left: 0; list-style: none; counter-reset: clue; display: flex; flex-direction: column; gap: 6px; }
+.logicgrid .lg-clues li {
+  counter-increment: clue; position: relative; padding: 8px 10px 8px 36px; border-radius: 10px;
+  background: var(--card); border: 1px solid var(--line); cursor: pointer; line-height: 1.4; user-select: none;
+}
+.logicgrid .lg-clues li::before {
+  content: counter(clue); position: absolute; left: 8px; top: 8px; width: 21px; height: 21px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-size: .75rem; font-weight: 700; display: flex; align-items: center; justify-content: center;
+}
+.logicgrid .lg-clues li b { color: var(--accent); }
+.logicgrid .lg-clues li.done { text-decoration: line-through; color: var(--muted); opacity: .7; }
+.logicgrid .lg-clues li.done b { color: var(--muted); }
+.logicgrid .lg-clues li.hinted { border-color: #f0b429; box-shadow: 0 0 0 2px #f0b429; }
+
+/* Cevap tablosu */
+.logicgrid .lg-sumwrap { overflow-x: auto; }
+.logicgrid .lg-summary table { border-collapse: collapse; width: 100%; background: var(--card); font-size: .85rem; }
+.logicgrid .lg-summary th, .logicgrid .lg-summary td { border: 1px solid var(--line); padding: 6px; text-align: center; }
+.logicgrid .lg-summary thead th { background: var(--accent-soft); font-size: .78rem; }
+.logicgrid .lg-summary tbody th { text-align: left; }
+.logicgrid .lg-summary td.empty { color: var(--muted); }
+.logicgrid .lg-summary td.bad { background: color-mix(in srgb, var(--danger) 20%, var(--card)); }
+
+/* Dar ekran: kategori sütununu gizle, simgesi olan etiketlerde yalnızca simge */
+.logicgrid.narrow .lg-rowcat, .logicgrid.narrow .lg-rc { display: none; }
+.logicgrid.narrow .lg-rowhead { font-size: .72rem; padding: 0 2px; }
+.logicgrid.narrow .lg-rowhead .lg-lbl.has-ico .lg-w { display: none; }
+.logicgrid.narrow .lg-rowhead .lg-ico { font-size: .95rem; }
+.logicgrid.narrow .lg-cathead .lg-catname { display: none; }
+.logicgrid.narrow .lg-colhead { font-size: .68rem; }
+.logicgrid.narrow .lg-colhead .lg-ico { font-size: .75rem; }
+.logicgrid.narrow .lg-summary .lg-catname { display: none; }
+.logicgrid.narrow .lg-summary td .lg-ico + .lg-w { display: none; }
+.logicgrid.narrow .lg-summary { font-size: .8rem; }

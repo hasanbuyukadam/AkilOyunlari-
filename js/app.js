@@ -4,6 +4,8 @@ import { getStars, setStars, isUnlocked, solvedCount } from './core/storage.js';
 
 const app = document.getElementById('app');
 let current = null; // aktif oyun örneği (temizlik için)
+let navId = 0; // eski (geç biten) yüklemeler yeni sayfanın üstüne çizmesin
+const stale = (id) => id !== navId;
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 const starText = (n) => '★'.repeat(n) + '☆'.repeat(3 - n);
@@ -17,8 +19,9 @@ export function toast(msg) {
   toastTimer = setTimeout(() => el.classList.remove('show'), 2600);
 }
 
-async function renderHome() {
+async function renderHome(nav) {
   const entries = await loadAvailableGames();
+  if (stale(nav)) return;
   const total = DIFFICULTIES.length * LEVELS_PER_DIFFICULTY;
   const card = ({ game: g }) => {
     const done = DIFFICULTIES.reduce((s, d) => s + solvedCount(g.id, d.id), 0);
@@ -40,8 +43,9 @@ async function renderHome() {
   }).join('');
 }
 
-async function renderLevels(gameId, diffId) {
+async function renderLevels(nav, gameId, diffId) {
   const game = await loadGame(gameId);
+  if (stale(nav)) return;
   if (!game) return renderNotFound();
   const diff = DIFFICULTIES.find((d) => d.id === diffId) ?? DIFFICULTIES[0];
   app.innerHTML = `
@@ -71,8 +75,9 @@ async function renderLevels(gameId, diffId) {
     </ul>`;
 }
 
-async function renderPlay(gameId, diffId, levelNo) {
+async function renderPlay(nav, gameId, diffId, levelNo) {
   const game = await loadGame(gameId);
+  if (stale(nav)) return;
   const diff = DIFFICULTIES.find((d) => d.id === diffId);
   if (!game || !diff || levelNo < 1 || levelNo > LEVELS_PER_DIFFICULTY) return renderNotFound();
   if (!isUnlocked(gameId, diffId, levelNo)) {
@@ -81,6 +86,7 @@ async function renderPlay(gameId, diffId, levelNo) {
     return;
   }
   const levels = await loadLevels(gameId);
+  if (stale(nav)) return;
   const level = levels[diffId][levelNo - 1];
 
   const uses = Object.fromEntries(game.boosters.map((b) => [b.id, b.uses]));
@@ -160,17 +166,18 @@ function renderNotFound() {
 }
 
 async function route() {
+  const nav = ++navId;
   current?.destroy?.();
   current = null;
   document.querySelectorAll('.modal').forEach((m) => m.remove());
   const [gameId, diffId, levelNo] = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
   try {
-    if (!gameId) await renderHome();
-    else if (!levelNo) await renderLevels(gameId, diffId);
-    else await renderPlay(gameId, diffId, Number(levelNo));
+    if (!gameId) await renderHome(nav);
+    else if (!levelNo) await renderLevels(nav, gameId, diffId);
+    else await renderPlay(nav, gameId, diffId, Number(levelNo));
   } catch (err) {
     console.error(err);
-    app.innerHTML = `<p>Bir hata oluştu: ${esc(err.message)}</p>`;
+    if (!stale(nav)) app.innerHTML = `<p>Bir hata oluştu: ${esc(err.message)}</p>`;
   }
   window.scrollTo(0, 0);
 }
