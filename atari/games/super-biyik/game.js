@@ -379,7 +379,7 @@ export default class SuperBiyik {
     if (this.mode !== 'play') return;
 
     // Bayrak
-    if (this.pole && p.x + p.w >= this.pole.x && p.x <= this.pole.x + 2 && p.y + p.h > this.pole.top) this.grabFlag();
+    if (this.pole && p.x + p.w >= this.pole.col * T + 2 && p.x <= this.pole.x + 4 && p.y + p.h > this.pole.top) this.grabFlag();
     // Balta
     if (this.mode === 'play') {
       const cx = Math.floor((p.x + p.w / 2) / T);
