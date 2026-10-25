@@ -1,0 +1,55 @@
+.nlink {
+  width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px;
+  -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
+}
+.nlink .nl-board {
+  width: min(100%, 560px); aspect-ratio: var(--ratio, 1); display: block;
+  background: var(--card); border: 2px solid var(--line); border-radius: 12px;
+  touch-action: none; -webkit-tap-highlight-color: transparent; cursor: pointer;
+}
+.nlink .nl-cell {
+  fill: color-mix(in srgb, var(--text) 5%, var(--card));
+  stroke: var(--line); stroke-width: 0.02; transition: fill .12s;
+}
+.nlink .nl-path {
+  fill: none; stroke-width: 0.3; stroke-linecap: round; stroke-linejoin: round; pointer-events: none;
+}
+.nlink .nl-path.locked { stroke-width: 0.34; filter: drop-shadow(0 0 0.04px var(--text)); }
+.nlink .nl-end { pointer-events: none; }
+.nlink .nl-dot { stroke: color-mix(in srgb, var(--text) 25%, transparent); stroke-width: 0.03; }
+.nlink .nl-end text {
+  font: 800 0.46px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  fill: #fff; text-anchor: middle; dominant-baseline: central;
+  stroke: rgb(0 0 0 / .45); stroke-width: 0.06px; paint-order: stroke;
+}
+.nlink .nl-check { display: none; }
+.nlink .nl-end.done .nl-check { display: inline; }
+.nlink .nl-check circle { fill: var(--ok); stroke: var(--card); stroke-width: 0.04; }
+.nlink .nl-check path { fill: none; stroke: #fff; stroke-width: 0.05; stroke-linecap: round; stroke-linejoin: round; }
+.nlink .nl-hint {
+  fill: none; stroke: #f0b429; stroke-width: 0.1; pointer-events: none;
+  animation: nl-pulse 1s ease-in-out 3;
+}
+.nlink .nl-alt { fill: color-mix(in srgb, #fb8c00 18%, transparent); stroke: #fb8c00; stroke-width: 0.06; stroke-dasharray: 0.12 0.08; pointer-events: none; }
+@keyframes nl-pulse { 50% { stroke-width: 0.18; } }
+.nlink .nl-wrong { stroke: var(--danger); stroke-width: 0.11; stroke-linecap: round; fill: none; pointer-events: none; }
+.nlink .nl-cursor { fill: none; stroke: var(--accent); stroke-width: 0.07; pointer-events: none; }
+.nlink .nl-cursor.drawing { stroke-dasharray: 0.14 0.08; }
+.nlink.solved .nl-board { border-color: var(--ok); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok) 30%, transparent); }
+.nlink .nl-legend {
+  display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; align-items: center; max-width: 560px;
+}
+.nlink .nl-chip {
+  min-width: 34px; padding: 3px 8px; border-radius: 999px; text-align: center; font-weight: 700; font-size: .9rem;
+  border: 2px solid var(--c); color: var(--text); background: var(--card);
+}
+.nlink .nl-chip.done { background: color-mix(in srgb, var(--c) 30%, var(--card)); }
+.nlink .nl-count { width: 100%; text-align: center; color: var(--muted); font-size: .9rem; }
+.nlink .nl-tools { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; }
+.nlink .nl-tools button {
+  padding: 9px 16px; min-height: 44px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--card); color: var(--text); font: inherit; font-weight: 600; cursor: pointer;
+}
+.nlink .nl-tools button:hover { border-color: var(--accent); }
+.nlink .nl-help { margin: 0; max-width: 560px; text-align: center; color: var(--muted); font-size: .85rem; }
+.nlink .nl-wrong-bg { fill: var(--card); stroke: var(--danger); stroke-width: 0.04; pointer-events: none; }
