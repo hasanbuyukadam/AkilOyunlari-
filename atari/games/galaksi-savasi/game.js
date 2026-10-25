@@ -420,6 +420,10 @@ export default class Galaga {
 
     switch (this.phase) {
       case 'intro':
+        if (this.phaseT === 1 && this.stage === 1 && !api.preview) {
+          api.sfx.seq([['C5', 0.12], ['G5', 0.12], ['E5', 0.12], ['C6', 0.12], ['B5', 0.12], ['G5', 0.12], ['A5', 0.12], ['B5', 0.12], ['C6', 0.36]], { vol: 0.08, type: 'square' });
+          api.sfx.seq([['C3', 0.24], ['E3', 0.24], ['G3', 0.24], ['G3', 0.24], ['C3', 0.36]], { vol: 0.1, type: 'triangle' });
+        }
         this.updatePlayer();
         this.updateShots();
         if (this.phaseT > (this.stage === 1 ? 170 : 120)) {

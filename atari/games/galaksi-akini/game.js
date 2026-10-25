@@ -239,6 +239,7 @@ export default class Galaxian {
 
     this.updateConvoy();
     if (this.phase === 'intro') {
+      if (this.phaseT === 1 && !api.preview) api.sfx.seq([['E5', 0.1], ['G5', 0.1], ['B5', 0.1], ['E6', 0.1], ['D6', 0.1], ['B5', 0.1], ['G5', 0.1], ['B5', 0.3]], { vol: 0.08, type: 'triangle' });
       for (const a of this.aliens) if (a.state === 'form') [a.x, a.y] = this.slotPos(a);
       if (this.phaseT > 110) {
         this.phase = 'play';

@@ -420,7 +420,7 @@ export default class Air1942 {
     const s = this.stage;
     return {
       gap: Math.max(55, 130 - s * 10),
-      fire: Math.min(0.022, 0.006 + s * 0.0025),
+      fire: Math.min(0.022, 0.004 + s * 0.0025),
       bsp: Math.min(2.8, 1.5 + s * 0.15),
       sp: Math.min(2.4, 1.5 + s * 0.1),
     };
@@ -766,7 +766,7 @@ export default class Air1942 {
     const x0 = api.rand(40, W - 40);
     for (let i = 0; i < n; i++) {
       let e;
-      const base = { kind: 'small', red, hp: 1, sp: d.sp, si: 0, st: 0, wait: i * 12, squad, flash: 0, shots: api.rand() < 0.5 + this.stage * 0.05 ? 1 + (this.stage > 3 ? 1 : 0) : 0 };
+      const base = { kind: 'small', red, hp: 1, sp: d.sp, si: 0, st: 0, wait: i * 12, squad, flash: 0, shots: api.rand() < 0.3 + this.stage * 0.1 ? 1 + (this.stage > 3 ? 1 : 0) : 0 };
       switch (pat) {
         case 'dive': {
           e = { ...base, x: x0, y: -10, th: 90 * DEG, script: [[60 + api.randInt(0, 20), 0], [45, 4 * side], [200, 0]] };
