@@ -1,0 +1,77 @@
+.maze {
+  width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px;
+  -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
+}
+.maze .mz-task { margin: 0; font-weight: 700; text-align: center; font-size: 1.05rem; }
+.maze .mz-hero { font-size: 1.4rem; vertical-align: -3px; }
+.maze .mz-board {
+  width: min(100%, 560px); display: block; height: auto;
+  background: var(--card); border: 2px solid var(--line); border-radius: 12px;
+  touch-action: none; -webkit-tap-highlight-color: transparent; cursor: pointer;
+}
+.maze .mz-floor { fill: color-mix(in srgb, var(--accent) 4%, var(--card)); }
+.maze .mz-walls {
+  fill: none; stroke: var(--text); stroke-linecap: round; stroke-linejoin: round;
+  vector-effect: non-scaling-stroke; pointer-events: none;
+}
+.maze .mz-startcell { fill: color-mix(in srgb, var(--accent) 16%, transparent); }
+.maze .mz-goalcell { fill: color-mix(in srgb, var(--ok) 22%, transparent); }
+.maze .mz-path {
+  fill: none; stroke: var(--accent); stroke-width: 0.3; stroke-linecap: round; stroke-linejoin: round;
+  opacity: .8; pointer-events: none;
+}
+.maze .mz-path.frozen { stroke: var(--muted); opacity: .35; stroke-width: 0.22; }
+.maze .mz-dead rect { fill: color-mix(in srgb, var(--muted) 38%, transparent); }
+.maze .mz-region rect { fill: color-mix(in srgb, #f08a24 18%, transparent); animation: mz-fade 1s ease-in-out 3; }
+.maze .mz-revline {
+  fill: none; stroke: #f0b429; stroke-width: 0.1; stroke-dasharray: 0.16 0.14; stroke-linecap: round; pointer-events: none;
+}
+.maze .mz-step { fill: #f0b429; animation: mz-pulse 1s ease-in-out 3; }
+.maze .mz-ring {
+  fill: none; stroke: #f0b429; stroke-width: 0.12; animation: mz-ringp 1s ease-in-out 4;
+}
+.maze .mz-arrow { fill: #f08a24; stroke: var(--card); stroke-width: 0.04; }
+@keyframes mz-fade { 50% { opacity: .45; } }
+@keyframes mz-pulse { 50% { opacity: .35; } }
+@keyframes mz-ringp { 50% { stroke-width: 0.2; } }
+.maze .mz-emoji {
+  text-anchor: middle; dominant-baseline: central; pointer-events: none;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+.maze .mz-goal.locked { opacity: .8; }
+.maze .mz-key { animation: mz-key 1.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes mz-key { 50% { transform: scale(1.12); } }
+.maze .mz-heroG { transition: transform .11s linear; pointer-events: none; }
+.maze .mz-heroIn.bump0 { animation: mz-b0 .2s; }
+.maze .mz-heroIn.bump1 { animation: mz-b1 .2s; }
+.maze .mz-heroIn.bump2 { animation: mz-b2 .2s; }
+.maze .mz-heroIn.bump3 { animation: mz-b3 .2s; }
+@keyframes mz-b0 { 50% { transform: translate(0.15px, 0); } }
+@keyframes mz-b1 { 50% { transform: translate(0, 0.15px); } }
+@keyframes mz-b2 { 50% { transform: translate(-0.15px, 0); } }
+@keyframes mz-b3 { 50% { transform: translate(0, -0.15px); } }
+.maze.solved .mz-board { border-color: var(--ok); }
+.maze.solved .mz-path { stroke: var(--ok); }
+.maze.solved .mz-heroIn { animation: mz-hop .5s ease-in-out 2; }
+@keyframes mz-hop { 50% { transform: translate(0, -0.25px) scale(1.15); } }
+
+.maze .mz-status { margin: 0; color: var(--muted); font-size: .9rem; min-height: 1.2em; }
+.maze .mz-controls { display: flex; gap: 18px; align-items: center; justify-content: center; flex-wrap: wrap; }
+.maze .mz-pad {
+  display: grid; grid-template-columns: repeat(3, 54px); grid-template-rows: repeat(3, 46px); gap: 4px;
+  grid-template-areas: ". up ." "left . right" ". down .";
+}
+.maze .mz-up { grid-area: up; }
+.maze .mz-left { grid-area: left; }
+.maze .mz-right { grid-area: right; }
+.maze .mz-down { grid-area: down; }
+.maze .mz-pad button, .maze .mz-tools button {
+  border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--text);
+  font: inherit; font-weight: 600; cursor: pointer; touch-action: manipulation;
+}
+.maze .mz-pad button { font-size: 1.15rem; padding: 0; }
+.maze .mz-pad button:active { background: var(--accent-soft); border-color: var(--accent); }
+.maze .mz-tools { display: flex; flex-direction: column; gap: 8px; }
+.maze .mz-tools button { padding: 9px 14px; min-height: 44px; }
+.maze .mz-pad button:hover, .maze .mz-tools button:hover { border-color: var(--accent); }
+.maze .mz-help { margin: 0; max-width: 560px; text-align: center; color: var(--muted); font-size: .85rem; }
