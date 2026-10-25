@@ -368,7 +368,11 @@ export default class SpaceInvaders {
     this.ticks++;
     const api = this.api;
     if (this.over) {
-      if (--this.over === 0) api.gameOver();
+      if (this.over > 1) this.over--;
+      else if (!this.ended) {
+        this.ended = true;
+        api.gameOver();
+      }
       this.updateBooms();
       return;
     }
