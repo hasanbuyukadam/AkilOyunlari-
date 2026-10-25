@@ -1,0 +1,111 @@
+.cipher-game {
+  --avail: min(calc(100vw - 40px), 720px);
+  --tw: min(46px, calc((var(--avail) - (var(--maxlen) - 1) * 3px) / var(--maxlen)));
+  width: 100%; max-width: 760px; margin: 0 auto;
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+}
+.cipher-game .cp-task {
+  margin: 0; width: 100%; padding: 10px 14px; border-radius: 12px;
+  background: var(--accent-soft); color: var(--text); font-size: .98rem; line-height: 1.45;
+}
+
+/* ---------- Bilgi paneli ---------- */
+.cipher-game .cp-panel {
+  width: 100%; box-sizing: border-box; padding: 10px 12px 12px; border: 1px solid var(--line);
+  border-radius: 12px; background: var(--card);
+}
+.cipher-game .cp-panel h3 { margin: 4px 0 8px; font-size: .95rem; color: var(--muted); font-weight: 600; }
+.cipher-game .cp-panel h3 + * { margin-bottom: 6px; }
+.cipher-game .cp-keys { display: flex; flex-wrap: wrap; gap: 6px; }
+.cipher-game .cp-k {
+  display: inline-flex; align-items: center; gap: 4px; padding: 3px 8px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--card); font-size: 1.05rem; line-height: 1.4;
+}
+.cipher-game .cp-k i { font-style: normal; font-size: 1.2rem; }
+.cipher-game .cp-k b::before { content: '= '; color: var(--muted); font-weight: 400; }
+.cipher-game .cp-table .cp-k i { font-size: 1rem; font-weight: 700; color: var(--accent); min-width: 1.3em; text-align: right; }
+.cipher-game .cp-strip { display: grid; grid-template-columns: repeat(auto-fill, minmax(32px, 1fr)); gap: 4px; }
+.cipher-game .cp-a {
+  display: flex; flex-direction: column; align-items: center; padding: 3px 0; border-radius: 6px;
+  border: 1px solid var(--line); line-height: 1.15;
+}
+.cipher-game .cp-a b { font-size: 1rem; }
+.cipher-game .cp-a small { font-size: .72rem; color: var(--accent); font-weight: 700; }
+.cipher-game .cp-a.faint small { color: var(--muted); font-weight: 400; }
+.cipher-game .cp-note { margin: 6px 0 0; font-size: .85rem; color: var(--muted); }
+.cipher-game .cp-examples, .cipher-game .cp-box, .cipher-game .cp-eqs { display: flex; flex-wrap: wrap; gap: 8px; }
+.cipher-game .cp-ex { display: inline-flex; gap: 2px; padding: 4px 6px; border: 1px solid var(--line); border-radius: 8px; }
+.cipher-game .cp-ex span { display: flex; flex-direction: column; align-items: center; min-width: 24px; line-height: 1.25; }
+.cipher-game .cp-ex i { font-style: normal; font-size: 1.15rem; }
+.cipher-game .cp-ex b { font-size: .95rem; }
+.cipher-game .cp-box span {
+  padding: 4px 10px; border-radius: 999px; border: 1px solid var(--line); font-weight: 600; letter-spacing: .04em; font-size: .95rem;
+}
+.cipher-game .cp-eq {
+  padding: 6px 12px; border-radius: 10px; border: 1px solid var(--line); font-size: 1.2rem; white-space: nowrap;
+}
+.cipher-game .hi {
+  background: color-mix(in srgb, #f0b429 28%, var(--card)) !important; border-color: #f0b429 !important;
+  box-shadow: 0 0 0 2px #f0b429;
+}
+
+/* ---------- Mesaj ---------- */
+.cipher-game .cp-msg {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 16px 18px; width: 100%;
+  padding: 14px 6px; box-sizing: border-box; border-radius: 14px; background: var(--card); border: 2px dashed var(--line);
+}
+.cipher-game .cp-word { display: inline-flex; gap: 3px; align-items: flex-end; border-radius: 8px; padding: 2px; }
+.cipher-game .cp-lit { font-size: 1.4rem; font-weight: 700; padding-bottom: 6px; color: var(--muted); }
+.cipher-game .cp-tile {
+  width: var(--tw); padding: 0; border: 0; background: none; color: var(--text); font: inherit;
+  display: flex; flex-direction: column; align-items: center; gap: 3px; cursor: pointer;
+  touch-action: manipulation; -webkit-tap-highlight-color: transparent;
+}
+.cipher-game .cp-sym {
+  width: 100%; height: calc(var(--tw) * .95); display: flex; align-items: center; justify-content: center;
+  font-size: calc(var(--tw) * .62); border-radius: 8px 8px 0 0; background: color-mix(in srgb, var(--accent) 8%, var(--card));
+  line-height: 1;
+}
+.cipher-game .cp-num .cp-sym { font-size: calc(var(--tw) * .45); font-weight: 700; color: var(--accent); }
+.cipher-game .cp-lettersym .cp-sym { font-size: calc(var(--tw) * .5); font-weight: 700; color: var(--muted); }
+.cipher-game .cp-let {
+  width: 100%; height: calc(var(--tw) * 1.05); display: flex; align-items: center; justify-content: center;
+  font-size: calc(var(--tw) * .6); font-weight: 700; color: var(--accent);
+  border: 2px solid var(--line); border-radius: 0 0 8px 8px; background: var(--card); box-sizing: border-box;
+}
+.cipher-game .cp-tile.same .cp-let { border-color: var(--accent); background: var(--accent-soft); }
+.cipher-game .cp-tile.sel .cp-let { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 30%, var(--card)); box-shadow: 0 0 0 2px var(--accent); }
+.cipher-game .cp-tile.given .cp-let { color: var(--text); }
+.cipher-game .cp-tile.revealed .cp-let { color: var(--ok); }
+.cipher-game .cp-tile.conflict .cp-let { color: var(--danger); }
+.cipher-game .cp-tile.wrong .cp-let { background: color-mix(in srgb, var(--danger) 25%, var(--card)); border-color: var(--danger); color: var(--danger); }
+.cipher-game .cp-tile.hinted .cp-let { border-color: #f0b429; animation: cipher-pulse 1s ease-in-out 3; }
+@keyframes cipher-pulse { 50% { box-shadow: 0 0 0 5px #f0b429; } }
+.cipher-game .cp-word.hi { box-shadow: 0 0 0 2px #f0b429; }
+.cipher-game.solved .cp-let { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 18%, var(--card)); color: var(--text); transition: background .3s; }
+
+.cipher-game .cp-done {
+  display: flex; flex-direction: column; align-items: center; gap: 4px; text-align: center; width: 100%;
+  padding: 12px; border-radius: 12px; background: color-mix(in srgb, var(--ok) 15%, var(--card)); font-size: 1.1rem;
+}
+.cipher-game .cp-done[hidden] { display: none; }
+.cipher-game .cp-done b { font-size: 1.2rem; }
+
+/* ---------- Klavye ---------- */
+.cipher-game .cp-kbd { display: grid; grid-template-columns: repeat(10, 1fr); gap: 6px; width: 100%; max-width: 560px; }
+.cipher-game .cp-kbd button {
+  min-height: 46px; padding: 0; border-radius: 8px; border: 1px solid var(--line); background: var(--card);
+  color: var(--text); font: inherit; font-size: 1.15rem; font-weight: 600; cursor: pointer; touch-action: manipulation;
+}
+.cipher-game .cp-kbd button:hover { border-color: var(--accent); }
+.cipher-game .cp-kbd button:active { background: var(--accent-soft); }
+.cipher-game .cp-kbd button.used { color: var(--muted); background: color-mix(in srgb, var(--line) 35%, var(--card)); }
+.cipher-game .cp-kbd .cp-erase { grid-column: span 1; color: var(--danger); }
+.cipher-game.solved .cp-kbd { opacity: .4; pointer-events: none; }
+
+@media (max-width: 480px) {
+  .cipher-game .cp-kbd { grid-template-columns: repeat(8, 1fr); gap: 5px; }
+  .cipher-game .cp-kbd .cp-erase { grid-column: span 2; }
+  .cipher-game .cp-eq { font-size: 1.05rem; padding: 5px 9px; }
+  .cipher-game .cp-msg { gap: 14px 12px; }
+}
