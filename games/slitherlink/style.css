@@ -1,0 +1,45 @@
+.slither { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.slither .sl-board {
+  width: min(100%, calc(var(--cols) * 52px + 52px), 600px); height: auto; display: block;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
+}
+.slither .sl-cell { fill: transparent; }
+.slither .sl-cell.hinted { fill: color-mix(in srgb, #f0b429 28%, transparent); }
+.slither .sl-cell.inside { fill: var(--accent-soft); transition: fill .4s; }
+.slither .sl-clue {
+  fill: var(--text); font: 600 22px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  text-anchor: middle; dominant-baseline: central; pointer-events: none;
+}
+.slither .sl-clue.ok { fill: var(--ok); }
+.slither .sl-clue.bad { fill: var(--danger); }
+.slither .sl-dot { fill: var(--text); pointer-events: none; }
+.slither .sl-dot.bad { fill: var(--danger); r: 5.5px; }
+.slither .sl-dot.hinted { fill: #f0b429; r: 6px; }
+.slither .sl-edge { pointer-events: none; }
+.slither .sl-ln { stroke: var(--accent); stroke-width: 6; stroke-linecap: round; opacity: 0; }
+.slither .sl-glow { stroke: #f0b429; stroke-width: 14; stroke-linecap: round; opacity: 0; }
+.slither .sl-x { stroke: var(--muted); stroke-width: 2.4; stroke-linecap: round; fill: none; opacity: 0; }
+.slither .sl-edge.on .sl-ln { opacity: 1; }
+.slither .sl-edge.off .sl-x { opacity: 1; }
+.slither .sl-edge.locked .sl-ln { stroke: var(--ok); }
+.slither .sl-edge.wrong .sl-ln { stroke: var(--danger); }
+.slither .sl-edge.wrong .sl-x { stroke: var(--danger); stroke-width: 3.4; }
+.slither .sl-edge.hint-line .sl-glow,
+.slither .sl-edge.hint-cross .sl-glow { opacity: .55; animation: sl-pulse 1s ease-in-out 3; }
+.slither .sl-edge.hint-cross .sl-x { opacity: 1; stroke: #c98a00; stroke-width: 3.4; }
+.slither .sl-edge.flash .sl-glow { opacity: .5; stroke: var(--ok); animation: sl-pulse .8s ease-in-out 2; }
+@keyframes sl-pulse { 50% { opacity: .15; } }
+.slither .sl-hit { fill: transparent; cursor: pointer; }
+@media (hover: hover) {
+  .slither .sl-hit:hover { fill: color-mix(in srgb, var(--accent) 12%, transparent); }
+}
+.slither.solved .sl-ln { stroke: var(--ok); }
+.slither.solved .sl-hit { cursor: default; }
+.slither .sl-tools { display: flex; gap: 8px; }
+.slither .sl-tools button {
+  padding: 9px 14px; min-height: 40px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--card); color: var(--text); font: inherit; font-weight: 600; cursor: pointer;
+}
+.slither .sl-tools button:active { background: var(--accent-soft); }
+.slither .sl-help { margin: 0; font-size: .82rem; color: var(--muted); text-align: center; }
