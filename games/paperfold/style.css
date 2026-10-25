@@ -1,0 +1,103 @@
+.pf-game {
+  /* kâğıt her temada açık renklidir; üzerindeki çizgiler bu yüzden sabit koyu tonda */
+  --pf-paper: color-mix(in srgb, #fff3cc 88%, var(--card));
+  --pf-back: color-mix(in srgb, #e6bd5e 85%, var(--card));
+  --pf-stack: color-mix(in srgb, #f6d97f 85%, var(--card));
+  --pf-ink: #3d3526;
+  --pf-gridc: rgb(90 70 30 / .2);
+  width: 100%; max-width: 640px; display: flex; flex-direction: column; align-items: stretch; gap: 10px;
+}
+.pf-game .pf-dots { display: flex; justify-content: center; gap: 8px; }
+.pf-game .pf-dot { width: 14px; height: 14px; border-radius: 50%; background: var(--line); transition: background .3s, transform .3s; }
+.pf-game .pf-dot.cur { background: var(--accent); transform: scale(1.25); }
+.pf-game .pf-dot.done { background: var(--ok); }
+.pf-game .pf-q { display: flex; flex-direction: column; gap: 12px; }
+.pf-game .pf-title { margin: 0; text-align: center; font-size: 1.08rem; line-height: 1.4; }
+
+/* SVG kâğıt */
+.pf-game .pf-svg { display: block; width: 100%; height: auto; overflow: visible; }
+.pf-game .pf-paper { fill: var(--pf-paper); }
+.pf-game .pf-paper.pf-stack { fill: var(--pf-stack); }
+.pf-game .pf-flap.back .pf-paper { fill: var(--pf-back); }
+.pf-game .pf-svg * { vector-effect: non-scaling-stroke; }
+.pf-game .pf-edge { fill: none; stroke: var(--pf-ink); stroke-width: 2px; stroke-linejoin: round; }
+.pf-game .pf-grid { fill: none; stroke: var(--pf-gridc); stroke-width: 1px; }
+.pf-game .pf-ghost { fill: none; stroke: var(--muted); stroke-width: 1.2px; stroke-dasharray: 4 3; opacity: .8; }
+.pf-game .pf-holes > * { fill: color-mix(in srgb, var(--bg) 85%, var(--text)); stroke: var(--pf-ink); stroke-width: 1.5px; }
+.pf-game .pf-flapzone { fill: var(--accent); opacity: .2; }
+.pf-game .pf-foldline { stroke: #2f6fe4; stroke-width: 3px; stroke-dasharray: 7 5; stroke-linecap: round; }
+.pf-game .pf-arrow { fill: none; stroke: #e0483f; stroke-width: 3px; stroke-linecap: round; }
+.pf-game .pf-arrowhead { fill: #e0483f; }
+
+/* Katlama adımları */
+.pf-game .pf-steps { display: flex; gap: 8px; align-items: stretch; }
+.pf-game .pf-folds { display: grid; grid-template-columns: repeat(var(--k), minmax(0, 1fr)); gap: 8px; flex: var(--k) 1 0; min-width: 0; }
+.pf-game .pf-steps > .pf-punch { flex: 1 1 0; min-width: 0; }
+.pf-game .pf-panel {
+  margin: 0; padding: 6px 6px 4px; background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 0;
+}
+.pf-game .pf-panel figcaption { font-size: .85rem; color: var(--muted); font-weight: 600; }
+.pf-game .pf-panel.pf-punch { border-color: var(--accent); }
+@media (max-width: 560px) {
+  /* telefonda: katlamalar bir sırada, delikli katlı kâğıt altında büyük */
+  .pf-game .pf-steps:not(.k1) { flex-direction: column; align-items: center; }
+  .pf-game .pf-steps:not(.k1) .pf-folds { width: 100%; max-width: calc(var(--k) * 170px); }
+  .pf-game .pf-steps:not(.k1) > .pf-punch { width: min(62vw, 240px); flex: none; }
+}
+
+/* Seçenekler */
+.pf-game .pf-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; width: 100%; max-width: 480px; align-self: center; }
+.pf-game .pf-opt {
+  position: relative; padding: 10px; border-radius: 14px; border: 3px solid var(--line); background: var(--card);
+  cursor: pointer; font: inherit; color: var(--text); min-width: 0; touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent; transition: border-color .2s, opacity .3s, transform .2s;
+}
+.pf-game .pf-opt:hover:not(:disabled) { border-color: var(--accent); }
+.pf-game .pf-opt:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.pf-game .pf-opt:disabled { cursor: default; }
+.pf-game .pf-letter {
+  position: absolute; top: 6px; left: 6px; z-index: 1; width: 26px; height: 26px; border-radius: 50%;
+  background: var(--accent); color: #fff; font-weight: 700; font-size: .9rem; display: flex; align-items: center; justify-content: center;
+}
+.pf-game .pf-opt.ok { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 14%, var(--card)); }
+.pf-game .pf-opt.ok .pf-letter { background: var(--ok); }
+.pf-game .pf-opt.wrong { border-color: var(--danger); opacity: .75; }
+.pf-game .pf-opt.wrong .pf-letter { background: var(--danger); }
+.pf-game .pf-opt.removed { opacity: .18; filter: grayscale(1); }
+.pf-game .pf-opt.dim { opacity: .4; }
+.pf-game .pf-opt.shake { animation: pf-shake .45s; }
+@keyframes pf-shake { 20%, 60% { transform: translateX(-7px); } 40%, 80% { transform: translateX(7px); } }
+
+/* Ters sorular */
+.pf-game .pf-target {
+  align-self: center; width: min(62vw, 240px); padding: 8px; background: var(--card);
+  border: 2px solid var(--accent); border-radius: 14px;
+}
+.pf-game .pf-options.pf-rev { grid-template-columns: 1fr; max-width: 520px; }
+.pf-game .pf-card { display: flex; flex-direction: column; align-items: stretch; gap: 6px; padding: 10px 10px 8px 38px; }
+.pf-game .pf-card .pf-letter { top: 50%; transform: translateY(-50%); left: 8px; }
+.pf-game .pf-mini { display: flex; align-items: center; gap: 4px; }
+.pf-game .pf-mini .pf-panel { flex: 1; padding: 3px; border-radius: 8px; }
+.pf-game .pf-then { color: var(--muted); font-weight: 700; font-size: 1.2rem; }
+.pf-game .pf-would { display: flex; align-items: center; gap: 8px; font-size: .85rem; color: var(--danger); font-weight: 600; }
+.pf-game .pf-would .pf-svg { width: 84px; }
+
+/* Adım adım ve açıklama */
+.pf-game .pf-peek, .pf-game .pf-explain {
+  background: var(--card); border: 2px dashed var(--accent); border-radius: 14px; padding: 10px;
+  display: flex; flex-direction: column; align-items: center; gap: 6px;
+}
+.pf-game .pf-peek[hidden] { display: none; }
+.pf-game .pf-peek-title { margin: 0; font-weight: 600; text-align: center; }
+.pf-game .pf-peek-svg, .pf-game .pf-anim { width: min(70vw, 240px); }
+.pf-game .pf-explain { border-style: solid; border-color: var(--ok); }
+.pf-game .pf-good, .pf-game .pf-bad { margin: 0; line-height: 1.45; text-align: center; }
+.pf-game .pf-good b { color: var(--ok); }
+.pf-game .pf-bad b { color: var(--danger); }
+.pf-game .pf-anim-cap { margin: 0; min-height: 1.3em; color: var(--muted); font-weight: 600; }
+.pf-game .pf-actions { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.pf-game .pf-actions .btn { font: inherit; font-weight: 600; cursor: pointer; min-height: 46px; padding: 10px 18px; }
+@media (prefers-reduced-motion: reduce) {
+  .pf-game .pf-opt.shake { animation: none; }
+}
