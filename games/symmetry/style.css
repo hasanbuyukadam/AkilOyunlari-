@@ -1,0 +1,85 @@
+.symm {
+  --axis: #ff3d7f;
+  --ink-ring: rgb(0 0 0 / .12);
+  --board: min(calc(100vw - 32px), 460px, max(280px, calc(100vh - 330px)));
+  --cell: calc(var(--board) / var(--n));
+  width: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px;
+}
+.symm .sy-banner {
+  display: flex; gap: 8px; align-items: flex-start; margin: 0; max-width: 520px; width: 100%;
+  padding: 8px 12px; border-radius: 12px; background: var(--accent-soft); color: var(--text); font-size: .92rem; line-height: 1.35;
+}
+.symm .sy-b-icon { font-size: 1.2rem; line-height: 1.1; }
+.symm .sy-wrap { position: relative; width: var(--board); aspect-ratio: 1; }
+.symm .sy-board {
+  display: grid; grid-template-columns: repeat(var(--n), 1fr); grid-template-rows: repeat(var(--n), 1fr);
+  width: 100%; height: 100%; gap: 1px; background: var(--line);
+  border: 2px solid var(--text); border-radius: 8px; overflow: hidden;
+  touch-action: none; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none; -webkit-tap-highlight-color: transparent;
+}
+.symm .sy-cell { position: relative; background: var(--card); min-width: 0; min-height: 0; }
+.symm .sy-cell.r-tgt { background: color-mix(in srgb, var(--accent) 13%, var(--card)); cursor: pointer; }
+.symm .sy-cell.r-out {
+  background: repeating-linear-gradient(45deg, var(--card) 0 4px, color-mix(in srgb, var(--muted) 22%, var(--card)) 4px 6px);
+}
+.symm .sy-cell.on { background: var(--fill); box-shadow: inset 0 0 0 1px rgb(0 0 0 / .12); }
+/* Siyah kareler koyu temada da seçilsin */
+.symm .sy-cell.ink { box-shadow: inset 0 0 0 2px var(--ink-ring); }
+@media (prefers-color-scheme: dark) { .symm { --ink-ring: rgb(255 255 255 / .5); } }
+/* Verilen (kilitli) hedef kareler: küçük beyaz nokta */
+.symm .sy-cell.locked::before {
+  content: ''; position: absolute; left: 50%; top: 50%; width: 22%; height: 22%; transform: translate(-50%, -50%);
+  border-radius: 50%; background: rgb(255 255 255 / .75); box-shadow: 0 0 0 1px rgb(0 0 0 / .15);
+}
+/* En kolay levellerde silik "hayalet" önizleme */
+.symm .sy-board.ghosty .sy-cell.r-tgt:not(.on)::before {
+  content: ''; position: absolute; inset: 26%; border-radius: 4px; background: var(--ghost, transparent); opacity: .35;
+}
+.symm .sy-cell.twin, .symm .sy-cell.twin-self { box-shadow: inset 0 0 0 3px var(--axis); z-index: 1; }
+.symm .sy-cell.cursor { box-shadow: inset 0 0 0 3px var(--accent); z-index: 2; }
+.symm .sy-cell.wrong { box-shadow: inset 0 0 0 3px var(--danger); }
+.symm .sy-cell.wrong::after {
+  content: '✕'; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  color: #fff; font-weight: 800; font-size: calc(var(--cell) * .55); text-shadow: 0 0 3px var(--danger), 0 0 1px #000;
+}
+.symm .sy-cell.h-path:not(.on) { background: color-mix(in srgb, #f0b429 30%, var(--card)); }
+.symm .sy-cell.h-path.on { box-shadow: inset 0 0 0 3px color-mix(in srgb, #f0b429 80%, transparent); }
+.symm .sy-cell.h-mid { box-shadow: inset 0 0 0 3px #f0b429; }
+.symm .sy-cell.h-src { box-shadow: inset 0 0 0 4px var(--accent), inset 0 0 0 6px var(--card); z-index: 2; }
+.symm .sy-cell.h-target { box-shadow: inset 0 0 0 4px #f0b429, inset 0 0 0 6px var(--text); z-index: 3; animation: sy-pulse 1s ease-in-out 3; }
+@keyframes sy-pulse { 50% { box-shadow: inset 0 0 0 6px #f0b429, inset 0 0 0 8px var(--text); } }
+.symm .sy-cell[data-label]::after {
+  content: attr(data-label); position: absolute; right: 1px; bottom: 0; font-size: max(10px, calc(var(--cell) * .38)); line-height: 1;
+  font-weight: 800; color: var(--text); text-shadow: 0 0 2px var(--card), 0 0 2px var(--card), 0 0 3px var(--card);
+}
+.symm .sy-cell.flash { animation: sy-flash .8s ease-out; }
+@keyframes sy-flash { 0% { transform: scale(.4); } 70% { transform: scale(1.12); } 100% { transform: scale(1); } }
+
+.symm .sy-axis { position: absolute; inset: 2px; width: calc(100% - 4px); height: calc(100% - 4px); pointer-events: none; overflow: visible; }
+.symm .sy-axis line { stroke: var(--axis); stroke-width: 4; stroke-dasharray: 9 6; stroke-linecap: round; opacity: .9; }
+.symm .sy-axis .sy-rot { fill: none; stroke: var(--axis); stroke-width: 3.5; opacity: .9; }
+.symm .sy-axis .sy-rot-head, .symm .sy-axis .sy-center { fill: var(--axis); }
+.symm .sy-axis .sy-hintline line { stroke: #f0b429; stroke-width: 3; stroke-dasharray: 2 5; stroke-linecap: round; opacity: 1; }
+.symm .sy-board.solved, .symm.solved .sy-board { border-color: var(--ok); }
+.symm.solved .sy-axis { opacity: .35; transition: opacity .4s; }
+.symm.solved .sy-cell.r-tgt:not(.on) { background: var(--card); transition: background .4s; }
+
+.symm .sy-palette { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; max-width: 520px; }
+.symm .sy-sw, .symm .sy-undo {
+  display: flex; flex-direction: column; align-items: center; gap: 2px; min-width: 60px; min-height: 58px; padding: 6px 6px 4px;
+  border: 2px solid var(--line); border-radius: 12px; background: var(--card); color: var(--text); font: inherit; cursor: pointer;
+  touch-action: manipulation;
+}
+.symm .sy-sw i {
+  display: block; width: 30px; height: 30px; border-radius: 8px; background: var(--sw); font-style: normal; font-size: 1.3rem; line-height: 30px;
+  box-shadow: inset 0 0 0 1px rgb(0 0 0 / .15);
+}
+.symm .sy-sw.ink i { box-shadow: inset 0 0 0 2px var(--ink-ring); }
+.symm .sy-eraser i, .symm .sy-undo i { background: none; box-shadow: none; font-style: normal; font-size: 1.3rem; line-height: 30px; height: 30px; }
+.symm .sy-sw span, .symm .sy-undo span { font-size: .72rem; font-weight: 600; white-space: nowrap; }
+.symm .sy-sw.on { border-color: var(--accent); background: var(--accent-soft); box-shadow: 0 0 0 2px var(--accent); }
+.symm .sy-undo:disabled { opacity: .45; cursor: default; }
+@media (max-width: 480px) {
+  .symm .sy-sw, .symm .sy-undo { min-width: 52px; }
+  .symm .sy-banner { font-size: .86rem; }
+}
