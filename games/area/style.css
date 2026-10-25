@@ -2,9 +2,8 @@
   --fa: #4f9dea; --fb: #f09a3e; --oa: #1f5fa8; --ob: #b45f0d;
   width: 100%; max-width: 560px; display: flex; flex-direction: column; align-items: center; gap: 10px;
 }
-@media (prefers-color-scheme: dark) {
-  .area-game { --fa: #3a78bd; --fb: #c27a2c; --oa: #9cc8ff; --ob: #ffc48a; }
-}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .area-game { --fa: #3a78bd; --fb: #c27a2c; --oa: #9cc8ff; --ob: #ffc48a; } }
+:root[data-theme="dark"] .area-game { --fa: #3a78bd; --fb: #c27a2c; --oa: #9cc8ff; --ob: #ffc48a; }
 .area-game .area-top { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .area-game .area-dots { display: flex; gap: 8px; }
 .area-game .dot { width: 16px; height: 16px; border-radius: 50%; background: var(--line); transition: background .3s, transform .3s; }

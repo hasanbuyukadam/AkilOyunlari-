@@ -25,7 +25,8 @@
 .symm .sy-cell.on { background: var(--fill); box-shadow: inset 0 0 0 1px rgb(0 0 0 / .12); }
 /* Siyah kareler koyu temada da seçilsin */
 .symm .sy-cell.ink { box-shadow: inset 0 0 0 2px var(--ink-ring); }
-@media (prefers-color-scheme: dark) { .symm { --ink-ring: rgb(255 255 255 / .5); } }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .symm { --ink-ring: rgb(255 255 255 / .5); } }
+:root[data-theme="dark"] .symm { --ink-ring: rgb(255 255 255 / .5); }
 /* Verilen (kilitli) hedef kareler: küçük beyaz nokta */
 .symm .sy-cell.locked::before {
   content: ''; position: absolute; left: 50%; top: 50%; width: 22%; height: 22%; transform: translate(-50%, -50%);

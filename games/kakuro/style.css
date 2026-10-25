@@ -9,9 +9,8 @@
   --cell: calc(var(--board) / var(--s));
   width: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px;
 }
-@media (prefers-color-scheme: dark) {
-  .kakuro-game { --kk-black: #07080b; --kk-black-line: #3a4050; --kk-clue: #e8eaf0; --kk-white: #2c3140; }
-}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kakuro-game { --kk-black: #07080b; --kk-black-line: #3a4050; --kk-clue: #e8eaf0; --kk-white: #2c3140; } }
+:root[data-theme="dark"] .kakuro-game { --kk-black: #07080b; --kk-black-line: #3a4050; --kk-clue: #e8eaf0; --kk-white: #2c3140; }
 .kakuro-game.s5 { --bw: 320px; }
 .kakuro-game.s6 { --bw: 360px; }
 .kakuro-game.s7 { --bw: 400px; }
