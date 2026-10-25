@@ -22,10 +22,10 @@ for (const diff of DIFFICULTIES) {
     let level, salt = 0;
     do {
       level = logic.generateLevel(createRng(`${gameId}:${seed}:${diff.id}:${i}:${salt++}`), diff.id, i, LEVELS_PER_DIFFICULTY);
-    } while (seen.has(level.puzzle));
+    } while (seen.has(JSON.stringify(level.puzzle)));
     const err = logic.verifyLevel(level);
     if (err) throw new Error(`${diff.id} #${i + 1} doğrulanamadı: ${err}`);
-    seen.add(level.puzzle);
+    seen.add(JSON.stringify(level.puzzle));
     out[diff.id].push(level);
     console.log(`${gameId} ${diff.name.padEnd(5)} #${String(i + 1).padStart(2)} ✓ tek çözüm (${Date.now() - t0} ms)`);
   }
