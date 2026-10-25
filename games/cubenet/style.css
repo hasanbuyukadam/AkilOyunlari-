@@ -1,0 +1,91 @@
+.cubenet-game {
+  width: 100%; max-width: 640px; display: flex; flex-direction: column; align-items: center; gap: 12px;
+  color: var(--text);
+}
+.cubenet-game .cn-dots { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; justify-content: center; }
+.cubenet-game .cn-dots span {
+  width: 14px; height: 14px; border-radius: 50%; background: var(--line); display: inline-block; transition: background .3s, transform .3s;
+}
+.cubenet-game .cn-dots span.cur { background: var(--accent); transform: scale(1.2); }
+.cubenet-game .cn-dots span.ok { background: var(--ok); }
+.cubenet-game .cn-dots b { margin-left: 8px; font-size: .9rem; color: var(--muted); font-weight: 600; }
+.cubenet-game .cn-prompt { font-size: 1.15rem; font-weight: 700; text-align: center; margin: 0; line-height: 1.35; }
+.cubenet-game .cn-note { color: var(--muted); text-align: center; margin: 0; }
+.cubenet-game .cn-stim {
+  width: 100%; display: flex; justify-content: center; align-items: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 8px;
+}
+.cubenet-game .cn-stim.t-isnet { background: transparent; border: 0; padding: 0; }
+.cubenet-game .cn-svg { display: block; max-width: 100%; height: auto; overflow: visible; }
+.cubenet-game .cn-two { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.cubenet-game .cn-two figure { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.cubenet-game .cn-two figcaption { color: var(--muted); font-size: .85rem; font-weight: 600; }
+
+.cubenet-game .cn-opts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; width: 100%; }
+.cubenet-game .cn-opts.t-opp, .cubenet-game .cn-opts.t-twoview { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.cubenet-game .cn-opt {
+  position: relative; display: flex; align-items: center; justify-content: center; min-height: 92px; padding: 18px 8px 10px;
+  background: var(--card); border: 2px solid var(--line); border-radius: 14px; cursor: pointer; color: var(--text);
+  font: inherit; touch-action: manipulation; -webkit-tap-highlight-color: transparent; transition: border-color .15s, background .2s, opacity .3s;
+}
+.cubenet-game .cn-opts.t-opp .cn-opt, .cubenet-game .cn-opts.t-twoview .cn-opt { min-height: 84px; padding: 22px 4px 8px; }
+.cubenet-game .cn-opt:hover:not(:disabled) { border-color: var(--accent); background: color-mix(in srgb, var(--accent) 6%, var(--card)); }
+.cubenet-game .cn-opt:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.cubenet-game .cn-opt:disabled { cursor: default; }
+.cubenet-game .cn-letter {
+  position: absolute; top: 6px; left: 8px; width: 24px; height: 24px; border-radius: 50%;
+  background: var(--accent-soft); color: var(--accent); font-weight: 800; font-size: .85rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.cubenet-game .cn-opt.wrong { border-color: var(--danger); opacity: .45; }
+.cubenet-game .cn-opt.wrong .cn-letter { background: var(--danger); color: #fff; }
+.cubenet-game .cn-opt.removed { opacity: .12; filter: grayscale(1); }
+.cubenet-game .cn-opt.right { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 16%, var(--card)); opacity: 1; }
+.cubenet-game .cn-opt.right .cn-letter { background: var(--ok); color: #fff; }
+.cubenet-game .cn-opt.shake { animation: cn-shake .45s ease; }
+@keyframes cn-shake { 20%, 60% { transform: translateX(-7px); } 40%, 80% { transform: translateX(7px); } }
+.cubenet-game .cn-shape-cell { fill: color-mix(in srgb, var(--accent) 30%, var(--card)); stroke: var(--text); stroke-width: 5; }
+
+.cubenet-game .cn-feedback { width: 100%; }
+.cubenet-game .cn-try { text-align: center; color: var(--danger); font-weight: 700; margin: 0; }
+.cubenet-game .cn-explain {
+  background: color-mix(in srgb, var(--ok) 10%, var(--card)); border: 2px solid var(--ok); border-radius: var(--radius);
+  padding: 12px 14px; line-height: 1.5; display: flex; flex-direction: column; gap: 6px;
+}
+.cubenet-game .cn-explain p { margin: 0; }
+.cubenet-game .cn-praise { font-weight: 800; font-size: 1.1rem; color: var(--ok); }
+.cubenet-game .cn-next { align-self: center; cursor: pointer; font: inherit; font-weight: 700; min-height: 46px; padding: 10px 26px; margin-top: 4px; }
+.cubenet-game.solved .cn-explain { border-color: #f0b429; }
+
+/* Katla: CSS 3B katlama */
+.cubenet-game .cn-foldbox {
+  width: 100%; background: var(--card); border: 2px dashed var(--accent); border-radius: var(--radius);
+  padding: 10px; display: flex; flex-direction: column; align-items: center; gap: 8px;
+}
+.cubenet-game .cn-foldbox[hidden] { display: none; }
+.cubenet-game .cn-foldcap { margin: 0; text-align: center; font-weight: 600; }
+.cubenet-game .cn-scene { perspective: 900px; padding: 34px 10px; display: flex; justify-content: center; max-width: 100%; overflow: hidden; }
+.cubenet-game .cn-stage {
+  position: relative; transform-style: preserve-3d; transform: rotateX(-18deg) rotateY(22deg);
+  transition: transform 1s ease-in-out;
+}
+.cubenet-game .cn-stage.folded { transform: translate(var(--dx), var(--dy)) scale(1.5) rotateX(-24deg) rotateY(28deg); transition-delay: 1s; }
+.cubenet-game .cn-stage.spin { animation: cn-spin 6s linear infinite; }
+@keyframes cn-spin {
+  from { transform: translate(var(--dx), var(--dy)) scale(1.5) rotateX(-24deg) rotateY(28deg); }
+  to { transform: translate(var(--dx), var(--dy)) scale(1.5) rotateX(-24deg) rotateY(388deg); }
+}
+.cubenet-game .cn-f3 {
+  position: absolute; width: var(--S); height: var(--S); transform-style: preserve-3d;
+  transition: transform .55s ease-in-out;
+}
+.cubenet-game .cn-f3 > svg { display: block; position: absolute; inset: 0; }
+.cubenet-game .cn-stage.folded .cn-f3 { transform: var(--fold); }
+.cubenet-game .cn-foldbtns { display: flex; gap: 8px; }
+.cubenet-game .cn-foldbtns .btn { cursor: pointer; font: inherit; font-weight: 600; min-height: 42px; }
+
+@media (max-width: 480px) {
+  .cubenet-game .cn-prompt { font-size: 1.05rem; }
+  .cubenet-game .cn-opts { gap: 8px; }
+  .cubenet-game .cn-opts.t-opp, .cubenet-game .cn-opts.t-twoview { gap: 6px; }
+}
