@@ -1,0 +1,80 @@
+.ngram { --cs: 28px; --clue-font: 14px; --thick: var(--text); display: flex; flex-direction: column; align-items: center; gap: 12px; width: 100%; }
+.ngram .ng-tools { display: flex; gap: 8px; align-items: center; justify-content: center; flex-wrap: wrap; }
+.ngram .ng-mode { display: inline-flex; border: 2px solid var(--accent); border-radius: 12px; overflow: hidden; }
+.ngram .ng-mode button, .ngram .ng-undo {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 14px;
+  border: 0; background: var(--card); color: var(--text); font: inherit; font-weight: 600; cursor: pointer;
+}
+.ngram .ng-mode button.on { background: var(--accent); color: #fff; }
+.ngram .ng-undo { border: 2px solid var(--line); border-radius: 12px; }
+.ngram .ng-undo:disabled { opacity: .45; cursor: default; }
+.ngram .ng-sw-fill { display: inline-block; width: 14px; height: 14px; border-radius: 3px; background: currentColor; }
+.ngram .ng-sw-mark { font-style: normal; font-size: 1.2rem; line-height: 1; }
+
+.ngram .ng-board {
+  display: grid;
+  grid-template-columns: auto repeat(var(--w), var(--cs));
+  grid-template-rows: auto repeat(var(--h), var(--cs));
+  touch-action: none; user-select: none; -webkit-tap-highlight-color: transparent; -webkit-user-select: none; -webkit-touch-callout: none;
+  background: var(--card); padding: 4px; border-radius: 10px;
+}
+.ngram .ng-corner { border-right: 2px solid var(--thick); border-bottom: 2px solid var(--thick); }
+
+/* İpuçları */
+.ngram .ng-cc, .ngram .ng-rc {
+  display: flex; color: var(--text); font-size: var(--clue-font); font-weight: 600; font-variant-numeric: tabular-nums;
+  transition: opacity .2s, background .2s;
+}
+.ngram .ng-cc {
+  flex-direction: column; justify-content: flex-end; align-items: center; line-height: 1.15;
+  padding: 2px 0 4px; border-bottom: 2px solid var(--thick); min-height: 1.5em;
+}
+.ngram .ng-cc:nth-child(even) { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+.ngram .ng-rc {
+  flex-direction: row; justify-content: flex-end; align-items: center; gap: .4em;
+  padding: 0 5px 0 4px; border-right: 2px solid var(--thick); white-space: nowrap;
+}
+.ngram .ng-cc.done, .ngram .ng-rc.done { opacity: .32; }
+.ngram .ng-cc.hover, .ngram .ng-rc.hover { background: var(--accent-soft); color: var(--accent); }
+.ngram .ng-cc.hint-clue, .ngram .ng-rc.hint-clue { background: color-mix(in srgb, #f0b429 35%, var(--card)); opacity: 1; }
+
+/* Hücreler */
+.ngram .ng-cell {
+  position: relative; background: var(--card); cursor: pointer;
+  border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
+}
+.ngram .ng-cell.br5 { border-right: 2px solid var(--thick); }
+.ngram .ng-cell.bb5 { border-bottom: 2px solid var(--thick); }
+.ngram .ng-cell.last-c { border-right: 2px solid var(--thick); }
+.ngram .ng-cell.last-r { border-bottom: 2px solid var(--thick); }
+.ngram .ng-cell.hint-line { background: color-mix(in srgb, #f0b429 16%, var(--card)); }
+.ngram .ng-cell.filled { background: var(--text); }
+.ngram .ng-cell.marked::after, .ngram .ng-cell.hint-empty::after {
+  content: '×'; position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+  color: var(--muted); font-size: calc(var(--cs) * .78); line-height: 1; font-weight: 600;
+}
+.ngram .ng-cell.locked.filled { background: color-mix(in srgb, var(--ok) 55%, var(--text)); }
+.ngram .ng-cell.locked.marked::after { color: var(--ok); }
+.ngram .ng-cell.wrong { background: color-mix(in srgb, var(--danger) 30%, var(--card)); }
+.ngram .ng-cell.wrong.filled { background: var(--danger); }
+.ngram .ng-cell.wrong.marked::after { color: var(--danger); }
+.ngram .ng-cell.hint-fill { box-shadow: inset 0 0 0 3px #f0b429; animation: ng-pulse 1s ease-in-out 3; }
+.ngram .ng-cell.hint-fill:not(.filled)::before {
+  content: ''; position: absolute; inset: 30%; border-radius: 3px; background: #f0b429;
+}
+.ngram .ng-cell.hint-empty:not(.marked)::after { color: #d99a12; }
+.ngram .ng-cell.cursor { outline: 3px solid var(--accent); outline-offset: -3px; z-index: 1; }
+.ngram .ng-cell.flash { animation: ng-flash .9s ease-out 2; }
+@keyframes ng-pulse { 50% { box-shadow: inset 0 0 0 calc(var(--cs) * .25) #f0b429; } }
+@keyframes ng-flash { 0% { box-shadow: inset 0 0 0 calc(var(--cs) / 2) var(--ok); } 100% { box-shadow: inset 0 0 0 0 var(--ok); } }
+
+@media (hover: hover) {
+  .ngram .ng-cell:not(.filled):hover { background: var(--accent-soft); }
+}
+
+/* Çözüldü: resim ortaya çıkar */
+.ngram.solved .ng-board { box-shadow: 0 0 0 3px var(--ok); }
+.ngram.solved .ng-cell { cursor: default; border-color: transparent; transition: border-color .4s, background .4s; }
+.ngram.solved .ng-cell.marked::after { content: none; }
+.ngram.solved .ng-cell.locked.filled { background: var(--text); }
+.ngram.solved .ng-cc, .ngram.solved .ng-rc { opacity: .25; }
