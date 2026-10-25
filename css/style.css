@@ -1,0 +1,111 @@
+:root {
+  --bg: #f5f6fa;
+  --card: #ffffff;
+  --text: #1f2430;
+  --muted: #6b7280;
+  --line: #d8dbe3;
+  --accent: #4f6bed;
+  --accent-soft: #e5eaff;
+  --danger: #d9534f;
+  --ok: #3fae6a;
+  --radius: 14px;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #14161c;
+    --card: #1e212b;
+    --text: #e8eaf0;
+    --muted: #9aa1b0;
+    --line: #353a48;
+    --accent: #7c93ff;
+    --accent-soft: #2a3150;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+a { color: var(--accent); text-decoration: none; }
+.topbar { padding: 14px 16px; background: var(--card); border-bottom: 1px solid var(--line); }
+.brand { font-weight: 700; font-size: 1.15rem; color: var(--text); }
+.container { max-width: 760px; margin: 0 auto; padding: 16px; }
+h1 { margin: 8px 0 12px; font-size: 1.6rem; }
+.muted { color: var(--muted); }
+.back { display: inline-block; margin-bottom: 6px; }
+
+/* Ana sayfa */
+.game-list { display: grid; gap: 12px; }
+.game-card {
+  display: flex; gap: 16px; align-items: center;
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 16px; color: var(--text);
+}
+.game-card:hover { border-color: var(--accent); }
+.game-card h2 { margin: 0 0 4px; font-size: 1.2rem; }
+.game-card p { margin: 0 0 8px; color: var(--muted); }
+.game-icon { font-size: 2.4rem; }
+.progress { height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; width: 200px; max-width: 100%; }
+.progress span { display: block; height: 100%; background: var(--ok); }
+
+/* Seviye sekmeleri ve level ızgarası */
+.tabs { display: flex; gap: 8px; margin: 12px 0 16px; }
+.tab {
+  flex: 1; text-align: center; padding: 10px; border-radius: 10px;
+  background: var(--card); border: 2px solid var(--line); color: var(--text); font-weight: 600;
+}
+.tab small { display: block; font-weight: 400; color: var(--muted); }
+.tab.active { border-color: var(--c); background: color-mix(in srgb, var(--c) 14%, var(--card)); }
+.level-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+.level {
+  aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: var(--card); border: 2px solid var(--c, var(--line)); border-radius: 12px; color: var(--text);
+}
+.level b { font-size: 1.3rem; }
+.level .stars { color: #f0b429; font-size: .8rem; letter-spacing: 1px; }
+.level.done { background: color-mix(in srgb, var(--c) 14%, var(--card)); }
+.level.locked { opacity: .45; border-color: var(--line); }
+.booster-info { padding-left: 0; list-style: none; }
+.booster-info li { margin: 6px 0; }
+.booster-info span { margin-right: 6px; }
+
+/* Oyun ekranı */
+.play-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.badge { padding: 4px 10px; border-radius: 999px; background: var(--c); color: #fff; font-weight: 600; font-size: .9rem; }
+.play-area { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.board-wrap { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.boosters { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+.booster {
+  position: relative; display: flex; flex-direction: column; align-items: center; gap: 2px;
+  min-width: 96px; padding: 10px 12px; border-radius: 12px; cursor: pointer;
+  background: var(--card); border: 2px solid var(--accent); color: var(--text); font: inherit;
+}
+.booster:disabled { opacity: .4; cursor: not-allowed; border-color: var(--line); }
+.b-icon { font-size: 1.5rem; }
+.b-name { font-size: .85rem; font-weight: 600; }
+.b-count {
+  position: absolute; top: -8px; right: -8px; min-width: 22px; height: 22px; border-radius: 11px;
+  background: var(--accent); color: #fff; font-size: .8rem; display: flex; align-items: center; justify-content: center;
+}
+.hint { min-height: 1.4em; text-align: center; color: var(--muted); margin: 0; }
+
+/* Modal ve bildirim */
+.modal { position: fixed; inset: 0; background: rgb(0 0 0 / .5); display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 10; }
+.modal-box { background: var(--card); border-radius: var(--radius); padding: 24px; max-width: 360px; width: 100%; text-align: center; }
+.big-stars { font-size: 2.4rem; color: #f0b429; letter-spacing: 4px; }
+.modal-actions { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 12px; }
+.btn { padding: 10px 16px; border-radius: 10px; border: 1px solid var(--line); color: var(--text); background: var(--card); font-weight: 600; }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.toast {
+  position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%) translateY(80px);
+  background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 10px; transition: transform .25s, opacity .25s; z-index: 20; opacity: 0; pointer-events: none;
+  max-width: calc(100% - 32px);
+}
+.toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
+
+@media (max-width: 480px) {
+  .level-grid { grid-template-columns: repeat(4, 1fr); }
+  .booster { min-width: 0; flex: 1; }
+}

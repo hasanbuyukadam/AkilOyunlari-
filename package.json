@@ -1,0 +1,13 @@
+{
+  "name": "akil-oyunlari",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Levelli akıl oyunları — statik web sitesi",
+  "scripts": {
+    "generate": "node tools/generate.mjs",
+    "verify": "node tools/verify.mjs",
+    "test": "node tools/verify.mjs",
+    "serve": "python3 -m http.server 8080"
+  }
+}
