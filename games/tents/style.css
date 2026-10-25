@@ -1,0 +1,62 @@
+.tents {
+  width: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px;
+  -webkit-user-select: none; user-select: none; -webkit-touch-callout: none;
+}
+.tents .tn-board {
+  --cell: min(54px, calc((100vw - 52px - 2px * var(--cols)) / var(--cols)));
+  display: grid; grid-template-columns: repeat(var(--cols), var(--cell));
+  grid-auto-rows: var(--cell); gap: 2px; padding: 6px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  touch-action: none;
+}
+@media (min-width: 700px) {
+  .tents .tn-board { --cell: min(54px, calc(560px / var(--cols))); }
+}
+.tents .tn-corner { background: transparent; }
+.tents .tn-clue {
+  display: flex; align-items: center; justify-content: center; padding: 0; margin: 0;
+  border: 0; border-radius: 6px; background: transparent; color: var(--text);
+  font: inherit; font-weight: 700; font-size: calc(var(--cell) * .5); cursor: pointer;
+  transition: color .15s, background .15s;
+}
+.tents .tn-clue.ok { color: var(--ok); background: color-mix(in srgb, var(--ok) 12%, transparent); }
+.tents .tn-clue.over { color: #fff; background: var(--danger); }
+.tents .tn-clue.hinted { box-shadow: inset 0 0 0 3px #f0b429; }
+.tents .tn-cell {
+  position: relative; display: flex; align-items: center; justify-content: center;
+  border-radius: 6px; background: color-mix(in srgb, var(--text) 6%, var(--card));
+  border: 1px solid var(--line); cursor: pointer; line-height: 1;
+  font-size: calc(var(--cell) * .62); transition: background .12s;
+}
+.tents .tn-cell span { pointer-events: none; }
+.tents .tn-cell.tree {
+  cursor: default; background: color-mix(in srgb, var(--ok) 10%, var(--card));
+  border-color: color-mix(in srgb, var(--ok) 35%, var(--line));
+}
+.tents .tn-cell.tree.has-tent { opacity: .75; }
+.tents .tn-cell.tent { background: color-mix(in srgb, var(--accent) 14%, var(--card)); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+.tents .tn-cell.locked { box-shadow: inset 0 0 0 2px var(--ok); }
+.tents .tn-cell.grass { background: color-mix(in srgb, var(--ok) 32%, var(--card)); border-color: color-mix(in srgb, var(--ok) 45%, var(--line)); }
+.tents .tn-cell.grass::after {
+  content: ''; width: 22%; height: 22%; border-radius: 50%;
+  background: color-mix(in srgb, var(--ok) 70%, var(--text));
+  opacity: .55;
+}
+.tents .tn-cell.touch { background: color-mix(in srgb, var(--danger) 35%, var(--card)); border-color: var(--danger); }
+.tents .tn-cell.wrong { background: color-mix(in srgb, var(--danger) 40%, var(--card)); border-color: var(--danger); box-shadow: inset 0 0 0 2px var(--danger); }
+.tents .tn-cell.wrong.grass::after { background: var(--danger); opacity: 1; }
+.tents .tn-cell.cur { outline: 3px solid var(--accent); outline-offset: -1px; z-index: 1; }
+.tents .tn-cell.hinted { animation: tn-pulse 1s ease-in-out 3; box-shadow: inset 0 0 0 3px #f0b429; }
+@keyframes tn-pulse { 50% { box-shadow: inset 0 0 0 6px #f0b429; } }
+.tents.solved .tn-cell:not(.tree) { transition: background .3s; }
+.tents.solved .tn-cell.tent { background: color-mix(in srgb, var(--ok) 35%, var(--card)); border-color: var(--ok); }
+.tents .tn-tools { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.tents .tn-tools button {
+  min-height: 44px; padding: 8px 14px; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--card); color: var(--text); font: inherit; font-weight: 600; cursor: pointer;
+}
+.tents .tn-tools button:disabled { opacity: .45; cursor: default; }
+@media (hover: hover) {
+  .tents .tn-cell:not(.tree):hover { border-color: var(--accent); }
+  .tents .tn-tools button:not(:disabled):hover { border-color: var(--accent); }
+}
