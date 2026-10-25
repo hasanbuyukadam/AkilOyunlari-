@@ -1,0 +1,7577 @@
+{
+ "easy": [
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 1,0 2,0 0,1\"}|compare:{\"cells\":\"0,0 0,1 1,1 0,2 0,3\"}/{\"cells\":\"5,0 4,1 5,1 6,1 7,1\"}|rect:{\"polys\":[\"0,0 4,0 4,3 0,3\"]}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 4,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 0,1"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 2,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "0,0 0,1 1,1 0,2 0,3"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "5,0 4,1 5,1 6,1 7,1"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 4, boyu 3 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 3.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "w": 4,
+      "h": 3
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 4,3 0,3"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    4,
+    2,
+    12
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 1,0 0,1 1,1 0,2\"}|compare:{\"cells\":\"1,0 0,1 1,1 2,1 1,2\"}/{\"cells\":\"6,0 5,1 6,1 7,1 7,2\"}|rect:{\"polys\":[\"0,0 2,0 2,2 0,2\"]}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 5,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 0,1 1,1 0,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 2,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "1,0 0,1 1,1 2,1 1,2"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "6,0 5,1 6,1 7,1 7,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 2, boyu 2 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 1,
+       "y": 2.5,
+       "text": "2"
+      },
+      {
+       "x": -0.5,
+       "y": 1,
+       "text": "2"
+      }
+     ],
+     "meta": {
+      "w": 2,
+      "h": 2
+     },
+     "answer": 4,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 2,0 2,2 0,2"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    5,
+    2,
+    4
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 1,0 0,1 1,1 0,2\"}|compare:{\"cells\":\"0,0 0,1 1,1 2,1 1,2 2,2 3,2\"}/{\"cells\":\"9,0 9,1 7,2 8,2 9,2 6,3 7,3\"}|rect:{\"polys\":[\"0,0 3,0 3,3 0,3\"]}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 5,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 0,1 1,1 0,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 2,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "0,0 0,1 1,1 2,1 1,2 2,2 3,2"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "9,0 9,1 7,2 8,2 9,2 6,3 7,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 3, boyu 3 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 3.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "w": 3,
+      "h": 3
+     },
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,0 3,3 0,3"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    5,
+    2,
+    9
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 1,0 2,0 3,0 2,1 2,2\"}|compare:{\"cells\":\"1,0 0,1 1,1 2,1 3,1 4,1\"}/{\"cells\":\"7,0 8,0 9,0 7,1\"}|rect:{\"polys\":[\"0,0 4,0 4,2 0,2\"]}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 6,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 2,1 2,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "1,0 0,1 1,1 2,1 3,1 4,1"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "7,0 8,0 9,0 7,1"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 4, boyu 2 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 2.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 1,
+       "text": "2"
+      }
+     ],
+     "meta": {
+      "w": 4,
+      "h": 2
+     },
+     "answer": 8,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 4,2 0,2"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    6,
+    0,
+    8
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 1,0 2,0 1,1 2,1 2,2\"}|rect:{\"polys\":[\"0,0 5,0 5,3 0,3\"]}|compare:{\"cells\":\"0,0 1,0 2,0 0,1 1,1 2,1\"}/{\"cells\":\"6,0 6,1 5,2 6,2\"}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 6,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 1,1 2,1 2,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 5, boyu 3 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 2.5,
+       "y": 3.5,
+       "text": "5"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "w": 5,
+      "h": 3
+     },
+     "answer": 15,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 5,3 0,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "0,0 1,0 2,0 0,1 1,1 2,1"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "6,0 6,1 5,2 6,2"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    6,
+    15,
+    0
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 1,0 0,1 1,1 0,2 1,2 0,3\"}|rect:{\"polys\":[\"0,0 3,0 3,4 0,4\"]}|compare:{\"cells\":\"0,0 0,1 0,2 0,3 1,3 2,3 2,4\"}/{\"cells\":\"6,0 5,1 6,1 7,1 8,1 9,1 7,2 9,2\"}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 7,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 0,1 1,1 0,2 1,2 0,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 3, boyu 4 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 4.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "w": 3,
+      "h": 4
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,0 3,4 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "0,0 0,1 0,2 0,3 1,3 2,3 2,4"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "6,0 5,1 6,1 7,1 8,1 9,1 7,2 9,2"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    7,
+    12,
+    1
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 1,0 0,1 1,1 2,1 1,2 2,2\"}|compare:{\"cells\":\"2,0 1,1 2,1 3,1 0,2 1,2 2,2\"}/{\"cells\":\"6,0 7,0 6,1 7,1 7,2 7,3\"}|rect:{\"polys\":[\"0,0 5,0 5,2 0,2\"]}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 7,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 0,1 1,1 2,1 1,2 2,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "2,0 1,1 2,1 3,1 0,2 1,2 2,2"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "6,0 7,0 6,1 7,1 7,2 7,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 5, boyu 2 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 2.5,
+       "y": 2.5,
+       "text": "5"
+      },
+      {
+       "x": -0.5,
+       "y": 1,
+       "text": "2"
+      }
+     ],
+     "meta": {
+      "w": 5,
+      "h": 2
+     },
+     "answer": 10,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 5,2 0,2"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    7,
+    0,
+    10
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"2,0 2,1 3,1 0,2 1,2 2,2 2,3\"}|compare:{\"cells\":\"1,0 1,1 2,1 0,2 1,2 2,2 2,3 3,3\"}/{\"cells\":\"9,0 8,1 9,1 7,2 8,2 9,2 6,3 7,3 8,3 9,3\"}|rect:{\"polys\":[\"0,0 5,0 5,2 0,2\"]}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 7,
+     "shapes": [
+      {
+       "region": {
+        "cells": "2,0 2,1 3,1 0,2 1,2 2,2 2,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "1,0 1,1 2,1 0,2 1,2 2,2 2,3 3,3"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "9,0 8,1 9,1 7,2 8,2 9,2 6,3 7,3 8,3 9,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 5, boyu 2 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 2.5,
+       "y": 2.5,
+       "text": "5"
+      },
+      {
+       "x": -0.5,
+       "y": 1,
+       "text": "2"
+      }
+     ],
+     "meta": {
+      "w": 5,
+      "h": 2
+     },
+     "answer": 10,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 5,2 0,2"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    7,
+    1,
+    10
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 2,0 0,1 1,1 2,1 1,2 2,2 3,2\"}|rect:{\"polys\":[\"0,0 3,0 3,4 0,4\"]}|compare:{\"cells\":\"3,0 3,1 0,2 1,2 2,2 3,2 2,3 3,3\"}/{\"cells\":\"6,0 7,0 8,0 9,0 10,0 6,1 7,1 8,1\"}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 8,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 2,0 0,1 1,1 2,1 1,2 2,2 3,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 3, boyu 4 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 4.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "w": 3,
+      "h": 4
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,0 3,4 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 2,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "3,0 3,1 0,2 1,2 2,2 3,2 2,3 3,3"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "6,0 7,0 8,0 9,0 10,0 6,1 7,1 8,1"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    8,
+    12,
+    2
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 1,0 0,1 1,1 2,1 3,1 4,1 4,2\"}|rect:{\"polys\":[\"0,0 4,0 4,3 0,3\"]}|compare:{\"cells\":\"0,0 1,0 2,0 3,0 2,1 2,2 2,3\"}/{\"cells\":\"6,0 6,1 7,1 6,2 6,3 7,3 6,4\"}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 8,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 0,1 1,1 2,1 3,1 4,1 4,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 4, boyu 3 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 3.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "w": 4,
+      "h": 3
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 4,3 0,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 2,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 2,1 2,2 2,3"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "6,0 6,1 7,1 6,2 6,3 7,3 6,4"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    8,
+    12,
+    2
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 1,0 0,1 1,1 2,1 0,2 1,2 0,3 1,3\"}|compare:{\"cells\":\"0,0 1,0 0,1 1,1 0,2 1,2 0,3 1,3\"}/{\"cells\":\"5,0 6,0 7,0 4,1 5,1 6,1 4,2 5,2 6,2\"}|rect:{\"polys\":[\"0,0 3,0 3,4 0,4\"]}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 0,1 1,1 2,1 0,2 1,2 0,3 1,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "0,0 1,0 0,1 1,1 0,2 1,2 0,3 1,3"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "5,0 6,0 7,0 4,1 5,1 6,1 4,2 5,2 6,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 3, boyu 4 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 4.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "w": 3,
+      "h": 4
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,0 3,4 0,4"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    9,
+    1,
+    12
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"4,0 2,1 3,1 4,1 0,2 1,2 2,2 3,2 2,3\"}|rect:{\"polys\":[\"0,0 4,0 4,3 0,3\"]}|compare:{\"cells\":\"0,0 0,1 1,1 0,2 1,2 0,3 1,3 0,4\"}/{\"cells\":\"5,0 4,1 5,1 5,2 6,2 7,2 6,3\"}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "cells": "4,0 2,1 3,1 4,1 0,2 1,2 2,2 3,2 2,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 4, boyu 3 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 3.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "w": 4,
+      "h": 3
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 4,3 0,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "0,0 0,1 1,1 0,2 1,2 0,3 1,3 0,4"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "5,0 4,1 5,1 5,2 6,2 7,2 6,3"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    9,
+    12,
+    0
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"1,0 0,1 1,1 0,2 1,2 2,2 1,3 2,3 2,4\"}|rect:{\"polys\":[\"0,0 3,0 3,4 0,4\"]}|compare:{\"cells\":\"3,0 2,1 3,1 0,2 1,2 2,2 3,2 0,3 1,3\"}/{\"cells\":\"6,0 6,1 7,1 8,1 6,2 7,2 8,2 6,3\"}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 0,1 1,1 0,2 1,2 2,2 1,3 2,3 2,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 3, boyu 4 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 4.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "w": 3,
+      "h": 4
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,0 3,4 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "3,0 2,1 3,1 0,2 1,2 2,2 3,2 0,3 1,3"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "6,0 6,1 7,1 8,1 6,2 7,2 8,2 6,3"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    9,
+    12,
+    0
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"1,0 1,1 0,2 1,2 2,2 3,2 2,3 2,4 3,4\"}|compare:{\"cells\":\"0,0 0,1 1,1 0,2 1,2 2,2 1,3 2,3\"}/{\"cells\":\"6,0 6,1 5,2 6,2 6,3 6,4 7,4\"}|rect:{\"polys\":[\"0,0 5,0 5,4 0,4\"]}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 1,1 0,2 1,2 2,2 3,2 2,3 2,4 3,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "0,0 0,1 1,1 0,2 1,2 2,2 1,3 2,3"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "6,0 6,1 5,2 6,2 6,3 6,4 7,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 5, boyu 4 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 2.5,
+       "y": 4.5,
+       "text": "5"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "w": 5,
+      "h": 4
+     },
+     "answer": 20,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 5,4 0,4"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    9,
+    0,
+    20
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"1,0 0,1 1,1 2,1 0,2 1,2 2,2 3,2 1,3\"}|rect:{\"polys\":[\"0,0 4,0 4,3 0,3\"]}|compare:{\"cells\":\"2,0 0,1 1,1 2,1 1,2 2,2 1,3 2,3 2,4\"}/{\"cells\":\"6,0 6,1 7,1 5,2 6,2 7,2 6,3 7,3\"}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 0,1 1,1 2,1 0,2 1,2 2,2 3,2 1,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 4, boyu 3 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 3.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "w": 4,
+      "h": 3
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 4,3 0,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "2,0 0,1 1,1 2,1 1,2 2,2 1,3 2,3 2,4"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "6,0 6,1 7,1 5,2 6,2 7,2 6,3 7,3"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    9,
+    12,
+    0
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"1,0 2,0 0,1 1,1 2,1 3,1 1,2 2,2 3,2 1,3 2,3\"}|rect:{\"polys\":[\"0,0 6,0 6,5 0,5\"]}|compare:{\"cells\":\"1,0 2,0 3,0 1,1 2,1 3,1 0,2 1,2 2,2 0,3\"}/{\"cells\":\"8,0 9,0 10,0 8,1 7,2 8,2 6,3 7,3 8,3 8,4\"}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 11,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 2,0 0,1 1,1 2,1 3,1 1,2 2,2 3,2 1,3 2,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 6, boyu 5 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 3,
+       "y": 5.5,
+       "text": "6"
+      },
+      {
+       "x": -0.5,
+       "y": 2.5,
+       "text": "5"
+      }
+     ],
+     "meta": {
+      "w": 6,
+      "h": 5
+     },
+     "answer": 30,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 6,0 6,5 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 2,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "1,0 2,0 3,0 1,1 2,1 3,1 0,2 1,2 2,2 0,3"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "8,0 9,0 10,0 8,1 7,2 8,2 6,3 7,3 8,3 8,4"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    11,
+    30,
+    2
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 1,0 2,0 1,1 1,2 0,3 1,3 2,3 0,4 1,4\"}|rect:{\"polys\":[\"0,0 7,0 7,5 0,5\"]}|compare:{\"cells\":\"2,0 3,0 0,1 1,1 2,1 0,2 1,2 2,2 1,3\"}/{\"cells\":\"7,0 8,0 9,0 6,1 7,1 8,1 9,1 7,2 8,2 9,2\"}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 10,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 1,1 1,2 0,3 1,3 2,3 0,4 1,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 7, boyu 5 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 3.5,
+       "y": 5.5,
+       "text": "7"
+      },
+      {
+       "x": -0.5,
+       "y": 2.5,
+       "text": "5"
+      }
+     ],
+     "meta": {
+      "w": 7,
+      "h": 5
+     },
+     "answer": 35,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 7,0 7,5 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "2,0 3,0 0,1 1,1 2,1 0,2 1,2 2,2 1,3"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "7,0 8,0 9,0 6,1 7,1 8,1 9,1 7,2 8,2 9,2"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    10,
+    35,
+    1
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"1,0 1,1 0,2 1,2 2,2 3,2 1,3 2,3 3,3 4,3\"}|compare:{\"cells\":\"1,0 1,1 2,1 3,1 0,2 1,2 2,2 3,2 2,3 2,4\"}/{\"cells\":\"8,0 6,1 7,1 8,1 6,2 7,2 8,2 7,3 8,3 7,4\"}|rect:{\"polys\":[\"0,0 4,0 4,3 0,3\"]}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 10,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 1,1 0,2 1,2 2,2 3,2 1,3 2,3 3,3 4,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 2,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "1,0 1,1 2,1 3,1 0,2 1,2 2,2 3,2 2,3 2,4"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "8,0 6,1 7,1 8,1 6,2 7,2 8,2 7,3 8,3 7,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 4, boyu 3 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 3.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "w": 4,
+      "h": 3
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 4,3 0,3"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    10,
+    2,
+    12
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"0,0 1,0 2,0 3,0 4,0 1,1 2,1 3,1 4,1 2,2 3,2\"}|compare:{\"cells\":\"0,0 2,0 3,0 0,1 1,1 2,1 3,1 2,2 3,2 3,3\"}/{\"cells\":\"6,0 7,0 8,0 9,0 10,0 7,1 8,1 9,1 10,1 8,2\"}|rect:{\"polys\":[\"0,0 7,0 7,3 0,3\"]}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 11,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 4,0 1,1 2,1 3,1 4,1 2,2 3,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 2,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "0,0 2,0 3,0 0,1 1,1 2,1 3,1 2,2 3,2 3,3"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "6,0 7,0 8,0 9,0 10,0 7,1 8,1 9,1 10,1 8,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 7, boyu 3 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 3.5,
+       "y": 3.5,
+       "text": "7"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "w": 7,
+      "h": 3
+     },
+     "answer": 21,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 7,0 7,3 0,3"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    11,
+    2,
+    21
+   ]
+  },
+  {
+   "difficulty": "easy",
+   "puzzle": "count:{\"cells\":\"1,0 0,1 1,1 2,1 3,1 0,2 1,2 2,2 1,3 2,3 3,3\"}|compare:{\"cells\":\"1,0 2,0 3,0 0,1 1,1 2,1 3,1 4,1 1,2 2,2 3,2\"}/{\"cells\":\"10,0 9,1 10,1 11,1 10,2 11,2 7,3 8,3 9,3 10,3 9,4 10,4\"}|rect:{\"polys\":[\"0,0 4,0 4,3 0,3\"]}",
+   "questions": [
+    {
+     "kind": "count",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 11,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 0,1 1,1 2,1 3,1 0,2 1,2 2,2 1,3 2,3 3,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "compare",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "Hangi şeklin alanı daha büyük?",
+     "labels": [],
+     "meta": {},
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "cells": "1,0 2,0 3,0 0,1 1,1 2,1 3,1 4,1 1,2 2,2 3,2"
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "cells": "10,0 9,1 10,1 11,1 10,2 11,2 7,3 8,3 9,3 10,3 9,4 10,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "rect",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu dikdörtgenin eni 4, boyu 3 birim. Alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 3.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "w": 4,
+      "h": 3
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 4,3 0,3"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    11,
+    1,
+    12
+   ]
+  }
+ ],
+ "medium": [
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"0,0 1,0 2,0 0,1 1,1 2,1 0,2 1,2 2,2 3,2 0,3 1,3 2,3 3,3\"}|sameper:{\"polys\":[\"0,0 3,0 3,2 0,2\"]}/{\"polys\":[\"5,0 9,0 9,1 5,1\"]}|perim:{\"cells\":\"0,0 1,0 2,0 3,0 4,0\"}|half:{\"cells\":\"0,0 1,0 0,1 1,1 2,1\",\"tris\":\"2,2,1 0,2,0\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 14,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 0,1 1,1 2,1 0,2 1,2 2,2 3,2 0,3 1,3 2,3 3,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 10 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 2.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 1,
+       "text": "2"
+      },
+      {
+       "x": 7,
+       "y": 1.5,
+       "text": "4"
+      },
+      {
+       "x": 9.5,
+       "y": 0.5,
+       "text": "1"
+      }
+     ],
+     "meta": {
+      "per": 10
+     },
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 3,0 3,2 0,2"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "5,0 9,0 9,1 5,1"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 5
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 4,0"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 5,
+      "halves": 2
+     },
+     "answer": 6,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 0,1 1,1 2,1",
+        "tris": "2,2,1 0,2,0"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    14,
+    0,
+    12,
+    6
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"0,0 1,0 0,1 1,1 2,1 0,2 1,2 0,3 1,3 0,4 1,4\"}|sameper:{\"polys\":[\"0,0 4,0 4,1 0,1\"]}/{\"polys\":[\"6,0 9,0 9,2 6,2\"]}|perim:{\"cells\":\"0,0 1,0 2,0 0,1 1,1\"}|half:{\"cells\":\"0,1 1,1 2,1 2,2\",\"tris\":\"0,0,3 3,1,0\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 11,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 0,1 1,1 2,1 0,2 1,2 0,3 1,3 0,4 1,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 10 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 1.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 0.5,
+       "text": "1"
+      },
+      {
+       "x": 7.5,
+       "y": 2.5,
+       "text": "3"
+      },
+      {
+       "x": 9.5,
+       "y": 1,
+       "text": "2"
+      }
+     ],
+     "meta": {
+      "per": 10
+     },
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 4,0 4,1 0,1"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "6,0 9,0 9,2 6,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 5
+     },
+     "answer": 10,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 0,1 1,1"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 4,
+      "halves": 2
+     },
+     "answer": 5,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,1 1,1 2,1 2,2",
+        "tris": "0,0,3 3,1,0"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    11,
+    1,
+    10,
+    5
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"0,0 1,0 2,0 3,0 0,1 1,1 3,1 0,2 1,2 3,2\"}|half:{\"cells\":\"1,0 0,1 1,1 2,1 3,1\",\"tris\":\"2,0,3 4,1,0\"}|perim:{\"cells\":\"2,0 1,1 2,1 0,2 1,2 2,2 2,3\"}|sameper:{\"polys\":[\"0,0 3,0 3,2 0,2\"]}/{\"polys\":[\"5,0 9,0 9,1 5,1\"]}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 10,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 0,1 1,1 3,1 0,2 1,2 3,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 5,
+      "halves": 2
+     },
+     "answer": 6,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 0,1 1,1 2,1 3,1",
+        "tris": "2,0,3 4,1,0"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 7
+     },
+     "answer": 14,
+     "shapes": [
+      {
+       "region": {
+        "cells": "2,0 1,1 2,1 0,2 1,2 2,2 2,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 10 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 2.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 1,
+       "text": "2"
+      },
+      {
+       "x": 7,
+       "y": 1.5,
+       "text": "4"
+      },
+      {
+       "x": 9.5,
+       "y": 0.5,
+       "text": "1"
+      }
+     ],
+     "meta": {
+      "per": 10
+     },
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 3,0 3,2 0,2"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "5,0 9,0 9,1 5,1"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    10,
+    6,
+    14,
+    0
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"0,0 1,0 0,1 1,1 2,1 3,1 4,1 0,2 1,2 2,2 3,2 4,2 1,3 2,3 3,3 4,3\"}|sameper:{\"polys\":[\"0,0 5,0 5,1 0,1\"]}/{\"polys\":[\"7,0 10,0 10,3 7,3\"]}|perim:{\"cells\":\"0,0 1,0 2,0 3,0 1,1 2,1 2,2\"}|half:{\"cells\":\"1,0 0,1 1,1 1,2 2,2 3,2\",\"tris\":\"3,3,0 2,3,1\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 16,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 0,1 1,1 2,1 3,1 4,1 0,2 1,2 2,2 3,2 4,2 1,3 2,3 3,3 4,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 12 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 2.5,
+       "y": 1.5,
+       "text": "5"
+      },
+      {
+       "x": -0.5,
+       "y": 0.5,
+       "text": "1"
+      },
+      {
+       "x": 8.5,
+       "y": 3.5,
+       "text": "3"
+      },
+      {
+       "x": 10.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "per": 12
+     },
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 5,0 5,1 0,1"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "7,0 10,0 10,3 7,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 7
+     },
+     "answer": 14,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 1,1 2,1 2,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 6,
+      "halves": 2
+     },
+     "answer": 7,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 0,1 1,1 1,2 2,2 3,2",
+        "tris": "3,3,0 2,3,1"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    16,
+    1,
+    14,
+    7
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"1,0 2,0 1,1 2,1 0,2 1,2 2,2 1,3 2,3 1,4 2,4\"}|sameper:{\"polys\":[\"0,0 3,0 3,3 0,3\"]}/{\"polys\":[\"5,0 9,0 9,2 5,2\"]}|perim:{\"cells\":\"1,0 0,1 1,1 2,1 1,2 2,2\"}|half:{\"cells\":\"1,0 2,0 1,1 2,1 3,1 3,2\",\"tris\":\"3,0,3 0,1,2\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 11,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 2,0 1,1 2,1 0,2 1,2 2,2 1,3 2,3 1,4 2,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 12 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 3.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      },
+      {
+       "x": 7,
+       "y": 2.5,
+       "text": "4"
+      },
+      {
+       "x": 9.5,
+       "y": 1,
+       "text": "2"
+      }
+     ],
+     "meta": {
+      "per": 12
+     },
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 3,0 3,3 0,3"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "5,0 9,0 9,2 5,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 6
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 0,1 1,1 2,1 1,2 2,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 6,
+      "halves": 2
+     },
+     "answer": 7,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 2,0 1,1 2,1 3,1 3,2",
+        "tris": "3,0,3 0,1,2"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    11,
+    0,
+    12,
+    7
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"1,0 2,0 3,0 4,0 1,1 2,1 3,1 4,1 1,2 2,2 3,2 4,2 0,3 1,3 2,3 3,3 4,3 0,4 1,4 2,4\"}|perim:{\"cells\":\"0,0 1,0 2,0 0,1 1,1 2,1\"}|sameper:{\"polys\":[\"0,0 4,0 4,2 0,2\"]}/{\"polys\":[\"6,0 11,0 11,1 6,1\"]}|half:{\"cells\":\"0,0 2,0 0,1 1,1 2,1 3,1\",\"tris\":\"2,2,1 4,1,3\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 20,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 2,0 3,0 4,0 1,1 2,1 3,1 4,1 1,2 2,2 3,2 4,2 0,3 1,3 2,3 3,3 4,3 0,4 1,4 2,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 6
+     },
+     "answer": 10,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 0,1 1,1 2,1"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 12 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 2.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 1,
+       "text": "2"
+      },
+      {
+       "x": 8.5,
+       "y": 1.5,
+       "text": "5"
+      },
+      {
+       "x": 11.5,
+       "y": 0.5,
+       "text": "1"
+      }
+     ],
+     "meta": {
+      "per": 12
+     },
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 4,0 4,2 0,2"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "6,0 11,0 11,1 6,1"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 6,
+      "halves": 2
+     },
+     "answer": 7,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 2,0 0,1 1,1 2,1 3,1",
+        "tris": "2,2,1 4,1,3"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    20,
+    10,
+    0,
+    7
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"2,0 3,0 0,1 1,1 2,1 3,1 0,2 1,2 2,2 3,2 2,3 3,3 2,4 3,4 2,5 3,5\"}|perim:{\"cells\":\"0,0 1,0 2,0 0,1 1,1 2,1 0,2\"}|sameper:{\"polys\":[\"0,0 4,0 4,2 0,2\"]}/{\"polys\":[\"6,0 9,0 9,3 6,3\"]}|half:{\"cells\":\"0,1 1,1 2,1 1,2 2,2 2,3\",\"tris\":\"1,0,2 2,4,0\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 16,
+     "shapes": [
+      {
+       "region": {
+        "cells": "2,0 3,0 0,1 1,1 2,1 3,1 0,2 1,2 2,2 3,2 2,3 3,3 2,4 3,4 2,5 3,5"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 7
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 0,1 1,1 2,1 0,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 12 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 2.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 1,
+       "text": "2"
+      },
+      {
+       "x": 7.5,
+       "y": 3.5,
+       "text": "3"
+      },
+      {
+       "x": 9.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "per": 12
+     },
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 4,0 4,2 0,2"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "6,0 9,0 9,3 6,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 6,
+      "halves": 2
+     },
+     "answer": 7,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,1 1,1 2,1 1,2 2,2 2,3",
+        "tris": "1,0,2 2,4,0"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    16,
+    12,
+    1,
+    7
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"0,0 1,0 2,0 3,0 0,1 1,1 2,1 3,1 0,2 1,2 0,3 1,3 0,4 1,4 0,5 1,5\"}|sameper:{\"polys\":[\"0,0 3,0 3,3 0,3\"]}/{\"polys\":[\"5,0 9,0 9,2 5,2\"]}|perim:{\"cells\":\"1,0 2,0 1,1 2,1 0,2 1,2 2,2 2,3\"}|half:{\"cells\":\"2,1 1,2 2,2 3,2 1,3 3,3\",\"tris\":\"4,2,0 2,0,2 0,2,2 1,1,2\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 16,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 0,1 1,1 2,1 3,1 0,2 1,2 0,3 1,3 0,4 1,4 0,5 1,5"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 12 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 3.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      },
+      {
+       "x": 7,
+       "y": 2.5,
+       "text": "4"
+      },
+      {
+       "x": 9.5,
+       "y": 1,
+       "text": "2"
+      }
+     ],
+     "meta": {
+      "per": 12
+     },
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 3,0 3,3 0,3"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "5,0 9,0 9,2 5,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 8
+     },
+     "answer": 14,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 2,0 1,1 2,1 0,2 1,2 2,2 2,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 6,
+      "halves": 4
+     },
+     "answer": 8,
+     "shapes": [
+      {
+       "region": {
+        "cells": "2,1 1,2 2,2 3,2 1,3 3,3",
+        "tris": "4,2,0 2,0,2 0,2,2 1,1,2"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    16,
+    0,
+    14,
+    8
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"0,0 1,0 2,0 3,0 4,0 0,1 1,1 2,1 3,1 4,1 0,2 1,2 2,2 3,2 4,2 0,3 1,3 4,3 0,4 1,4 4,4\"}|sameper:{\"polys\":[\"0,0 6,0 6,1 0,1\"]}/{\"polys\":[\"8,0 13,0 13,2 8,2\"]}|perim:{\"cells\":\"1,0 2,0 0,1 1,1 2,1 0,2 1,2 2,2\"}|half:{\"cells\":\"2,0 2,1 2,2 3,2 1,3 2,3 3,3\",\"tris\":\"4,3,0 3,0,0 0,3,1 1,2,2\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 21,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 4,0 0,1 1,1 2,1 3,1 4,1 0,2 1,2 2,2 3,2 4,2 0,3 1,3 4,3 0,4 1,4 4,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 14 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 3,
+       "y": 1.5,
+       "text": "6"
+      },
+      {
+       "x": -0.5,
+       "y": 0.5,
+       "text": "1"
+      },
+      {
+       "x": 10.5,
+       "y": 2.5,
+       "text": "5"
+      },
+      {
+       "x": 13.5,
+       "y": 1,
+       "text": "2"
+      }
+     ],
+     "meta": {
+      "per": 14
+     },
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 6,0 6,1 0,1"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "8,0 13,0 13,2 8,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 8
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 2,0 0,1 1,1 2,1 0,2 1,2 2,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 7,
+      "halves": 4
+     },
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "cells": "2,0 2,1 2,2 3,2 1,3 2,3 3,3",
+        "tris": "4,3,0 3,0,0 0,3,1 1,2,2"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    21,
+    1,
+    12,
+    9
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"0,0 1,0 2,0 3,0 0,1 1,1 2,1 3,1 2,2 3,2 2,3 3,3 2,4 3,4 2,5 3,5\"}|half:{\"cells\":\"3,0 2,1 3,1 1,2 2,2 3,2\",\"tris\":\"1,3,0 0,2,2 4,0,0 3,3,1\"}|perim:{\"cells\":\"0,0 0,1 0,2 1,2 2,2 0,3 1,3\"}|sameper:{\"polys\":[\"0,0 4,0 4,4 0,4\"]}/{\"polys\":[\"6,0 13,0 13,1 6,1\"]}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 16,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 0,1 1,1 2,1 3,1 2,2 3,2 2,3 3,3 2,4 3,4 2,5 3,5"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 6,
+      "halves": 4
+     },
+     "answer": 8,
+     "shapes": [
+      {
+       "region": {
+        "cells": "3,0 2,1 3,1 1,2 2,2 3,2",
+        "tris": "1,3,0 0,2,2 4,0,0 3,3,1"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 7
+     },
+     "answer": 14,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 0,1 0,2 1,2 2,2 0,3 1,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 16 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 4.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "4"
+      },
+      {
+       "x": 9.5,
+       "y": 1.5,
+       "text": "7"
+      },
+      {
+       "x": 13.5,
+       "y": 0.5,
+       "text": "1"
+      }
+     ],
+     "meta": {
+      "per": 16
+     },
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 4,0 4,4 0,4"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "6,0 13,0 13,1 6,1"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    16,
+    8,
+    14,
+    0
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"4,0 5,0 4,1 5,1 0,2 1,2 2,2 3,2 4,2 5,2 0,3 1,3 2,3 3,3 4,3 5,3\"}|sameper:{\"polys\":[\"0,0 6,0 6,1 0,1\"]}/{\"polys\":[\"8,0 12,0 12,3 8,3\"]}|half:{\"cells\":\"1,0 2,0 1,1 2,1 1,2 2,2 1,3\",\"tris\":\"0,0,1 1,4,1 3,2,0 3,0,3\"}|perim:{\"cells\":\"2,0 1,1 2,1 1,2 2,2 0,3 1,3 2,3\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": false,
+     "prompt": "Kenar uzunlukları verilen bu şeklin alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 5,
+       "y": -0.45,
+       "text": "2"
+      },
+      {
+       "x": 3.55,
+       "y": 1,
+       "text": "2"
+      },
+      {
+       "x": 6.45,
+       "y": 2,
+       "text": "4"
+      },
+      {
+       "x": 2,
+       "y": 1.55,
+       "text": "4"
+      },
+      {
+       "x": -0.45,
+       "y": 3,
+       "text": "2"
+      },
+      {
+       "x": 3,
+       "y": 4.45,
+       "text": "6"
+      }
+     ],
+     "meta": {
+      "labelMode": true
+     },
+     "answer": 16,
+     "shapes": [
+      {
+       "region": {
+        "cells": "4,0 5,0 4,1 5,1 0,2 1,2 2,2 3,2 4,2 5,2 0,3 1,3 2,3 3,3 4,3 5,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 14 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 3,
+       "y": 1.5,
+       "text": "6"
+      },
+      {
+       "x": -0.5,
+       "y": 0.5,
+       "text": "1"
+      },
+      {
+       "x": 10,
+       "y": 3.5,
+       "text": "4"
+      },
+      {
+       "x": 12.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "per": 14
+     },
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 6,0 6,1 0,1"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "8,0 12,0 12,3 8,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 7,
+      "halves": 4
+     },
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 2,0 1,1 2,1 1,2 2,2 1,3",
+        "tris": "0,0,1 1,4,1 3,2,0 3,0,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 8
+     },
+     "answer": 14,
+     "shapes": [
+      {
+       "region": {
+        "cells": "2,0 1,1 2,1 1,2 2,2 0,3 1,3 2,3"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    16,
+    1,
+    9,
+    14
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"1,0 2,0 3,0 1,1 2,1 3,1 0,2 1,2 2,2 3,2 4,2 5,2 6,2 0,3 1,3 2,3 3,3 4,3 5,3 6,3 0,4 1,4 2,4 3,4 4,4 5,4 6,4\"}|sameper:{\"polys\":[\"0,0 7,0 7,1 0,1\"]}/{\"polys\":[\"9,0 13,0 13,4 9,4\"]}|perim:{\"cells\":\"0,0 0,1 1,1 3,1 0,2 1,2 2,2 3,2\"}|half:{\"cells\":\"3,0 0,1 1,1 2,1 3,1 2,2 3,2 2,3\",\"tris\":\"3,3,0 4,1,0\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 27,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 2,0 3,0 1,1 2,1 3,1 0,2 1,2 2,2 3,2 4,2 5,2 6,2 0,3 1,3 2,3 3,3 4,3 5,3 6,3 0,4 1,4 2,4 3,4 4,4 5,4 6,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 16 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 3.5,
+       "y": 1.5,
+       "text": "7"
+      },
+      {
+       "x": -0.5,
+       "y": 0.5,
+       "text": "1"
+      },
+      {
+       "x": 11,
+       "y": 4.5,
+       "text": "4"
+      },
+      {
+       "x": 13.5,
+       "y": 2,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "per": 16
+     },
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 7,0 7,1 0,1"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "9,0 13,0 13,4 9,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 8
+     },
+     "answer": 16,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 0,1 1,1 3,1 0,2 1,2 2,2 3,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 8,
+      "halves": 2
+     },
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "cells": "3,0 0,1 1,1 2,1 3,1 2,2 3,2 2,3",
+        "tris": "3,3,0 4,1,0"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    27,
+    1,
+    16,
+    9
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"0,0 1,0 2,0 3,0 4,0 5,0 0,1 1,1 2,1 3,1 4,1 5,1 2,2 3,2 4,2 5,2 2,3 3,3 4,3 5,3\"}|half:{\"cells\":\"1,0 2,0 0,1 1,1 2,1 3,1 0,2 1,2\",\"tris\":\"3,0,3 1,3,0\"}|sameper:{\"polys\":[\"0,0 5,0 5,3 0,3\"]}/{\"polys\":[\"7,0 14,0 14,1 7,1\"]}|perim:{\"cells\":\"1,0 2,0 3,0 4,0 1,1 4,1 0,2 1,2 2,2\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": false,
+     "prompt": "Kenar uzunlukları verilen bu şeklin alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 3,
+       "y": -0.45,
+       "text": "6"
+      },
+      {
+       "x": -0.45,
+       "y": 1,
+       "text": "2"
+      },
+      {
+       "x": 6.45,
+       "y": 2,
+       "text": "4"
+      },
+      {
+       "x": 1,
+       "y": 2.45,
+       "text": "2"
+      },
+      {
+       "x": 1.55,
+       "y": 3,
+       "text": "2"
+      },
+      {
+       "x": 4,
+       "y": 4.45,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "labelMode": true
+     },
+     "answer": 20,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 4,0 5,0 0,1 1,1 2,1 3,1 4,1 5,1 2,2 3,2 4,2 5,2 2,3 3,3 4,3 5,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 8,
+      "halves": 2
+     },
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 2,0 0,1 1,1 2,1 3,1 0,2 1,2",
+        "tris": "3,0,3 1,3,0"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 16 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 2.5,
+       "y": 3.5,
+       "text": "5"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      },
+      {
+       "x": 10.5,
+       "y": 1.5,
+       "text": "7"
+      },
+      {
+       "x": 14.5,
+       "y": 0.5,
+       "text": "1"
+      }
+     ],
+     "meta": {
+      "per": 16
+     },
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 5,0 5,3 0,3"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "7,0 14,0 14,1 7,1"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 9
+     },
+     "answer": 20,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 2,0 3,0 4,0 1,1 4,1 0,2 1,2 2,2"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    20,
+    9,
+    0,
+    20
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"2,0 3,0 4,0 2,1 3,1 4,1 0,2 1,2 2,2 3,2 4,2 0,3 1,3 2,3 3,3 4,3 0,4 1,4 2,4 3,4 4,4 0,5 1,5 2,5 3,5\"}|sameper:{\"polys\":[\"0,0 6,0 6,2 0,2\"]}/{\"polys\":[\"8,0 13,0 13,3 8,3\"]}|half:{\"cells\":\"0,1 1,1 2,1 0,2 1,2 2,2 3,2 2,3\",\"tris\":\"0,3,1 1,0,2\"}|perim:{\"cells\":\"1,0 1,1 1,2 2,2 3,2 0,3 1,3 2,3\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 25,
+     "shapes": [
+      {
+       "region": {
+        "cells": "2,0 3,0 4,0 2,1 3,1 4,1 0,2 1,2 2,2 3,2 4,2 0,3 1,3 2,3 3,3 4,3 0,4 1,4 2,4 3,4 4,4 0,5 1,5 2,5 3,5"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 16 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 3,
+       "y": 2.5,
+       "text": "6"
+      },
+      {
+       "x": -0.5,
+       "y": 1,
+       "text": "2"
+      },
+      {
+       "x": 10.5,
+       "y": 3.5,
+       "text": "5"
+      },
+      {
+       "x": 13.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "per": 16
+     },
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 6,0 6,2 0,2"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "8,0 13,0 13,3 8,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 8,
+      "halves": 2
+     },
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,1 1,1 2,1 0,2 1,2 2,2 3,2 2,3",
+        "tris": "0,3,1 1,0,2"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "perim",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin çevresi kaç birim? (Çevre: şeklin etrafını dolaşan çizginin uzunluğu.)",
+     "labels": [],
+     "meta": {
+      "area": 8
+     },
+     "answer": 16,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 1,1 1,2 2,2 3,2 0,3 1,3 2,3"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    25,
+    1,
+    9,
+    16
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"2,0 3,0 2,1 3,1 2,2 3,2 2,3 3,3 0,4 1,4 2,4 3,4 0,5 1,5 2,5 3,5\"}|sameper:{\"polys\":[\"0,0 6,0 6,3 0,3\"]}/{\"polys\":[\"8,0 13,0 13,4 8,4\"]}|half:{\"cells\":\"0,0 1,0 3,0 0,1 1,1 2,1 3,1 1,2 1,3\",\"tris\":\"3,2,0 4,1,3\"}|composite:{\"cells\":\"0,0 1,0 2,0 3,0 4,0 5,0 6,0 0,1 1,1 2,1 3,1 4,1 5,1 6,1 0,2 1,2 2,2 3,2 4,2 5,2 6,2 3,3 4,3 5,3 6,3 3,4 4,4 5,4 6,4\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": false,
+     "prompt": "Kenar uzunlukları verilen bu şeklin alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 3,
+       "y": -0.45,
+       "text": "2"
+      },
+      {
+       "x": 1.55,
+       "y": 2,
+       "text": "4"
+      },
+      {
+       "x": 4.45,
+       "y": 3,
+       "text": "6"
+      },
+      {
+       "x": 1,
+       "y": 3.55,
+       "text": "2"
+      },
+      {
+       "x": -0.45,
+       "y": 5,
+       "text": "2"
+      },
+      {
+       "x": 2,
+       "y": 6.45,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "labelMode": true
+     },
+     "answer": 16,
+     "shapes": [
+      {
+       "region": {
+        "cells": "2,0 3,0 2,1 3,1 2,2 3,2 2,3 3,3 0,4 1,4 2,4 3,4 0,5 1,5 2,5 3,5"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 18 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 3,
+       "y": 3.5,
+       "text": "6"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      },
+      {
+       "x": 10.5,
+       "y": 4.5,
+       "text": "5"
+      },
+      {
+       "x": 13.5,
+       "y": 2,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "per": 18
+     },
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 6,0 6,3 0,3"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "8,0 13,0 13,4 8,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 9,
+      "halves": 2
+     },
+     "answer": 10,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 3,0 0,1 1,1 2,1 3,1 1,2 1,3",
+        "tris": "3,2,0 4,1,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": false,
+     "prompt": "Kenar uzunlukları verilen bu şeklin alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 3.5,
+       "y": -0.45,
+       "text": "7"
+      },
+      {
+       "x": -0.45,
+       "y": 1.5,
+       "text": "3"
+      },
+      {
+       "x": 7.45,
+       "y": 2.5,
+       "text": "5"
+      },
+      {
+       "x": 1.5,
+       "y": 3.45,
+       "text": "3"
+      },
+      {
+       "x": 2.55,
+       "y": 4,
+       "text": "2"
+      },
+      {
+       "x": 5,
+       "y": 5.45,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "labelMode": true
+     },
+     "answer": 29,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 4,0 5,0 6,0 0,1 1,1 2,1 3,1 4,1 5,1 6,1 0,2 1,2 2,2 3,2 4,2 5,2 6,2 3,3 4,3 5,3 6,3 3,4 4,4 5,4 6,4"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    16,
+    1,
+    10,
+    29
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"4,0 5,0 4,1 5,1 4,2 5,2 0,3 1,3 2,3 3,3 4,3 5,3 0,4 1,4 2,4 3,4 4,4 0,5 1,5 2,5 3,5 4,5 0,6 1,6 2,6 3,6 4,6\"}|composite:{\"cells\":\"0,0 1,0 2,0 3,0 4,0 5,0 6,0 0,1 1,1 2,1 3,1 4,1 5,1 6,1 3,2 4,2 5,2 6,2 3,3 4,3 5,3 6,3 3,4 4,4 5,4 6,4 3,5 4,5 5,5 6,5\"}|half:{\"cells\":\"1,0 1,1 2,1 3,1 4,1 1,2 2,2 4,2\",\"tris\":\"0,1,1 4,3,0 5,2,0 4,0,3\"}|sameper:{\"polys\":[\"0,0 5,0 5,3 0,3\"]}/{\"polys\":[\"7,0 13,0 13,2 7,2\"]}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 27,
+     "shapes": [
+      {
+       "region": {
+        "cells": "4,0 5,0 4,1 5,1 4,2 5,2 0,3 1,3 2,3 3,3 4,3 5,3 0,4 1,4 2,4 3,4 4,4 0,5 1,5 2,5 3,5 4,5 0,6 1,6 2,6 3,6 4,6"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": false,
+     "prompt": "Kenar uzunlukları verilen bu şeklin alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 3.5,
+       "y": -0.45,
+       "text": "7"
+      },
+      {
+       "x": -0.45,
+       "y": 1,
+       "text": "2"
+      },
+      {
+       "x": 7.45,
+       "y": 3,
+       "text": "6"
+      },
+      {
+       "x": 1.5,
+       "y": 2.45,
+       "text": "3"
+      },
+      {
+       "x": 2.55,
+       "y": 4,
+       "text": "4"
+      },
+      {
+       "x": 5,
+       "y": 6.45,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "labelMode": true
+     },
+     "answer": 30,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 4,0 5,0 6,0 0,1 1,1 2,1 3,1 4,1 5,1 6,1 3,2 4,2 5,2 6,2 3,3 4,3 5,3 6,3 3,4 4,4 5,4 6,4 3,5 4,5 5,5 6,5"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 8,
+      "halves": 4
+     },
+     "answer": 10,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 1,1 2,1 3,1 4,1 1,2 2,2 4,2",
+        "tris": "0,1,1 4,3,0 5,2,0 4,0,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 16 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 2.5,
+       "y": 3.5,
+       "text": "5"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      },
+      {
+       "x": 10,
+       "y": 2.5,
+       "text": "6"
+      },
+      {
+       "x": 13.5,
+       "y": 1,
+       "text": "2"
+      }
+     ],
+     "meta": {
+      "per": 16
+     },
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 5,0 5,3 0,3"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "7,0 13,0 13,2 7,2"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    27,
+    30,
+    10,
+    0
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"2,0 3,0 4,0 2,1 3,1 4,1 0,2 1,2 2,2 3,2 4,2 0,3 1,3 2,3 3,3 4,3 0,4 1,4 2,4 3,4 4,4 2,5 3,5 4,5 2,6 3,6 4,6\"}|composite:{\"cells\":\"4,0 5,0 6,0 4,1 5,1 6,1 4,2 5,2 6,2 0,3 1,3 2,3 3,3 4,3 5,3 6,3 0,4 1,4 2,4 3,4 4,4 5,4 6,4\"}|half:{\"cells\":\"1,1 2,1 3,1 1,2 2,2 3,2 2,3 3,3\",\"tris\":\"0,2,2 4,2,3 1,0,3 2,4,0\"}|sameper:{\"polys\":[\"0,0 6,0 6,3 0,3\"]}/{\"polys\":[\"8,0 13,0 13,4 8,4\"]}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": false,
+     "prompt": "Kenar uzunlukları verilen bu şeklin alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 3.5,
+       "y": -0.45,
+       "text": "3"
+      },
+      {
+       "x": 1.55,
+       "y": 1,
+       "text": "2"
+      },
+      {
+       "x": 1.55,
+       "y": 6,
+       "text": "2"
+      },
+      {
+       "x": 5.45,
+       "y": 3.5,
+       "text": "7"
+      },
+      {
+       "x": 1,
+       "y": 1.55,
+       "text": "2"
+      },
+      {
+       "x": -0.45,
+       "y": 3.5,
+       "text": "3"
+      },
+      {
+       "x": 1,
+       "y": 5.45,
+       "text": "2"
+      },
+      {
+       "x": 3.5,
+       "y": 7.45,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "labelMode": true
+     },
+     "answer": 27,
+     "shapes": [
+      {
+       "region": {
+        "cells": "2,0 3,0 4,0 2,1 3,1 4,1 0,2 1,2 2,2 3,2 4,2 0,3 1,3 2,3 3,3 4,3 0,4 1,4 2,4 3,4 4,4 2,5 3,5 4,5 2,6 3,6 4,6"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": false,
+     "prompt": "Kenar uzunlukları verilen bu şeklin alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 5.5,
+       "y": -0.45,
+       "text": "3"
+      },
+      {
+       "x": 3.55,
+       "y": 1.5,
+       "text": "3"
+      },
+      {
+       "x": 7.45,
+       "y": 2.5,
+       "text": "5"
+      },
+      {
+       "x": 2,
+       "y": 2.55,
+       "text": "4"
+      },
+      {
+       "x": -0.45,
+       "y": 4,
+       "text": "2"
+      },
+      {
+       "x": 3.5,
+       "y": 5.45,
+       "text": "7"
+      }
+     ],
+     "meta": {
+      "labelMode": true
+     },
+     "answer": 23,
+     "shapes": [
+      {
+       "region": {
+        "cells": "4,0 5,0 6,0 4,1 5,1 6,1 4,2 5,2 6,2 0,3 1,3 2,3 3,3 4,3 5,3 6,3 0,4 1,4 2,4 3,4 4,4 5,4 6,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 8,
+      "halves": 4
+     },
+     "answer": 10,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,1 2,1 3,1 1,2 2,2 3,2 2,3 3,3",
+        "tris": "0,2,2 4,2,3 1,0,3 2,4,0"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 18 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 3,
+       "y": 3.5,
+       "text": "6"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      },
+      {
+       "x": 10.5,
+       "y": 4.5,
+       "text": "5"
+      },
+      {
+       "x": 13.5,
+       "y": 2,
+       "text": "4"
+      }
+     ],
+     "meta": {
+      "per": 18
+     },
+     "answer": 1,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 6,0 6,3 0,3"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "8,0 13,0 13,4 8,4"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    27,
+    23,
+    10,
+    1
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"0,0 1,0 0,1 1,1 0,2 1,2 0,3 1,3 2,3 3,3 4,3 0,4 1,4 0,5 1,5 0,6 1,6\"}|sameper:{\"polys\":[\"0,0 6,0 6,4 0,4\"]}/{\"polys\":[\"8,0 15,0 15,3 8,3\"]}|half:{\"cells\":\"1,0 2,0 1,1 2,1 3,1 0,2 1,2 0,3 1,3\",\"tris\":\"1,4,0 3,0,3\"}|composite:{\"cells\":\"2,0 3,0 4,0 5,0 2,1 3,1 4,1 5,1 2,2 3,2 4,2 5,2 2,3 3,3 4,3 5,3 2,4 3,4 4,4 5,4 0,5 1,5 2,5 3,5 4,5 5,5 0,6 1,6 2,6 0,7 1,7 2,7\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 17,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 0,1 1,1 0,2 1,2 0,3 1,3 2,3 3,3 4,3 0,4 1,4 0,5 1,5 0,6 1,6"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 20 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 3,
+       "y": 4.5,
+       "text": "6"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "4"
+      },
+      {
+       "x": 11.5,
+       "y": 3.5,
+       "text": "7"
+      },
+      {
+       "x": 15.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "per": 20
+     },
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 6,0 6,4 0,4"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "8,0 15,0 15,3 8,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 9,
+      "halves": 2
+     },
+     "answer": 10,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,0 2,0 1,1 2,1 3,1 0,2 1,2 0,3 1,3",
+        "tris": "1,4,0 3,0,3"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": false,
+     "prompt": "Kenar uzunlukları verilen bu şeklin alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 4,
+       "y": -0.45,
+       "text": "4"
+      },
+      {
+       "x": 1.55,
+       "y": 2.5,
+       "text": "5"
+      },
+      {
+       "x": 6.45,
+       "y": 3,
+       "text": "6"
+      },
+      {
+       "x": 1,
+       "y": 4.55,
+       "text": "2"
+      },
+      {
+       "x": -0.45,
+       "y": 6.5,
+       "text": "3"
+      },
+      {
+       "x": 4.5,
+       "y": 6.45,
+       "text": "3"
+      },
+      {
+       "x": 3.45,
+       "y": 7,
+       "text": "2"
+      },
+      {
+       "x": 1.5,
+       "y": 8.45,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "labelMode": true
+     },
+     "answer": 32,
+     "shapes": [
+      {
+       "region": {
+        "cells": "2,0 3,0 4,0 5,0 2,1 3,1 4,1 5,1 2,2 3,2 4,2 5,2 2,3 3,3 4,3 5,3 2,4 3,4 4,4 5,4 0,5 1,5 2,5 3,5 4,5 5,5 0,6 1,6 2,6 0,7 1,7 2,7"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    17,
+    0,
+    10,
+    32
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"0,0 1,0 2,0 3,0 4,0 5,0 6,0 7,0 0,1 1,1 2,1 3,1 4,1 5,1 6,1 7,1 3,2 4,2 5,2 3,3 4,3 5,3 3,4 4,4 5,4\"}|composite:{\"cells\":\"0,0 1,0 2,0 0,1 1,1 2,1 0,2 1,2 2,2 0,3 1,3 2,3 0,4 1,4 2,4 0,5 1,5 2,5 3,5 4,5 5,5 0,6 1,6 2,6 3,6 4,6 5,6 0,7 1,7 2,7 3,7 4,7 5,7\"}|sameper:{\"polys\":[\"0,0 6,0 6,3 0,3\"]}/{\"polys\":[\"8,0 15,0 15,2 8,2\"]}|half:{\"cells\":\"1,1 2,1 0,2 1,2 2,2 3,2 1,3 2,3 2,4\",\"tris\":\"3,3,0 3,1,3 1,4,1 2,0,3\"}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": false,
+     "prompt": "Kenar uzunlukları verilen bu şeklin alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 4,
+       "y": -0.45,
+       "text": "8"
+      },
+      {
+       "x": -0.45,
+       "y": 1,
+       "text": "2"
+      },
+      {
+       "x": 8.45,
+       "y": 1,
+       "text": "2"
+      },
+      {
+       "x": 1.5,
+       "y": 2.45,
+       "text": "3"
+      },
+      {
+       "x": 7,
+       "y": 2.45,
+       "text": "2"
+      },
+      {
+       "x": 2.55,
+       "y": 3.5,
+       "text": "3"
+      },
+      {
+       "x": 6.45,
+       "y": 3.5,
+       "text": "3"
+      },
+      {
+       "x": 4.5,
+       "y": 5.45,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "labelMode": true
+     },
+     "answer": 25,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 4,0 5,0 6,0 7,0 0,1 1,1 2,1 3,1 4,1 5,1 6,1 7,1 3,2 4,2 5,2 3,3 4,3 5,3 3,4 4,4 5,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": false,
+     "prompt": "Kenar uzunlukları verilen bu şeklin alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": -0.45,
+       "text": "3"
+      },
+      {
+       "x": -0.45,
+       "y": 4,
+       "text": "8"
+      },
+      {
+       "x": 3.45,
+       "y": 2.5,
+       "text": "5"
+      },
+      {
+       "x": 4.5,
+       "y": 4.55,
+       "text": "3"
+      },
+      {
+       "x": 6.45,
+       "y": 6.5,
+       "text": "3"
+      },
+      {
+       "x": 3,
+       "y": 8.45,
+       "text": "6"
+      }
+     ],
+     "meta": {
+      "labelMode": true
+     },
+     "answer": 33,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 0,1 1,1 2,1 0,2 1,2 2,2 0,3 1,3 2,3 0,4 1,4 2,4 0,5 1,5 2,5 3,5 4,5 5,5 0,6 1,6 2,6 3,6 4,6 5,6 0,7 1,7 2,7 3,7 4,7 5,7"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 18 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 3,
+       "y": 3.5,
+       "text": "6"
+      },
+      {
+       "x": -0.5,
+       "y": 1.5,
+       "text": "3"
+      },
+      {
+       "x": 11.5,
+       "y": 2.5,
+       "text": "7"
+      },
+      {
+       "x": 15.5,
+       "y": 1,
+       "text": "2"
+      }
+     ],
+     "meta": {
+      "per": 18
+     },
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 6,0 6,3 0,3"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "8,0 15,0 15,2 8,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 9,
+      "halves": 4
+     },
+     "answer": 11,
+     "shapes": [
+      {
+       "region": {
+        "cells": "1,1 2,1 0,2 1,2 2,2 3,2 1,3 2,3 2,4",
+        "tris": "3,3,0 3,1,3 1,4,1 2,0,3"
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    25,
+    33,
+    0,
+    11
+   ]
+  },
+  {
+   "difficulty": "medium",
+   "puzzle": "composite:{\"cells\":\"0,0 1,0 2,0 3,0 4,0 5,0 6,0 0,1 1,1 2,1 3,1 4,1 5,1 6,1 0,2 1,2 2,2 3,2 4,2 5,2 6,2 0,3 1,3 2,3 3,3 4,3 5,3 6,3 7,3 1,4 2,4 3,4 4,4 5,4 6,4 7,4\"}|composite:{\"cells\":\"3,0 4,0 5,0 3,1 4,1 5,1 3,2 4,2 5,2 0,3 1,3 2,3 3,3 4,3 5,3 0,4 1,4 2,4 3,4 4,4 5,4 0,5 1,5 2,5 3,5 4,5 5,5 0,6 1,6 2,6 3,6 4,6 5,6\"}|half:{\"cells\":\"3,0 1,1 2,1 3,1 2,2 3,2 4,2 2,3 3,3 4,3\",\"tris\":\"4,1,3 1,3,1 0,1,2 3,4,0\"}|sameper:{\"polys\":[\"0,0 6,0 6,4 0,4\"]}/{\"polys\":[\"8,0 15,0 15,3 8,3\"]}",
+   "questions": [
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? Şekli dikdörtgenlere bölebilirsin.",
+     "labels": [],
+     "meta": {
+      "labelMode": false
+     },
+     "answer": 36,
+     "shapes": [
+      {
+       "region": {
+        "cells": "0,0 1,0 2,0 3,0 4,0 5,0 6,0 0,1 1,1 2,1 3,1 4,1 5,1 6,1 0,2 1,2 2,2 3,2 4,2 5,2 6,2 0,3 1,3 2,3 3,3 4,3 5,3 6,3 7,3 1,4 2,4 3,4 4,4 5,4 6,4 7,4"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "composite",
+     "input": "num",
+     "grid": false,
+     "prompt": "Kenar uzunlukları verilen bu şeklin alanı kaç birim kare?",
+     "labels": [
+      {
+       "x": 4.5,
+       "y": -0.45,
+       "text": "3"
+      },
+      {
+       "x": 2.55,
+       "y": 1.5,
+       "text": "3"
+      },
+      {
+       "x": 6.45,
+       "y": 3.5,
+       "text": "7"
+      },
+      {
+       "x": 1.5,
+       "y": 2.55,
+       "text": "3"
+      },
+      {
+       "x": -0.45,
+       "y": 5,
+       "text": "4"
+      },
+      {
+       "x": 3,
+       "y": 7.45,
+       "text": "6"
+      }
+     ],
+     "meta": {
+      "labelMode": true
+     },
+     "answer": 33,
+     "shapes": [
+      {
+       "region": {
+        "cells": "3,0 4,0 5,0 3,1 4,1 5,1 3,2 4,2 5,2 0,3 1,3 2,3 3,3 4,3 5,3 0,4 1,4 2,4 3,4 4,4 5,4 0,5 1,5 2,5 3,5 4,5 5,5 0,6 1,6 2,6 3,6 4,6 5,6"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "half",
+     "input": "num",
+     "grid": true,
+     "prompt": "Bu şeklin alanı kaç birim kare? (Çapraz kesilmiş kareler yarım karedir.)",
+     "labels": [],
+     "meta": {
+      "full": 10,
+      "halves": 4
+     },
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "cells": "3,0 1,1 2,1 3,1 2,2 3,2 4,2 2,3 3,3 4,3",
+        "tris": "4,1,3 1,3,1 0,1,2 3,4,0"
+       }
+      }
+     ]
+    },
+    {
+     "kind": "sameper",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "A",
+      "B",
+      "İkisi eşit"
+     ],
+     "prompt": "İki dikdörtgenin de çevresi 20 birim. Hangisinin alanı daha büyük?",
+     "labels": [
+      {
+       "x": 3,
+       "y": 4.5,
+       "text": "6"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "4"
+      },
+      {
+       "x": 11.5,
+       "y": 3.5,
+       "text": "7"
+      },
+      {
+       "x": 15.5,
+       "y": 1.5,
+       "text": "3"
+      }
+     ],
+     "meta": {
+      "per": 20
+     },
+     "answer": 0,
+     "shapes": [
+      {
+       "name": "A",
+       "region": {
+        "polys": [
+         "0,0 6,0 6,4 0,4"
+        ]
+       }
+      },
+      {
+       "name": "B",
+       "region": {
+        "polys": [
+         "8,0 15,0 15,3 8,3"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    36,
+    33,
+    12,
+    0
+   ]
+  }
+ ],
+ "hard": [
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 3,0 3,5 0,5\"]}|para:{\"polys\":[\"2,0 2,3 0,4 0,1\"]}|triangle:{\"polys\":[\"0,4 0,0 2,0\"]}|polygon:{\"polys\":[\"2,0 4,0 5,1 5,3 2,4 0,2\"]}|cutout:{\"polys\":[\"0,0 5,0 5,4 0,4\",\"-0,1 3,1 3,3 0,3\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 15 birim kare, eni 3 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 5.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 2.5,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 1.5,
+       "y": 2.5,
+       "text": "15",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 15,
+      "en": 3
+     },
+     "answer": 5,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,0 3,5 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "6",
+      "9",
+      "3",
+      "8"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 3,
+      "h": 2,
+      "s": 1,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 2,3 0,4 0,1"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "4",
+      "2",
+      "6",
+      "8"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 4,
+      "h": 2,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,4 0,0 2,0"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 14,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 4,0 5,1 5,3 2,4 0,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 5,
+      "H": 4
+     },
+     "answer": 14,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 5,4 0,4",
+         "-0,1 3,1 3,3 0,3"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    5,
+    0,
+    0,
+    14,
+    14
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 2,0 2,4 0,4\"]}|polygon:{\"polys\":[\"2,0 5,2 5,3 3,4 2,4 0,3\"]}|cutout:{\"polys\":[\"0,0 5,0 5,4 0,4\",\"-2,1 5,1 5,3 2,3\"]}|para:{\"polys\":[\"2,0 2,4 0,5 0,1\"]}|triangle:{\"polys\":[\"4,0 4,5 0,1\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 8 birim kare, eni 2 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 1,
+       "y": 4.5,
+       "text": "2"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 1,
+       "y": 2,
+       "text": "8",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 8,
+      "en": 2
+     },
+     "answer": 4,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 2,0 2,4 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 12,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 5,2 5,3 3,4 2,4 0,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 5,
+      "H": 4
+     },
+     "answer": 14,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 5,4 0,4",
+         "-2,1 5,1 5,3 2,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "8",
+      "12",
+      "4",
+      "10"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 4,
+      "h": 2,
+      "s": 1,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 2,4 0,5 0,1"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "10",
+      "20",
+      "9",
+      "6"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 5,
+      "h": 4,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "4,0 4,5 0,1"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    4,
+    12,
+    14,
+    0,
+    0
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 2,0 2,4 0,4\"]}|para:{\"polys\":[\"1,0 4,0 3,2 0,2\"]}|polygon:{\"polys\":[\"1,0 2,0 5,2 5,3 1,4 0,4\"]}|cutout:{\"polys\":[\"0,0 6,0 6,5 0,5\",\"-5,1 6,1 6,4 5,4\"]}|triangle:{\"polys\":[\"4,0 4,2 0,2\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 8 birim kare, eni 2 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 1,
+       "y": 4.5,
+       "text": "2"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 1,
+       "y": 2,
+       "text": "8",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 8,
+      "en": 2
+     },
+     "answer": 4,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 2,0 2,4 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "6",
+      "8",
+      "9",
+      "3"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 3,
+      "h": 2,
+      "s": 1,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "1,0 4,0 3,2 0,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 13,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "1,0 2,0 5,2 5,3 1,4 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 6,
+      "H": 5
+     },
+     "answer": 27,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 6,0 6,5 0,5",
+         "-5,1 6,1 6,4 5,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "4",
+      "2",
+      "8",
+      "6"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 4,
+      "h": 2,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "4,0 4,2 0,2"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    4,
+    0,
+    13,
+    27,
+    0
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 2,0 2,4 0,4\"]}|para:{\"polys\":[\"0,4 0,0 2,1 2,5\"]}|cutout:{\"polys\":[\"0,0 5,0 5,4 0,4\",\"-2,0 5,0 5,1 2,1\"]}|polygon:{\"polys\":[\"2,0 4,0 4,2 0,5\"]}|triangle:{\"polys\":[\"0,2 0,0 3,0\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 8 birim kare, eni 2 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 1,
+       "y": 4.5,
+       "text": "2"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 1,
+       "y": 2,
+       "text": "8",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 8,
+      "en": 2
+     },
+     "answer": 4,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 2,0 2,4 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "10",
+      "8",
+      "12",
+      "4"
+     ],
+     "answer": 1,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 4,
+      "h": 2,
+      "s": 1,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,4 0,0 2,1 2,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 5,
+      "H": 4
+     },
+     "answer": 17,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 5,4 0,4",
+         "-2,0 5,0 5,1 2,1"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 9,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 4,0 4,2 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "3",
+      "1",
+      "6",
+      "5"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 3,
+      "h": 2,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,2 0,0 3,0"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    4,
+    1,
+    17,
+    9,
+    0
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 4,0 4,5 0,5\"]}|triangle:{\"polys\":[\"0,0 5,0 4,4\"]}|cutout:{\"polys\":[\"0,0 6,0 6,5 0,5\",\"-3,2 6,2 6,4 3,4\"]}|polygon:{\"polys\":[\"2,0 4,0 5,4 1,4 0,2 0,1\"]}|para:{\"polys\":[\"0,3 0,0 2,2 2,5\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 20 birim kare, eni 4 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 5.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 2.5,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 2,
+       "y": 2.5,
+       "text": "20",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 20,
+      "en": 4
+     },
+     "answer": 5,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 4,5 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "6",
+      "20",
+      "9",
+      "10"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 5,
+      "h": 4,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 4,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 6,
+      "H": 5
+     },
+     "answer": 24,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 6,0 6,5 0,5",
+         "-3,2 6,2 6,4 3,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 16,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 4,0 5,4 1,4 0,2 0,1"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "3",
+      "6",
+      "9",
+      "10"
+     ],
+     "answer": 1,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 3,
+      "h": 2,
+      "s": 2,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,3 0,0 2,2 2,5"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    5,
+    3,
+    24,
+    16,
+    1
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 4,0 4,5 0,5\"]}|triangle:{\"polys\":[\"0,0 4,0 2,3\"]}|polygon:{\"polys\":[\"1,0 6,4 4,5 0,3 0,2\"]}|cutout:{\"polys\":[\"0,0 6,0 6,5 0,5\",\"-3,0 6,0 6,2 3,2\",\"-0,2 2,5 0,5\"]}|para:{\"polys\":[\"7,2 2,2 0,0 5,0\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 20 birim kare, eni 4 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 5.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 2.5,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 2,
+       "y": 2.5,
+       "text": "20",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 20,
+      "en": 4
+     },
+     "answer": 5,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 4,5 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "2",
+      "12",
+      "7",
+      "6"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 4,
+      "h": 3,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 2,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 14,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "1,0 6,4 4,5 0,3 0,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 6,
+      "H": 5
+     },
+     "answer": 21,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 6,0 6,5 0,5",
+         "-3,0 6,0 6,2 3,2",
+         "-0,2 2,5 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "14",
+      "10",
+      "15",
+      "5"
+     ],
+     "answer": 1,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 5,
+      "h": 2,
+      "s": 2,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "7,2 2,2 0,0 5,0"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    5,
+    3,
+    14,
+    21,
+    1
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 4,0 4,5 0,5\"]}|polygon:{\"polys\":[\"4,0 6,3 0,6 0,5\"]}|cutout:{\"polys\":[\"0,0 7,0 7,6 0,6\",\"-0,2 2,2 2,5 0,5\",\"-4,1 6,1 6,4 4,4\"]}|triangle:{\"polys\":[\"4,2 0,2 4,0\"]}|para:{\"polys\":[\"2,0 2,4 0,5 0,1\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 20 birim kare, eni 4 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 5.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 2.5,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 2,
+       "y": 2.5,
+       "text": "20",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 20,
+      "en": 4
+     },
+     "answer": 5,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 4,5 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 14,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "4,0 6,3 0,6 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 7,
+      "H": 6
+     },
+     "answer": 30,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 7,0 7,6 0,6",
+         "-0,2 2,2 2,5 0,5",
+         "-4,1 6,1 6,4 4,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "8",
+      "2",
+      "6",
+      "4"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 4,
+      "h": 2,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "4,2 0,2 4,0"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "10",
+      "4",
+      "12",
+      "8"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 4,
+      "h": 2,
+      "s": 1,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 2,4 0,5 0,1"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    5,
+    14,
+    30,
+    3,
+    3
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 3,0 3,4 0,4\"]}|para:{\"polys\":[\"2,0 2,5 0,6 0,1\"]}|triangle:{\"polys\":[\"1,0 3,2 0,2\"]}|polygon:{\"polys\":[\"5,0 1,5 0,2 0,1\"]}|cutout:{\"polys\":[\"0,0 7,0 7,5 0,5\",\"-4,2 7,2 7,4 4,4\",\"-5,0 7,0 7,1 5,1\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 12 birim kare, eni 3 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 4.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 1.5,
+       "y": 2,
+       "text": "12",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 12,
+      "en": 3
+     },
+     "answer": 4,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,0 3,4 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "12",
+      "10",
+      "5",
+      "15"
+     ],
+     "answer": 1,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 5,
+      "h": 2,
+      "s": 1,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 2,5 0,6 0,1"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "1",
+      "5",
+      "6",
+      "3"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 3,
+      "h": 2,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "1,0 3,2 0,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 11,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "5,0 1,5 0,2 0,1"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 7,
+      "H": 5
+     },
+     "answer": 27,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 7,0 7,5 0,5",
+         "-4,2 7,2 7,4 4,4",
+         "-5,0 7,0 7,1 5,1"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    4,
+    1,
+    3,
+    11,
+    27
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 3,0 3,6 0,6\"]}|triangle:{\"polys\":[\"0,0 3,2 3,8\"]}|para:{\"polys\":[\"6,4 1,4 0,0 5,0\"]}|cutout:{\"polys\":[\"0,0 7,0 7,6 0,6\",\"-5,0 6,0 6,3 5,3\",\"-0,3 2,6 0,6\"]}|polygon:{\"polys\":[\"6,0 6,6 0,4 0,3\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 18 birim kare, eni 3 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 6.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 3,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 1.5,
+       "y": 3,
+       "text": "18",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 18,
+      "en": 3
+     },
+     "answer": 6,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,0 3,6 0,6"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "18",
+      "11",
+      "3",
+      "9"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 6,
+      "h": 3,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,2 3,8"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "10",
+      "25",
+      "20",
+      "24"
+     ],
+     "answer": 2,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 5,
+      "h": 4,
+      "s": 1,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "6,4 1,4 0,0 5,0"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 7,
+      "H": 6
+     },
+     "answer": 36,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 7,0 7,6 0,6",
+         "-5,0 6,0 6,3 5,3",
+         "-0,3 2,6 0,6"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 21,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "6,0 6,6 0,4 0,3"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    6,
+    3,
+    2,
+    36,
+    21
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 3,0 3,7 0,7\"]}|para:{\"polys\":[\"5,2 1,2 0,0 4,0\"]}|cutout:{\"polys\":[\"0,0 7,0 7,6 0,6\",\"-0,1 3,1 3,3 0,3\",\"-4,0 7,0 7,3 4,3\"]}|polygon:{\"polys\":[\"1,0 3,0 5,1 5,6 0,5\"]}|triangle:{\"polys\":[\"2,0 7,0 0,4\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 21 birim kare, eni 3 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 7.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 3.5,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 1.5,
+       "y": 3.5,
+       "text": "21",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 21,
+      "en": 3
+     },
+     "answer": 7,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,0 3,7 0,7"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "8",
+      "12",
+      "10",
+      "4"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 4,
+      "h": 2,
+      "s": 1,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "5,2 1,2 0,0 4,0"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 7,
+      "H": 6
+     },
+     "answer": 27,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 7,0 7,6 0,6",
+         "-0,1 3,1 3,3 0,3",
+         "-4,0 7,0 7,3 4,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 24,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "1,0 3,0 5,1 5,6 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "4",
+      "9",
+      "10",
+      "20"
+     ],
+     "answer": 2,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 5,
+      "h": 4,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 7,0 0,4"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    7,
+    0,
+    27,
+    24,
+    2
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 6,0 6,5 0,5\"]}|polygon:{\"polys\":[\"0,0 2,0 6,1 6,2 3,5 0,4\"]}|cutout:{\"polys\":[\"0,0 7,0 7,6 0,6\",\"-7,3 5,0 7,0\",\"-1,0 3,0 3,3 1,3\"]}|para:{\"polys\":[\"0,4 0,0 3,2 3,6\"]}|triangle:{\"polys\":[\"3,2 3,6 0,0\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 30 birim kare, eni 6 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 3,
+       "y": 5.5,
+       "text": "6"
+      },
+      {
+       "x": -0.5,
+       "y": 2.5,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 3,
+       "y": 2.5,
+       "text": "30",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 30,
+      "en": 6
+     },
+     "answer": 5,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 6,0 6,5 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 22,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 2,0 6,1 6,2 3,5 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 7,
+      "H": 6
+     },
+     "answer": 33,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 7,0 7,6 0,6",
+         "-7,3 5,0 7,0",
+         "-1,0 3,0 3,3 1,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "18",
+      "16",
+      "6",
+      "12"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 4,
+      "h": 3,
+      "s": 2,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,4 0,0 3,2 3,6"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "2",
+      "12",
+      "7",
+      "6"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 4,
+      "h": 3,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "3,2 3,6 0,0"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    5,
+    22,
+    33,
+    3,
+    3
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 6,0 6,4 0,4\"]}|polygon:{\"polys\":[\"4,0 5,0 6,4 6,6 0,1\"]}|cutout:{\"polys\":[\"0,0 7,0 7,6 0,6\",\"-2,3 4,3 4,4 2,4\",\"-7,3 5,0 7,0\"]}|triangle:{\"polys\":[\"0,6 0,2 2,0\"]}|para:{\"polys\":[\"0,4 0,0 2,2 2,6\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 24 birim kare, eni 6 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 3,
+       "y": 4.5,
+       "text": "6"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 3,
+       "y": 2,
+       "text": "24",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 24,
+      "en": 6
+     },
+     "answer": 4,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 6,0 6,4 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 17,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "4,0 5,0 6,4 6,6 0,1"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 7,
+      "H": 6
+     },
+     "answer": 37,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 7,0 7,6 0,6",
+         "-2,3 4,3 4,4 2,4",
+         "-7,3 5,0 7,0"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "4",
+      "6",
+      "1",
+      "8"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 4,
+      "h": 2,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,6 0,2 2,0"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "10",
+      "12",
+      "4",
+      "8"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 4,
+      "h": 2,
+      "s": 2,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,4 0,0 2,2 2,6"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    4,
+    17,
+    37,
+    0,
+    3
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 3,0 3,4 0,4\"]}|cutout:{\"polys\":[\"0,0 8,0 8,5 0,5\",\"-1,4 3,4 3,5 1,5\",\"-1,0 3,0 3,2 1,2\"]}|triangle:{\"polys\":[\"0,0 7,2 1,2\"]}|para:{\"polys\":[\"0,5 0,0 3,2 3,7\"]}|polygon:{\"polys\":[\"1,0 7,1 7,2 4,6 2,6 0,4\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 12 birim kare, eni 3 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 4.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 2,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 1.5,
+       "y": 2,
+       "text": "12",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 12,
+      "en": 3
+     },
+     "answer": 4,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,0 3,4 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 8,
+      "H": 5
+     },
+     "answer": 34,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 8,0 8,5 0,5",
+         "-1,4 3,4 3,5 1,5",
+         "-1,0 3,0 3,2 1,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "2",
+      "8",
+      "12",
+      "6"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 6,
+      "h": 2,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 7,2 1,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "15",
+      "20",
+      "21",
+      "16"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 5,
+      "h": 3,
+      "s": 2,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,5 0,0 3,2 3,7"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 29,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "1,0 7,1 7,2 4,6 2,6 0,4"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    4,
+    34,
+    3,
+    0,
+    29
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 5,0 5,8 0,8\"]}|cutout:{\"polys\":[\"0,0 7,0 7,6 0,6\",\"-7,6 4,6 7,4\",\"-2,2 5,2 5,3 2,3\"]}|polygon:{\"polys\":[\"3,0 5,0 6,2 4,5 2,5 0,4\"]}|para:{\"polys\":[\"2,0 5,0 3,3 0,3\"]}|triangle:{\"polys\":[\"0,0 4,0 6,4\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 40 birim kare, eni 5 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 2.5,
+       "y": 8.5,
+       "text": "5"
+      },
+      {
+       "x": -0.5,
+       "y": 4,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 2.5,
+       "y": 4,
+       "text": "40",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 40,
+      "en": 5
+     },
+     "answer": 8,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 5,8 0,8"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 7,
+      "H": 6
+     },
+     "answer": 36,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 7,0 7,6 0,6",
+         "-7,6 4,6 7,4",
+         "-2,2 5,2 5,3 2,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 19,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "3,0 5,0 6,2 4,5 2,5 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "15",
+      "12",
+      "11",
+      "9"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 3,
+      "h": 3,
+      "s": 2,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 5,0 3,3 0,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "10",
+      "8",
+      "3",
+      "16"
+     ],
+     "answer": 1,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "base",
+      "b": 4,
+      "h": 4,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 6,4"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    8,
+    36,
+    19,
+    3,
+    1
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 3,0 3,7 0,7\"]}|polygon:{\"polys\":[\"0,0 1,0 7,1 7,4 3,5 2,5\"]}|para:{\"polys\":[\"4,0 4,3 0,5 0,2\"]}|triangle:{\"polys\":[\"1,0 3,2 0,3\"]}|cutout:{\"polys\":[\"0,0 8,0 8,5 0,5\",\"-3,0 6,0 6,3 3,3\",\"-1,4 4,4 4,5 1,5\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 21 birim kare, eni 3 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 1.5,
+       "y": 7.5,
+       "text": "3"
+      },
+      {
+       "x": -0.5,
+       "y": 3.5,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 1.5,
+       "y": 3.5,
+       "text": "21",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 21,
+      "en": 3
+     },
+     "answer": 7,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 3,0 3,7 0,7"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 25,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 1,0 7,1 7,4 3,5 2,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "20",
+      "6",
+      "15",
+      "12"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 3,
+      "h": 4,
+      "s": 2,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "4,0 4,3 0,5 0,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "5",
+      "1",
+      "4",
+      "6"
+     ],
+     "answer": 2,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "general"
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "1,0 3,2 0,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 8,
+      "H": 5
+     },
+     "answer": 28,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 8,0 8,5 0,5",
+         "-3,0 6,0 6,3 3,3",
+         "-1,4 4,4 4,5 1,5"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    7,
+    25,
+    3,
+    2,
+    28
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 5,0 5,6 0,6\"]}|para:{\"polys\":[\"7,3 2,3 0,0 5,0\"]}|polygon:{\"polys\":[\"2,0 6,6 2,7 0,6\"]}|triangle:{\"polys\":[\"0,0 6,1 2,3\"]}|cutout:{\"polys\":[\"0,0 8,0 8,6 0,6\",\"-5,4 8,4 8,5 5,5\",\"-0,4 1,6 0,6\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 30 birim kare, eni 5 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 2.5,
+       "y": 6.5,
+       "text": "5"
+      },
+      {
+       "x": -0.5,
+       "y": 3,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 2.5,
+       "y": 3,
+       "text": "30",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 30,
+      "en": 5
+     },
+     "answer": 6,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 5,6 0,6"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "15",
+      "20",
+      "21",
+      "16"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 5,
+      "h": 3,
+      "s": 2,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "7,3 2,3 0,0 5,0"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 21,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 6,6 2,7 0,6"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "9",
+      "10",
+      "2",
+      "8"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "general"
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 6,1 2,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 8,
+      "H": 6
+     },
+     "answer": 44,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 8,0 8,6 0,6",
+         "-5,4 8,4 8,5 5,5",
+         "-0,4 1,6 0,6"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    6,
+    0,
+    21,
+    3,
+    44
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 4,0 4,6 0,6\"]}|triangle:{\"polys\":[\"0,0 5,3 3,5\"]}|para:{\"polys\":[\"2,0 2,4 0,6 0,2\"]}|polygon:{\"polys\":[\"6,0 7,1 7,2 4,7 0,3\"]}|cutout:{\"polys\":[\"0,0 8,0 8,7 0,7\",\"-3,2 6,2 6,5 3,5\",\"-0,5 1,7 0,7\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 24 birim kare, eni 4 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 2,
+       "y": 6.5,
+       "text": "4"
+      },
+      {
+       "x": -0.5,
+       "y": 3,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 2,
+       "y": 3,
+       "text": "24",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 24,
+      "en": 4
+     },
+     "answer": 6,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 4,0 4,6 0,6"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "8",
+      "2",
+      "10",
+      "17"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "general"
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,3 3,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "12",
+      "4",
+      "8",
+      "10"
+     ],
+     "answer": 2,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 4,
+      "h": 2,
+      "s": 2,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "2,0 2,4 0,6 0,2"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 24,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "6,0 7,1 7,2 4,7 0,3"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 8,
+      "H": 7
+     },
+     "answer": 46,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 8,0 8,7 0,7",
+         "-3,2 6,2 6,5 3,5",
+         "-0,5 1,7 0,7"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    6,
+    0,
+    2,
+    24,
+    46
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 5,0 5,8 0,8\"]}|cutout:{\"polys\":[\"0,0 9,0 9,6 0,6\",\"-6,4 9,4 9,5 6,5\",\"-0,4 1,6 0,6\"]}|polygon:{\"polys\":[\"4,0 7,3 7,5 5,6 0,5\"]}|triangle:{\"polys\":[\"4,3 0,1 1,0\"]}|para:{\"polys\":[\"0,5 0,0 3,2 3,7\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 40 birim kare, eni 5 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 2.5,
+       "y": 8.5,
+       "text": "5"
+      },
+      {
+       "x": -0.5,
+       "y": 4,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 2.5,
+       "y": 4,
+       "text": "40",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 40,
+      "en": 5
+     },
+     "answer": 8,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 5,8 0,8"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 9,
+      "H": 6
+     },
+     "answer": 50,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 9,0 9,6 0,6",
+         "-6,4 9,4 9,5 6,5",
+         "-0,4 1,6 0,6"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 24,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "4,0 7,3 7,5 5,6 0,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "6",
+      "5",
+      "3",
+      "9"
+     ],
+     "answer": 2,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "general"
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "4,3 0,1 1,0"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "15",
+      "20",
+      "16",
+      "21"
+     ],
+     "answer": 0,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 5,
+      "h": 3,
+      "s": 2,
+      "vertical": true
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,5 0,0 3,2 3,7"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    8,
+    50,
+    24,
+    2,
+    0
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 7,0 7,8 0,8\"]}|cutout:{\"polys\":[\"0,0 8,0 8,7 0,7\",\"-5,1 8,1 8,2 5,2\",\"-8,7 6,7 8,5\"]}|triangle:{\"polys\":[\"6,5 0,1 3,0\"]}|polygon:{\"polys\":[\"6,0 8,2 8,3 6,6 0,6\"]}|para:{\"polys\":[\"1,0 6,0 5,3 0,3\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 56 birim kare, eni 7 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 3.5,
+       "y": 8.5,
+       "text": "7"
+      },
+      {
+       "x": -0.5,
+       "y": 4,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 3.5,
+       "y": 4,
+       "text": "56",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 56,
+      "en": 7
+     },
+     "answer": 8,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 7,0 7,8 0,8"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 8,
+      "H": 7
+     },
+     "answer": 51,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 8,0 8,7 0,7",
+         "-5,1 8,1 8,2 5,2",
+         "-8,7 6,7 8,5"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "15",
+      "9",
+      "21",
+      "2"
+     ],
+     "answer": 1,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "general"
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "6,5 0,1 3,0"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 25,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "6,0 8,2 8,3 6,6 0,6"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "18",
+      "15",
+      "20",
+      "16"
+     ],
+     "answer": 1,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 5,
+      "h": 3,
+      "s": 1,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "1,0 6,0 5,3 0,3"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    8,
+    51,
+    1,
+    25,
+    1
+   ]
+  },
+  {
+   "difficulty": "hard",
+   "puzzle": "inverse:{\"polys\":[\"0,0 5,0 5,6 0,6\"]}|triangle:{\"polys\":[\"1,4 0,2 4,0\"]}|para:{\"polys\":[\"5,3 1,3 0,0 4,0\"]}|polygon:{\"polys\":[\"3,0 6,0 7,6 4,6 0,4\"]}|cutout:{\"polys\":[\"0,0 8,0 8,6 0,6\",\"-3,1 5,1 5,3 3,3\",\"-8,1 6,0 8,0\",\"-0,1 2,1 2,3 0,3\"]}",
+   "questions": [
+    {
+     "kind": "inverse",
+     "input": "num",
+     "grid": false,
+     "prompt": "Bu dikdörtgenin alanı 30 birim kare, eni 5 birim. Boyu kaç birim?",
+     "labels": [
+      {
+       "x": 2.5,
+       "y": 6.5,
+       "text": "5"
+      },
+      {
+       "x": -0.5,
+       "y": 3,
+       "text": "?",
+       "cls": "q"
+      },
+      {
+       "x": 2.5,
+       "y": 3,
+       "text": "30",
+       "cls": "big"
+      }
+     ],
+     "meta": {
+      "area": 30,
+      "en": 5
+     },
+     "answer": 6,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 5,0 5,6 0,6"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "triangle",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "11",
+      "7",
+      "5",
+      "8"
+     ],
+     "answer": 2,
+     "prompt": "Boyalı üçgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "mode": "general"
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "1,4 0,2 4,0"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "para",
+     "input": "mc",
+     "grid": true,
+     "options": [
+      "15",
+      "16",
+      "6",
+      "12"
+     ],
+     "answer": 3,
+     "prompt": "Boyalı paralelkenarın alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "b": 4,
+      "h": 3,
+      "s": 1,
+      "vertical": false
+     },
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "5,3 1,3 0,0 4,0"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "polygon",
+     "input": "num",
+     "grid": true,
+     "prompt": "Köşeleri ızgara noktalarında olan bu şeklin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {},
+     "answer": 29,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "3,0 6,0 7,6 4,6 0,4"
+        ]
+       }
+      }
+     ]
+    },
+    {
+     "kind": "cutout",
+     "input": "num",
+     "grid": true,
+     "prompt": "Büyük dikdörtgenden bazı parçalar kesilip çıkarıldı. Kalan boyalı bölgenin alanı kaç birim kare?",
+     "labels": [],
+     "meta": {
+      "W": 8,
+      "H": 6
+     },
+     "answer": 39,
+     "shapes": [
+      {
+       "region": {
+        "polys": [
+         "0,0 8,0 8,6 0,6",
+         "-3,1 5,1 5,3 3,3",
+         "-8,1 6,0 8,0",
+         "-0,1 2,1 2,3 0,3"
+        ]
+       }
+      }
+     ]
+    }
+   ],
+   "solution": [
+    6,
+    2,
+    3,
+    29,
+    39
+   ]
+  }
+ ]
+}

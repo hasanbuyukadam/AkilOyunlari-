@@ -1,0 +1,98 @@
+.area-game {
+  --fa: #4f9dea; --fb: #f09a3e; --oa: #1f5fa8; --ob: #b45f0d;
+  width: 100%; max-width: 560px; display: flex; flex-direction: column; align-items: center; gap: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  .area-game { --fa: #3a78bd; --fb: #c27a2c; --oa: #9cc8ff; --ob: #ffc48a; }
+}
+.area-game .area-top { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.area-game .area-dots { display: flex; gap: 8px; }
+.area-game .dot { width: 16px; height: 16px; border-radius: 50%; background: var(--line); transition: background .3s, transform .3s; }
+.area-game .dot.cur { background: var(--accent); transform: scale(1.2); }
+.area-game .dot.ok { background: var(--ok); }
+.area-game .area-count { color: var(--muted); font-size: .9rem; font-weight: 600; }
+.area-game .area-prompt { margin: 2px 0 0; font-size: 1.15rem; font-weight: 600; text-align: center; line-height: 1.4; }
+.area-game .area-fig {
+  width: 100%; display: flex; justify-content: center; background: var(--card); border: 1px solid var(--line);
+  border-radius: 14px; padding: 8px; transition: border-color .3s, box-shadow .3s;
+}
+.area-game .area-fig.solved { border-color: var(--ok); box-shadow: 0 0 0 3px color-mix(in srgb, var(--ok) 25%, transparent); }
+.area-game svg { display: block; height: auto; max-height: 360px; overflow: visible; }
+.area-game svg .grid { fill: none; stroke: var(--text); stroke-opacity: .16; stroke-width: .035; pointer-events: none; }
+.area-game svg .fill-a { fill: var(--fa); stroke: var(--fa); stroke-width: .02; }
+.area-game svg .fill-b { fill: var(--fb); stroke: var(--fb); stroke-width: .02; }
+.area-game svg .hole { fill: var(--card); }
+.area-game svg .hole-line { fill: none; stroke: var(--danger); stroke-width: .06; stroke-dasharray: .18 .12; }
+.area-game svg .outline { fill: none; stroke: var(--oa); stroke-width: .09; stroke-linecap: round; stroke-linejoin: round; }
+.area-game svg .outline.ob { stroke: var(--ob); }
+.area-game svg text { font-family: inherit; text-anchor: middle; dominant-baseline: central; font-weight: 700; pointer-events: none; }
+.area-game svg .sname { font-size: .75px; fill: var(--oa); }
+.area-game svg .sname.nb { fill: var(--ob); }
+.area-game svg .lbl { font-size: .55px; fill: var(--text); }
+.area-game svg .lbl.q { fill: var(--danger); font-size: .7px; }
+.area-game svg .lbl.big { font-size: .8px; fill: #fff; paint-order: stroke; stroke: var(--oa); stroke-width: .12; }
+/* çizim katmanı (Böl ve Say / açıklama) */
+.area-game svg .ov polygon { stroke-width: .06; }
+.area-game svg .ov-p0 { fill: #ffd54f; fill-opacity: .55; stroke: #c79100; }
+.area-game svg .ov-p1 { fill: #81c784; fill-opacity: .6; stroke: #2e7d32; }
+.area-game svg .ov-p2 { fill: #f48fb1; fill-opacity: .55; stroke: #ad1457; }
+.area-game svg .ov-p3 { fill: #b39ddb; fill-opacity: .6; stroke: #4527a0; }
+.area-game svg .ov-neg { fill: var(--danger); fill-opacity: .35; stroke: var(--danger); stroke-dasharray: .15 .1; }
+.area-game svg .ov-box { fill: none; stroke: var(--text); stroke-dasharray: .2 .14; }
+.area-game svg .ov-move { fill: var(--ok); fill-opacity: .35; stroke: var(--ok); stroke-dasharray: .15 .1; }
+.area-game svg .ov-cell { fill: none; stroke: #c79100; stroke-width: .03 !important; }
+.area-game svg .ov-thin { stroke: #c79100; stroke-width: .03; }
+.area-game svg .ov-e0 { stroke: #e53935; stroke-width: .16; stroke-linecap: round; }
+.area-game svg .ov-e1 { stroke: #fbc02d; stroke-width: .16; stroke-linecap: round; }
+.area-game svg .ov-h { stroke: #e65100; stroke-width: .07; stroke-dasharray: .15 .1; }
+.area-game svg .ov-base { stroke: #e65100; stroke-width: .14; stroke-linecap: round; }
+.area-game svg .ov-arrow { stroke: var(--ok); stroke-width: .08; }
+.area-game svg .ov-arrowhead { fill: var(--ok); }
+.area-game svg .ov-txt, .area-game svg .ov-small {
+  fill: #1f2430; paint-order: stroke; stroke: #fff; stroke-width: .1; stroke-linejoin: round;
+}
+.area-game svg .ov-txt { font-size: .5px; }
+.area-game svg .ov-small { font-size: .38px; }
+/* cevap alanı */
+.area-game .area-answer { width: 100%; display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.area-game .area-display {
+  min-width: 150px; padding: 8px 18px; border-radius: 12px; border: 2px solid var(--accent); background: var(--card);
+  font-size: 2rem; font-weight: 800; text-align: center; color: var(--text); display: flex; align-items: baseline; gap: 8px; justify-content: center;
+}
+.area-game .area-display small { font-size: .85rem; font-weight: 600; color: var(--muted); }
+.area-game .area-display.empty { color: var(--muted); }
+.area-game .area-display.right { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 15%, var(--card)); }
+.area-game .area-range { font-weight: 600; color: var(--accent); }
+.area-game .area-pad { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; width: min(100%, 400px); }
+.area-game .area-pad button, .area-game .opt {
+  min-height: 50px; border-radius: 12px; border: 1px solid var(--line); background: var(--card); color: var(--text);
+  font: inherit; font-size: 1.35rem; font-weight: 700; cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent;
+}
+.area-game .area-pad button:hover, .area-game .opt:hover:not(:disabled) { border-color: var(--accent); }
+.area-game .area-pad button:active, .area-game .opt:active:not(:disabled) { background: var(--accent-soft); }
+.area-game .area-pad [data-act="erase"] { grid-column: span 2; }
+.area-game .area-pad .check { grid-column: span 3; background: var(--accent); border-color: var(--accent); color: #fff; font-size: 1.1rem; }
+.area-game .area-options { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; width: min(100%, 420px); }
+.area-game .area-options.n3 { grid-template-columns: repeat(3, 1fr); }
+.area-game .opt { min-height: 56px; padding: 8px; font-size: 1.25rem; }
+.area-game .area-options.n3 .opt { font-size: 1.05rem; }
+.area-game .opt.right { border: 2px solid var(--ok); background: color-mix(in srgb, var(--ok) 22%, var(--card)); opacity: 1; }
+.area-game .opt.wrong { border: 2px solid var(--danger); background: color-mix(in srgb, var(--danger) 14%, var(--card)); }
+.area-game .opt.gone { opacity: .25; text-decoration: line-through; cursor: default; }
+.area-game .opt:disabled:not(.right):not(.gone) { opacity: .55; cursor: default; }
+.area-game .area-feedback { margin: 0; min-height: 1.3em; text-align: center; font-weight: 600; color: var(--muted); }
+.area-game .area-feedback.bad { color: var(--danger); }
+.area-game .shake { animation: area-shake .4s ease; }
+@keyframes area-shake { 20%, 60% { transform: translateX(-7px); } 40%, 80% { transform: translateX(7px); } }
+.area-game .area-explain {
+  width: 100%; background: color-mix(in srgb, var(--ok) 10%, var(--card)); border: 2px solid var(--ok); border-radius: 14px;
+  padding: 12px 16px; text-align: center; line-height: 1.5; animation: area-pop .3s ease;
+}
+.area-game .area-explain p { margin: 4px 0 10px; }
+.area-game .area-good { font-size: 1.3rem; font-weight: 800; color: var(--ok); }
+.area-game .area-next { font: inherit; font-weight: 700; font-size: 1.05rem; padding: 12px 28px; cursor: pointer; min-height: 48px; }
+@keyframes area-pop { from { transform: scale(.95); opacity: 0; } to { transform: none; opacity: 1; } }
+@media (max-width: 480px) {
+  .area-game .area-prompt { font-size: 1.05rem; }
+  .area-game .area-fig { padding: 4px; }
+}
