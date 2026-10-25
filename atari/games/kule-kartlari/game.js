@@ -96,6 +96,7 @@ export default class TowerCards {
     this.streak = 0;
     this.duel = 1;
     this.sel = 0;
+    this.tapSel = -1;
     this.popups = [];
     this.parts = [];
     this.fxAnims = [];
@@ -338,14 +339,17 @@ export default class TowerCards {
       const inR = (r) => p.x >= r.x && p.x < r.x + r.w && p.y >= r.y && p.y < r.y + r.h;
       for (let i = 0; i < 6; i++) {
         if (inR({ x: cardX(i), y: HAND_Y - 8, w: CARD_W, h: CARD_H + 8 })) {
-          if (this.sel === i) act = 'play';
-          else { this.sel = i; this.sfx.play('blip'); }
+          // Dokunmatikte ilk dokunuş seçer, aynı karta ikinci dokunuş oynar
+          if (this.tapSel === i) act = 'play';
+          else { this.sel = i; this.tapSel = i; this.sfx.play('blip'); }
         }
       }
       if (inR(BTN_PLAY)) act = 'play';
       if (inR(BTN_DISC)) act = 'discard';
     }
+    if (input.pressed('left') || input.pressed('right')) this.tapSel = -1;
     if (!act) return;
+    this.tapSel = -1;
     const card = L.CARD_BY_ID[g.hands[0][this.sel]];
     if (act === 'play' && !L.canAfford(g.p[0], card)) {
       this.msg = { text: `YETERSİZ ${L.RES_NAME[card.type]}`, t: 60, col: '#ff6050' };

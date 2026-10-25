@@ -280,7 +280,7 @@ export default class SuperBiyik {
     e.y += e.vy;
     e.onGround = false;
     if (e.vy > 0) {
-      const row = Math.floor((e.y + e.h - 1) / T);
+      const row = Math.floor((e.y + e.h) / T);
       if (row >= 0 && this.solidRow(row, e.x, e.x + e.w - 1)) {
         e.y = row * T - e.h;
         e.vy = 0;
@@ -1597,5 +1597,3 @@ export default class SuperBiyik {
   }
 }
 
-// Geliştirme / test için
-export const _debug = { LEVELS, buildArea };

@@ -13,7 +13,7 @@ export const GAMES = [
   { id: 'tank-90', title: 'Tank 90', style: 'Tank 1990 / Battle City tarzı', year: '1990', color: '#c8c8c8', desc: 'Karargâhı (kartalı) koru, düşman tanklarını yok et. Tuğlalar yıkılır, çelik yıkılmaz.' },
   { id: 'super-biyik', title: 'Süper Bıyık', style: 'Super Mario tarzı', year: '1985', color: '#e8382f', desc: 'Yandan kayan dünyada koş, zıpla, düşmanlara üstten bas, altınları topla, bayrağa ulaş.' },
   { id: 'sokak-dovuscusu', title: 'Sokak Dövüşçüsü', style: 'Street Fighter tarzı', year: '1991', color: '#ffb000', desc: 'Bilgisayara karşı birebir dövüş. Yumruk, tekme, blok ve özel ateş topu hareketi.' },
-  { id: 'olumcul-dovus', title: 'Ölümcül Dövüş', style: 'Mortal Kombat tarzı', year: '1992', color: '#b30000', desc: 'Karanlık arenada üç raunt üzerinden dövüş. Özel hareketler ve "BİTİR ONU!" anı.' },
+  { id: 'olumcul-dovus', title: 'Ölümcül Dövüş', style: 'Mortal Kombat tarzı', year: '1992', color: '#e8343a', desc: 'Karanlık arenada üç raunt üzerinden dövüş. Özel hareketler ve "BİTİR ONU!" anı.' },
   { id: 'yol-savascisi', title: 'Yol Savaşçısı', style: 'Road Fighter tarzı', year: '1984', color: '#00c0ff', desc: 'Trafikte çarpmadan hızlan, yakıtını topla, bitiş çizgisine yetiş.' },
   { id: 'alan-kapan', title: 'Alan Kapan', style: 'Volfied / Qix tarzı', year: '1989', color: '#a070ff', desc: 'Kenardan çizgi çekerek alanı kapat; canavar çizgine değmeden alanın %80\'ini al.' },
   { id: 'kule-kartlari', title: 'Kule Kartları', style: 'Ant Cards / Arcomage tarzı', year: '1997', color: '#d4a03a', desc: 'Elindeki kartlarla kuleni yükselt, duvar ör, rakibine saldır. Kulesini ilk 50\'ye çıkaran kazanır.' },

@@ -51,3 +51,7 @@ tools/                          Level üretici ve doğrulayıcı
 | Sudoku | 🔍 Hücre Aç · ❗ Hata Bul · 💡 Akıllı İpucu (sıradaki mantıklı hamleyi nedeniyle gösterir) |
 
 Sudoku zorlukları: Kolay 42→34 ipucu, Orta 33→27 ipucu (yalnızca tekli tekniklerle çözülür), Zor 29→25 ipucu (çift/işaretleme gibi ileri teknik gerektirir). Hiçbir level tahmin gerektirmez.
+
+## Atari Salonu
+
+`atari/` klasöründe 90'ların 20 efsane atari oyunu var (Pac-Man, Tetris, Mario, Street Fighter tarzı...). Ayrıntılar: [atari/README.md](atari/README.md). `npm run serve` ile açıp http://localhost:8080/atari/ adresine gidin.
