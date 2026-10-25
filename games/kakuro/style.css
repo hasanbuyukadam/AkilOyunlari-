@@ -1,0 +1,102 @@
+.kakuro-game {
+  --kk-black: #3b4256;
+  --kk-black-line: #59617a;
+  --kk-clue: #ffffff;
+  --kk-white: var(--card);
+  --kk-yellow: #f0b429;
+  --bw: 460px;
+  --board: min(calc(100vw - 32px), var(--bw));
+  --cell: calc(var(--board) / var(--s));
+  width: 100%; display: flex; flex-direction: column; align-items: center; gap: 12px;
+}
+@media (prefers-color-scheme: dark) {
+  .kakuro-game { --kk-black: #07080b; --kk-black-line: #3a4050; --kk-clue: #e8eaf0; --kk-white: #2c3140; }
+}
+.kakuro-game.s5 { --bw: 320px; }
+.kakuro-game.s6 { --bw: 360px; }
+.kakuro-game.s7 { --bw: 400px; }
+.kakuro-game.s8 { --bw: 440px; }
+
+.kakuro-game .kk-board {
+  display: grid; grid-template-columns: repeat(var(--s), 1fr); grid-template-rows: repeat(var(--s), 1fr);
+  width: var(--board); aspect-ratio: 1; gap: 1px;
+  background: var(--line); border: 3px solid var(--kk-black); border-radius: 8px; overflow: hidden;
+  touch-action: manipulation;
+}
+.kakuro-game .kk-b {
+  position: relative; background: var(--kk-black); min-width: 0; min-height: 0;
+}
+.kakuro-game .kk-b.clue {
+  cursor: pointer;
+  background:
+    linear-gradient(to top right, transparent calc(50% - 1px), var(--kk-black-line) calc(50% - 1px), var(--kk-black-line) calc(50% + 1px), transparent calc(50% + 1px)),
+    var(--kk-black);
+}
+.kakuro-game .kk-r, .kakuro-game .kk-d {
+  position: absolute; color: var(--kk-clue); font-weight: 700; line-height: 1;
+  font-size: calc(var(--cell) * .3); padding: 1px 2px; border-radius: 4px;
+}
+.kakuro-game .kk-r { top: 6%; right: 6%; }
+.kakuro-game .kk-d { bottom: 6%; left: 6%; }
+.kakuro-game .kk-r.cur, .kakuro-game .kk-d.cur { background: var(--accent); color: #fff; }
+.kakuro-game .kk-r.ok, .kakuro-game .kk-d.ok { color: #7ee2a0; }
+.kakuro-game .kk-r.cur.ok, .kakuro-game .kk-d.cur.ok { background: var(--ok); color: #fff; }
+.kakuro-game .kk-r.bad, .kakuro-game .kk-d.bad { background: var(--danger); color: #fff; }
+
+.kakuro-game .kk-w {
+  border: 0; background: var(--kk-white); color: var(--accent); font: inherit; font-weight: 600;
+  font-size: calc(var(--cell) * .56); display: flex; align-items: center; justify-content: center;
+  padding: 0; cursor: pointer; line-height: 1; overflow: hidden; min-width: 0; min-height: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.kakuro-game .kk-w.revealed { color: var(--ok); font-weight: 700; }
+.kakuro-game .kk-w.run { background: color-mix(in srgb, var(--accent) 10%, var(--kk-white)); }
+.kakuro-game .kk-w.area { background: color-mix(in srgb, var(--kk-yellow) 30%, var(--kk-white)); }
+.kakuro-game .kk-w.same { background: color-mix(in srgb, var(--accent) 22%, var(--kk-white)); }
+.kakuro-game .kk-w.sel { background: color-mix(in srgb, var(--accent) 36%, var(--kk-white)); }
+.kakuro-game .kk-w.bad { color: var(--danger); background: color-mix(in srgb, var(--danger) 12%, var(--kk-white)); }
+.kakuro-game .kk-w.bad.sel { background: color-mix(in srgb, var(--danger) 26%, var(--kk-white)); }
+.kakuro-game .kk-w.wrong { background: color-mix(in srgb, var(--danger) 32%, var(--kk-white)); color: var(--danger); }
+.kakuro-game .kk-w.hinted { animation: kk-pulse 1s ease-in-out 3; box-shadow: inset 0 0 0 3px var(--kk-yellow); }
+@keyframes kk-pulse { 50% { box-shadow: inset 0 0 0 6px var(--kk-yellow); } }
+.kakuro-game .kk-board.solved .kk-w { background: color-mix(in srgb, var(--ok) 22%, var(--kk-white)); transition: background .3s; }
+
+.kakuro-game .kk-notes {
+  display: grid; grid-template-columns: repeat(3, 1fr); grid-auto-rows: 1fr; width: 100%; height: 100%; padding: 1px;
+}
+.kakuro-game .kk-notes i {
+  font-style: normal; font-weight: 500; font-size: calc(var(--cell) * .22); line-height: 1; color: var(--muted);
+  display: flex; align-items: center; justify-content: center;
+}
+
+.kakuro-game .kk-combos {
+  width: var(--board); background: var(--card); border: 2px solid var(--kk-yellow); border-radius: 12px;
+  padding: 10px 12px; display: flex; flex-direction: column; gap: 8px;
+}
+.kakuro-game .kk-combos[hidden] { display: none; }
+.kakuro-game .kk-combos-title { font-weight: 700; }
+.kakuro-game .kk-combo-head { font-size: .95rem; margin-bottom: 4px; }
+.kakuro-game .kk-combo-head small { color: var(--muted); }
+.kakuro-game .kk-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.kakuro-game .kk-chip {
+  padding: 3px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--text);
+  font-size: .95rem; font-variant-numeric: tabular-nums;
+}
+.kakuro-game .kk-chip b { color: var(--accent); }
+.kakuro-game .kk-chip.out { text-decoration: line-through; opacity: .5; }
+.kakuro-game .kk-chip.more { background: transparent; color: var(--muted); }
+
+.kakuro-game .kk-pad {
+  display: grid; grid-template-columns: repeat(12, 1fr); gap: 6px; width: min(calc(100vw - 32px), 460px);
+}
+.kakuro-game .kk-pad button {
+  min-height: 46px; padding: 8px 0; border-radius: 8px; border: 1px solid var(--line); background: var(--card);
+  color: var(--text); font: inherit; font-size: 1.2rem; font-weight: 600; cursor: pointer; touch-action: manipulation;
+}
+.kakuro-game .kk-pad button:hover { border-color: var(--accent); }
+.kakuro-game .kk-pad button:active { background: var(--accent-soft); }
+.kakuro-game .kk-pad .kk-notes-btn { font-size: .8rem; white-space: nowrap; grid-column: span 2; }
+.kakuro-game .kk-pad .kk-notes-btn.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+@media (max-width: 480px) {
+  .kakuro-game .kk-pad { grid-template-columns: repeat(6, 1fr); }
+}
