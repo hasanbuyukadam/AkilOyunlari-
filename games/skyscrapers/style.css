@@ -1,0 +1,92 @@
+.skyscrapers {
+  --sk-w: min(100%, calc(62px * (var(--n) + 1.3)), 480px);
+  width: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px;
+}
+.skyscrapers .sk-board {
+  display: grid; width: var(--sk-w);
+  grid-template-columns: .65fr repeat(var(--n), 1fr) .65fr;
+  grid-template-rows: .65fr repeat(var(--n), 1fr) .65fr;
+  user-select: none; -webkit-user-select: none;
+}
+.skyscrapers .sk-corner { aspect-ratio: auto; }
+.skyscrapers .sk-clue {
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: clamp(.95rem, 4vw, 1.3rem); color: var(--text);
+  border-radius: 8px; margin: 3px; transition: background .2s, color .2s;
+}
+.skyscrapers .sk-clue.empty { visibility: hidden; }
+.skyscrapers .sk-clue.done { color: var(--muted); opacity: .55; }
+.skyscrapers .sk-clue.bad { color: #fff; background: var(--danger); opacity: 1; }
+.skyscrapers .sk-clue.hinted { box-shadow: 0 0 0 3px #f0b429; animation: sk-pulse 1s ease-in-out 3; opacity: 1; color: var(--text); }
+.skyscrapers .sk-clue.bad.hinted { color: #fff; }
+
+.skyscrapers .sk-cell {
+  position: relative; aspect-ratio: 1; padding: 0; margin: 0; cursor: pointer;
+  border: 0; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  border-radius: 0; background: var(--card); color: var(--accent);
+  font: inherit; font-size: clamp(1.15rem, 5.4vw, 1.75rem); font-weight: 600;
+  display: flex; align-items: center; justify-content: center; overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+/* Bina silueti: yükseklikle orantılı dolgu */
+.skyscrapers .sk-cell::before {
+  content: ''; position: absolute; left: 0; right: 0; bottom: 0;
+  height: calc(var(--h, 0) * 100%);
+  background: linear-gradient(to top, color-mix(in srgb, var(--accent) 20%, transparent), color-mix(in srgb, var(--accent) 6%, transparent));
+  transition: height .2s;
+}
+.skyscrapers .sk-cell > span { position: relative; }
+.skyscrapers .sk-cell.given { color: var(--text); font-weight: 800; }
+.skyscrapers .sk-cell.given::before { background: linear-gradient(to top, color-mix(in srgb, var(--text) 18%, transparent), color-mix(in srgb, var(--text) 5%, transparent)); }
+.skyscrapers .sk-cell.revealed::before { background: linear-gradient(to top, color-mix(in srgb, var(--ok) 24%, transparent), color-mix(in srgb, var(--ok) 6%, transparent)); }
+.skyscrapers .sk-cell.revealed { color: var(--ok); font-weight: 800; }
+.skyscrapers .sk-cell.peer { background: color-mix(in srgb, var(--accent) 7%, var(--card)); }
+.skyscrapers .sk-cell.hline { background: color-mix(in srgb, #f0b429 14%, var(--card)); }
+.skyscrapers .sk-cell.same { background: color-mix(in srgb, var(--accent) 20%, var(--card)); }
+.skyscrapers .sk-cell.sel { background: color-mix(in srgb, var(--accent) 34%, var(--card)); }
+.skyscrapers .sk-cell.conflict { color: var(--danger); }
+.skyscrapers .sk-cell.wrong { background: color-mix(in srgb, var(--danger) 28%, var(--card)); color: var(--danger); }
+.skyscrapers .sk-cell.hinted { box-shadow: inset 0 0 0 3px #f0b429; animation: sk-pulse-in 1s ease-in-out 3; z-index: 1; }
+@keyframes sk-pulse { 50% { box-shadow: 0 0 0 6px #f0b429; } }
+@keyframes sk-pulse-in { 50% { box-shadow: inset 0 0 0 6px #f0b429; } }
+
+/* Dış çerçeve */
+.skyscrapers .sk-cell.et { border-top: 2px solid var(--text); }
+.skyscrapers .sk-cell.eb { border-bottom: 2px solid var(--text); }
+.skyscrapers .sk-cell.el { border-left: 2px solid var(--text); }
+.skyscrapers .sk-cell.er { border-right: 2px solid var(--text); }
+.skyscrapers .sk-cell.et.el { border-top-left-radius: 8px; }
+.skyscrapers .sk-cell.et.er { border-top-right-radius: 8px; }
+.skyscrapers .sk-cell.eb.el { border-bottom-left-radius: 8px; }
+.skyscrapers .sk-cell.eb.er { border-bottom-right-radius: 8px; }
+.skyscrapers .sk-board.solved .sk-cell { background: color-mix(in srgb, var(--ok) 20%, var(--card)); transition: background .3s; }
+.skyscrapers .sk-board.solved .sk-clue.done { color: var(--ok); opacity: 1; }
+
+.skyscrapers .sk-notes {
+  position: relative; display: grid; grid-template-columns: repeat(var(--nc), 1fr);
+  width: 100%; height: 100%; padding: 3px; align-content: center;
+}
+.skyscrapers .sk-notes i {
+  font-style: normal; font-weight: 500; font-size: clamp(.62rem, 2.8vw, .85rem); line-height: 1.2;
+  color: var(--muted); text-align: center;
+}
+
+.skyscrapers .sk-pad {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; width: min(100%, 560px);
+}
+.skyscrapers .sk-pad button {
+  flex: 1 1 42px; max-width: 64px; min-height: 46px; padding: 0;
+  border-radius: 10px; border: 1px solid var(--line); background: var(--card);
+  color: var(--text); font: inherit; font-size: 1.2rem; font-weight: 600; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.skyscrapers .sk-pad button:active { background: var(--accent-soft); }
+.skyscrapers .sk-pad .sk-notes-btn { font-size: .85rem; flex-basis: 64px; max-width: 80px; }
+.skyscrapers .sk-pad .sk-notes-btn.on { background: var(--accent); color: #fff; border-color: var(--accent); }
+@media (hover: hover) {
+  .skyscrapers .sk-pad button:hover { border-color: var(--accent); }
+  .skyscrapers .sk-cell:hover:not(.sel) { background: color-mix(in srgb, var(--accent) 12%, var(--card)); }
+}
+.skyscrapers .sk-cell:focus { outline: none; }
+.skyscrapers .sk-cell:focus-visible { outline: 2px solid var(--accent); outline-offset: -3px; }
+.skyscrapers .sk-board.solved { pointer-events: none; }
