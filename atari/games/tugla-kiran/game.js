@@ -573,9 +573,13 @@ export default class Breakout {
         sfx.play('explode');
       }
       if (p.dead > 90) {
+        if (this.overDone) return;
         this.lives--;
         if (this.lives <= 0) {
-          if (!this.overDone) { this.overDone = true; sfx.play('gameover'); this.api.gameOver(); }
+          this.lives = 0;
+          this.overDone = true;
+          sfx.play('gameover');
+          this.api.gameOver();
           return;
         }
         this.resetPaddle();
