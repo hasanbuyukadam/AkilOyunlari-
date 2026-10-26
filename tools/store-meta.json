@@ -1,0 +1,23 @@
+{
+  "sudoku": { "category": "Bulmaca / Sayısal Mantık", "tags": ["sudoku", "sayı bulmacası", "4x4 sudoku", "çocuk sudoku", "mantık", "matematik", "zeka oyunu"] },
+  "futoshiki": { "category": "Bulmaca / Sayısal Mantık", "tags": ["futoshiki", "büyük küçük", "eşitsizlik", "sayı bulmacası", "mantık", "matematik", "zeka oyunu"] },
+  "kakuro": { "category": "Bulmaca / Sayısal Mantık", "tags": ["kakuro", "toplama", "sayı bulmacası", "matematik", "mantık", "zeka oyunu", "eğitici"] },
+  "kenken": { "category": "Bulmaca / Sayısal Mantık", "tags": ["kenken", "hesap kafesi", "dört işlem", "matematik", "sayı bulmacası", "mantık", "eğitici"] },
+  "magicsquare": { "category": "Bulmaca / Sayısal Mantık", "tags": ["sihirli kare", "magic square", "toplama", "matematik", "sayı bulmacası", "eğitici", "zeka oyunu"] },
+  "nonogram": { "category": "Bulmaca / Görsel Mantık", "tags": ["nonogram", "kare karalamaca", "resim bulmacası", "piksel", "mantık", "boyama", "zeka oyunu"] },
+  "patterns": { "category": "Eğitici / Görsel Mantık", "tags": ["örüntü", "şekil örüntüleri", "dizi", "görsel zeka", "eğitici", "çocuk", "zeka oyunu"] },
+  "symmetry": { "category": "Eğitici / Görsel Mantık", "tags": ["simetri", "ayna", "boyama", "geometri", "eğitici", "çocuk", "görsel zeka"] },
+  "paperfold": { "category": "Eğitici / Görsel Mantık", "tags": ["kağıt katlama", "delik", "uzamsal zeka", "görsel zeka", "eğitici", "çocuk", "zeka oyunu"] },
+  "skyscrapers": { "category": "Bulmaca / Konumsal Mantık", "tags": ["apartmanlar", "skyscrapers", "bina bulmacası", "mantık", "sayı bulmacası", "zeka oyunu", "eğitici"] },
+  "tents": { "category": "Bulmaca / Konumsal Mantık", "tags": ["çadırlar ve ağaçlar", "tents", "kamp", "mantık", "ızgara bulmacası", "zeka oyunu", "eğitici"] },
+  "battleships": { "category": "Bulmaca / Konumsal Mantık", "tags": ["amiral battı", "battleships", "gemi bulmacası", "mantık", "ızgara bulmacası", "zeka oyunu", "eğitici"] },
+  "hashi": { "category": "Bulmaca / Yol ve Bağlantı", "tags": ["hashi", "köprü kurma", "adalar", "bağlantı", "mantık", "zeka oyunu", "eğitici"] },
+  "slitherlink": { "category": "Bulmaca / Yol ve Bağlantı", "tags": ["slitherlink", "çit çizme", "döngü", "çizgi bulmacası", "mantık", "zeka oyunu", "eğitici"] },
+  "numberlink": { "category": "Bulmaca / Yol ve Bağlantı", "tags": ["numberlink", "sayı bağla", "yol çizme", "renk bağlama", "mantık", "zeka oyunu", "eğitici"] },
+  "maze": { "category": "Bulmaca / Yol ve Bağlantı", "tags": ["labirent", "maze", "yol bulma", "çocuk", "dikkat", "eğitici", "zeka oyunu"] },
+  "logicgrid": { "category": "Bulmaca / Sözel Mantık", "tags": ["mantık tablosu", "logic grid", "einstein bulmacası", "sözel mantık", "ipucu", "zeka oyunu", "eğitici"] },
+  "cipher": { "category": "Eğitici / Sözel Mantık", "tags": ["şifre çözme", "gizli mesaj", "sezar şifresi", "kod", "harfler", "eğitici", "çocuk"] },
+  "shikaku": { "category": "Bulmaca / Geometrik Düşünme", "tags": ["shikaku", "dikdörtgen böl", "alan", "geometri", "mantık", "zeka oyunu", "eğitici"] },
+  "area": { "category": "Eğitici / Geometrik Düşünme", "tags": ["alan hesaplama", "alan problemleri", "geometri", "çevre", "matematik", "eğitici", "çocuk"] },
+  "cubenet": { "category": "Eğitici / Geometrik Düşünme", "tags": ["küp açılımı", "küp", "uzamsal zeka", "3 boyut", "geometri", "eğitici", "zeka oyunu"] }
+}

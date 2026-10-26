@@ -74,3 +74,12 @@ tools/                          Level üretici ve doğrulayıcı
 | Geometrik | Küp Açılımları | hangisi küp olur, karşı yüz | sembollü küpler | yönlü semboller, iki görünüş | ✂️ Yarı Yarıya · 💡 İpucu · 📦 Katla |
 
 "Akıllı İpucu" her oyunda sıradaki mantıklı adımı bulur, ilgili hücreleri işaretler ve nedenini Türkçe açıklar. Hiçbir işe yaramayacağı durumda (ör. hata yokken "Hata Bul") booster hakkı harcanmaz.
+
+## Her oyunu ayrı yayınlamak
+
+```bash
+node tools/package-games.mjs            # 21 oyunun hepsi
+node tools/package-games.mjs sudoku     # yalnızca bir oyun
+```
+
+`dist/oyunlar/<oyun>.zip` üretilir: kökte o oyuna özel `index.html` (`<html data-game="...">` ile tek oyun modu, diğer oyunlara geçiş yok), oyunun dosyaları, `thumbnail-1280x720.png`, `thumbnail-512x512.png` ve oyun adı, kategori, etiketler ve açıklamayı içeren `bilgi.txt`. Hepsi birden `dist/akil-oyunlari-ayri-oyunlar.zip` içinde, `OYUNLAR.txt` listesiyle birlikte. Kategori ve etiketler `tools/store-meta.json` dosyasındadır. Kapaklar için Playwright, zip için sistemde `zip` komutu gerekir.

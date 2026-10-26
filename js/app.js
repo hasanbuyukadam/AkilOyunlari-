@@ -4,6 +4,8 @@ import { getStars, setStars, isUnlocked, solvedCount, hasSeenHowTo, markHowToSee
 
 const app = document.getElementById('app');
 let current = null; // aktif oyun örneği (temizlik için)
+// Tek oyun paketi: <html data-game="sudoku"> ise site yalnızca o oyunu gösterir.
+const SINGLE_GAME = document.documentElement.dataset.game || null;
 let navId = 0; // eski (geç biten) yüklemeler yeni sayfanın üstüne çizmesin
 const stale = (id) => id !== navId;
 
@@ -49,7 +51,7 @@ async function renderLevels(nav, gameId, diffId) {
   if (!game) return renderNotFound();
   const diff = DIFFICULTIES.find((d) => d.id === diffId) ?? DIFFICULTIES[0];
   app.innerHTML = `
-    <a class="back" href="#/">← Oyunlar</a>
+    ${SINGLE_GAME ? '' : '<a class="back" href="#/">← Oyunlar</a>'}
     <h1>${game.icon} ${esc(game.name)}</h1>
     <p class="muted">${esc(game.rules)}</p>
     ${game.howTo?.length ? '<button class="btn howto-btn" type="button">❓ Nasıl Oynanır?</button>' : ''}
@@ -190,6 +192,10 @@ async function route() {
   current = null;
   document.querySelectorAll('.modal').forEach((m) => m.remove());
   const [gameId, diffId, levelNo] = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
+  if (SINGLE_GAME && gameId !== SINGLE_GAME) {
+    location.replace(`#/${SINGLE_GAME}`);
+    return;
+  }
   try {
     if (!gameId) await renderHome(nav);
     else if (!levelNo) await renderLevels(nav, gameId, diffId);
